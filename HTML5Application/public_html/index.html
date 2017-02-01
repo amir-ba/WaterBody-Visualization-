@@ -37,7 +37,7 @@
   <title>waterbody demo</title>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="../ThirdParty/Cesium/Cesium.js"></script> 
+  <script src="ThirdParty/Cesium/Cesium.js"></script> 
   <script src="ThirdParty/Intersection/IntersectionAPI.js"></script>
   <script src="js/3dcitydb-web-map.js"></script>  
   <script src="js/CitydbUtil.js"></script>  
@@ -52,7 +52,7 @@
   <script src= "js/jquery-3.1.1.slim.min.js"></script>
     
   <style>
-     @import url(../../ThirdParty/Cesium/Widgets/widgets.css);
+     @import url(ThirdParty/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
           top: 0px;
           left: 0px;
@@ -77,8 +77,8 @@
 <body>
   <div id="cesiumContainer"></div>
    <div id="uiMenu">
-    <button type="button" onclick="addLayers()">add waterbody Layer</button>
-    <button type="button" onclick="removeLayers()">remove waterbody Layer</button>
+    <button type="button" onclick="addgltfLayers()">add gltf waterbody Layer</button>
+    <button type="button" onclick="addKmlLayers()">add kml waterbody Layer</button>
      
 
   </div>
@@ -133,32 +133,34 @@
      var layers = viewer.scene.imageryLayers;
       
     
- 	var addLayers = function() {
+ 	var addgltfLayers = function() {
  
  
- city= new CitydbKmlLayer({
+ gltf= new CitydbKmlLayer({
 		 	url : 'data/waterbody/pigel_collada_MasterJSON.json'  
            
 		});
- 
-		buildingLayer = new CitydbKmlLayer({
-		 
-            url : 'data/waterbody/pigel_extruded_MasterJSON.json'
-		});
-		 
-		
-		 webMap.addLayer(city);
+   
+		 webMap.addLayer(gltf);
 	 	//webMap.addLayer(buildingLayer);
-		buildingLayer.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
+		gltf.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
 			loadedcitydbLayer.zoomToStartPosition();
 		});		
 	};
   viewer.scene.globe.depthTestAgainstTerrain = false;
   viewer.scene.globe.showWaterEffect =true;
-	var removeLayers = function() {
-		webMap.removeLayer(buildingLayer.id);
-		webMap.removeLayer(lotLayer.id);
-		webMap.removeLayer(streetLayer.id);
+	var addKmlLayers = function() {
+		kml = new CitydbKmlLayer({
+		 
+            url : 'data/waterbody/pigel_extruded_MasterJSON.json'
+		});
+		 
+		
+		 webMap.addLayer(kml);
+	 	//webMap.addLayer(buildingLayer);
+		kml.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
+			loadedcitydbLayer.zoomToStartPosition();
+		});
 	};	
     var terrainProvider = new Cesium.CesiumTerrainProvider({
   url: 'http://localhost/dashboard/cesium/Apps/terraincop'  
