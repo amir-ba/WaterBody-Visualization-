@@ -1,0 +1,9 @@
+{
+  "tilejson": "2.1.0",
+  "format": "heightmap-1.0",
+  "version": "1.0.0",
+ "minzoom":2,
+  "scheme": "tms",
+  "projection":"EPSG:4326",
+  "tiles":["{z}/{x}/{y}.terrain?v={version}"]
+  }
