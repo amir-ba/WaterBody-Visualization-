@@ -3,7 +3,7 @@
 	"layername": "pigel",
 	"fileextension": ".kml",
 	"displayform": "collada",
-	"minLodPixels": 130,
+	"minLodPixels": 0,
 	"maxLodPixels": -1,
 	"colnum": 1,
 	"rownum": 1,

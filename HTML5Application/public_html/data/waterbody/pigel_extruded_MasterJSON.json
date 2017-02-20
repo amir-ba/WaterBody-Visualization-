@@ -3,8 +3,8 @@
 	"layername": "pigel",
 	"fileextension": ".kml",
 	"displayform": "extruded",
-	"minLodPixels": 0,
-	"maxLodPixels": 130,
+	"minLodPixels": 120,
+	"maxLodPixels": 0,
 	"colnum": 1,
 	"rownum": 1,
 	"bbox":{ 

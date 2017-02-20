@@ -38,12 +38,32 @@
             <west>7.366546125405159</west>
           </LatLonAltBox>
           <Lod>
-            <minLodPixels>130.0</minLodPixels>
+            <minLodPixels>0.0</minLodPixels>
             <maxLodPixels>-1.0</maxLodPixels>
           </Lod>
         </Region>
         <Link>
           <href>Tiles\0\0\pigel_Tile_0_0_collada.kml</href>
+          <viewRefreshMode>onRegion</viewRefreshMode>
+          <viewFormat/>
+        </Link>
+      </NetworkLink>
+      <NetworkLink>
+        <name>Display as geometry</name>
+        <Region>
+          <LatLonAltBox>
+            <north>51.14320720067276</north>
+            <south>51.14078701298347</south>
+            <east>7.373397139370052</east>
+            <west>7.366546125405159</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>0.0</minLodPixels>
+            <maxLodPixels>0.0</maxLodPixels>
+          </Lod>
+        </Region>
+        <Link>
+          <href>Tiles\0\0\pigel_Tile_0_0_geometry.kml</href>
           <viewRefreshMode>onRegion</viewRefreshMode>
           <viewFormat/>
         </Link>
@@ -58,8 +78,8 @@
             <west>7.366546125405159</west>
           </LatLonAltBox>
           <Lod>
-            <minLodPixels>0.0</minLodPixels>
-            <maxLodPixels>130.0</maxLodPixels>
+            <minLodPixels>120.0</minLodPixels>
+            <maxLodPixels>0.0</maxLodPixels>
           </Lod>
         </Region>
         <Link>
