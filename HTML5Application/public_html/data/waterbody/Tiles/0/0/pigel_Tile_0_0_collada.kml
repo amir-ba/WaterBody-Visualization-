@@ -12,207 +12,20 @@
         <coordinates>7.366546125405159,51.14078701298347 7.373397139370052,51.14078701298347 7.373397139370052,51.14320720067276 7.366546125405159,51.14320720067276 7.366546125405159,51.14078701298347</coordinates>
       </LineString>
     </Placemark>
-    <Placemark id="COLLADA_DN_5">
-      <name>DN_5</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.367752</longitude>
-          <latitude>51.1429355</latitude>
-          <altitude>1.0</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7375882</heading>
-        </Orientation>
-        <Link>
-          <href>8/DN_5.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_1">
-      <name>DN_1</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.368898</longitude>
-          <latitude>51.1423509</latitude>
-          <altitude>0.2</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.727363</heading>
-        </Orientation>
-        <Link>
-          <href>13/DN_1.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_16">
-      <name>DN_16</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3701139</longitude>
-          <latitude>51.1419538</latitude>
-          <altitude>3.2</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7361747</heading>
-        </Orientation>
-        <Link>
-          <href>9/DN_16.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_7">
-      <name>DN_7</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3719655</longitude>
-          <latitude>51.1418563</latitude>
-          <altitude>1.4</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7436824</heading>
-        </Orientation>
-        <Link>
-          <href>10/DN_7.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
     <Placemark id="COLLADA_DN_6">
       <name>DN_6</name>
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3722347</longitude>
-          <latitude>51.1419865</latitude>
-          <altitude>1.2</altitude>
+          <longitude>7.3701548</longitude>
+          <latitude>51.1423044</latitude>
+          <altitude>3.0</altitude>
         </Location>
         <Orientation>
-          <heading>358.740358</heading>
+          <heading>358.738303</heading>
         </Orientation>
         <Link>
-          <href>17/DN_6.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_11">
-      <name>DN_11</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3700398</longitude>
-          <latitude>51.1421139</latitude>
-          <altitude>2.2</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7339494</heading>
-        </Orientation>
-        <Link>
-          <href>15/DN_11.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_12">
-      <name>DN_12</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3699052</longitude>
-          <latitude>51.1420488</latitude>
-          <altitude>2.4</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7351116</heading>
-        </Orientation>
-        <Link>
-          <href>1/DN_12.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_2">
-      <name>DN_2</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3687927</longitude>
-          <latitude>51.1425391</latitude>
-          <altitude>0.4</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7303048</heading>
-        </Orientation>
-        <Link>
-          <href>7/DN_2.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_17">
-      <name>DN_17</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3700446</longitude>
-          <latitude>51.1419764</latitude>
-          <altitude>3.5</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7252665</heading>
-        </Orientation>
-        <Link>
-          <href>2/DN_17.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_9">
-      <name>DN_9</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3700365</longitude>
-          <latitude>51.1422087</latitude>
-          <altitude>1.8</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7418161</heading>
-        </Orientation>
-        <Link>
-          <href>3/DN_9.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_8">
-      <name>DN_8</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3702373</longitude>
-          <latitude>51.142338</latitude>
-          <altitude>1.6</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7427975</heading>
-        </Orientation>
-        <Link>
-          <href>16/DN_8.dae</href>
-        </Link>
-      </Model>
-    </Placemark>
-    <Placemark id="COLLADA_DN_3">
-      <name>DN_3</name>
-      <Model>
-        <altitudeMode>absolute</altitudeMode>
-        <Location>
-          <longitude>7.3683733</longitude>
-          <latitude>51.1427861</latitude>
-          <altitude>0.6</altitude>
-        </Location>
-        <Orientation>
-          <heading>358.7324993</heading>
-        </Orientation>
-        <Link>
-          <href>18/DN_3.dae</href>
+          <href>5/DN_6.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -221,15 +34,32 @@
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3690059</longitude>
-          <latitude>51.1423157</latitude>
-          <altitude>0.1</altitude>
+          <longitude>7.3688745</longitude>
+          <latitude>51.1424061</latitude>
+          <altitude>0.0</altitude>
         </Location>
         <Orientation>
-          <heading>358.725299</heading>
+          <heading>358.7241738</heading>
         </Orientation>
         <Link>
-          <href>4/DN_0.dae</href>
+          <href>8/DN_0.gltf</href>
+        </Link>
+      </Model>
+    </Placemark>
+    <Placemark id="COLLADA_DN_9">
+      <name>DN_9</name>
+      <Model>
+        <altitudeMode>absolute</altitudeMode>
+        <Location>
+          <longitude>7.3716952</longitude>
+          <latitude>51.1414373</latitude>
+          <altitude>3.0</altitude>
+        </Location>
+        <Orientation>
+          <heading>358.7352721</heading>
+        </Orientation>
+        <Link>
+          <href>6/DN_9.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -238,66 +68,100 @@
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3699703</longitude>
-          <latitude>51.1421446</latitude>
-          <altitude>2.0</altitude>
+          <longitude>7.3701128</longitude>
+          <latitude>51.1419542</latitude>
+          <altitude>3.5</altitude>
         </Location>
         <Orientation>
-          <heading>358.7401523</heading>
+          <heading>358.7362915</heading>
         </Orientation>
         <Link>
-          <href>5/DN_10.dae</href>
+          <href>3/DN_10.gltf</href>
         </Link>
       </Model>
     </Placemark>
-    <Placemark id="COLLADA_DN_14">
-      <name>DN_14</name>
+    <Placemark id="COLLADA_DN_1">
+      <name>DN_1</name>
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3699191</longitude>
-          <latitude>51.1420174</latitude>
-          <altitude>2.8</altitude>
+          <longitude>7.3722759</longitude>
+          <latitude>51.1414625</latitude>
+          <altitude>0.5</altitude>
         </Location>
         <Orientation>
-          <heading>358.739402</heading>
+          <heading>358.7305751</heading>
         </Orientation>
         <Link>
-          <href>6/DN_14.dae</href>
+          <href>7/DN_1.gltf</href>
         </Link>
       </Model>
     </Placemark>
-    <Placemark id="COLLADA_DN_15">
-      <name>DN_15</name>
+    <Placemark id="COLLADA_DN_5">
+      <name>DN_5</name>
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3701831</longitude>
-          <latitude>51.1419312</latitude>
-          <altitude>3.0</altitude>
+          <longitude>7.3710663</longitude>
+          <latitude>51.1418728</latitude>
+          <altitude>2.5</altitude>
         </Location>
         <Orientation>
-          <heading>358.7271106</heading>
+          <heading>358.7261447</heading>
         </Orientation>
         <Link>
-          <href>11/DN_15.dae</href>
+          <href>9/DN_5.gltf</href>
         </Link>
       </Model>
     </Placemark>
-    <Placemark id="COLLADA_DN_13">
-      <name>DN_13</name>
+    <Placemark id="COLLADA_DN_2">
+      <name>DN_2</name>
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3699191</longitude>
-          <latitude>51.1420174</latitude>
-          <altitude>2.6</altitude>
+          <longitude>7.372355</longitude>
+          <latitude>51.1415319</latitude>
+          <altitude>1.0</altitude>
         </Location>
         <Orientation>
-          <heading>358.739402</heading>
+          <heading>358.7415013</heading>
         </Orientation>
         <Link>
-          <href>12/DN_13.dae</href>
+          <href>1/DN_2.gltf</href>
+        </Link>
+      </Model>
+    </Placemark>
+    <Placemark id="COLLADA_DN_7">
+      <name>DN_7</name>
+      <Model>
+        <altitudeMode>absolute</altitudeMode>
+        <Location>
+          <longitude>7.3701312</longitude>
+          <latitude>51.1422015</latitude>
+          <altitude>3.5</altitude>
+        </Location>
+        <Orientation>
+          <heading>358.7259435</heading>
+        </Orientation>
+        <Link>
+          <href>2/DN_7.gltf</href>
+        </Link>
+      </Model>
+    </Placemark>
+    <Placemark id="COLLADA_DN_8">
+      <name>DN_8</name>
+      <Model>
+        <altitudeMode>absolute</altitudeMode>
+        <Location>
+          <longitude>7.3699442</longitude>
+          <latitude>51.1421135</latitude>
+          <altitude>2.7</altitude>
+        </Location>
+        <Orientation>
+          <heading>358.7335539</heading>
+        </Orientation>
+        <Link>
+          <href>4/DN_8.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -306,15 +170,32 @@
       <Model>
         <altitudeMode>absolute</altitudeMode>
         <Location>
-          <longitude>7.3729122</longitude>
-          <latitude>51.1421856</latitude>
-          <altitude>0.8</altitude>
+          <longitude>7.3720051</longitude>
+          <latitude>51.1422105</latitude>
+          <altitude>2.0</altitude>
         </Location>
         <Orientation>
-          <heading>358.7417995</heading>
+          <heading>358.7256666</heading>
         </Orientation>
         <Link>
-          <href>14/DN_4.dae</href>
+          <href>10/DN_4.gltf</href>
+        </Link>
+      </Model>
+    </Placemark>
+    <Placemark id="COLLADA_DN_3">
+      <name>DN_3</name>
+      <Model>
+        <altitudeMode>absolute</altitudeMode>
+        <Location>
+          <longitude>7.3727985</longitude>
+          <latitude>51.1420507</latitude>
+          <altitude>1.5</altitude>
+        </Location>
+        <Orientation>
+          <heading>358.738793</heading>
+        </Orientation>
+        <Link>
+          <href>11/DN_3.gltf</href>
         </Link>
       </Model>
     </Placemark>
