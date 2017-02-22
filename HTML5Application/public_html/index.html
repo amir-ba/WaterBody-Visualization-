@@ -204,9 +204,11 @@ var positionN=[];
 var ellipsoid = Cesium.Ellipsoid.WGS84;
 var idList=[];
 
-Cesium.CzmlDataSource.updaters.push(czmlUpdater);
  czml = './data/simple.czml';
+ Cesium.CzmlDataSource.updaters.push(czmlUpdater);
+
 var czmldataSource = Cesium.CzmlDataSource.load(czml);
+
 viewer.dataSources.add(czmldataSource).then(function(data){
 
 var a =positionN.length
@@ -247,32 +249,31 @@ var a =positionN.length
  
  //node transformation of the model 
  /// change position of the model 
-   var firstProjection = 'PROJCS["WGS 84 / UTM zone 32N",    GEOGCS["WGS 84",  DATUM["WGS_1984",  SPHEROID["WGS 84",6378137,298.257223563,                AUTHORITY["EPSG","7030"]],            AUTHORITY["EPSG","6326"]],        PRIMEM["Greenwich",0,            AUTHORITY["EPSG","8901"]],        UNIT["degree",0.0174532925199433,            AUTHORITY["EPSG","9122"]],        AUTHORITY["EPSG","4326"]],    PROJECTION["Transverse_Mercator"],    PARAMETER["latitude_of_origin",0],    PARAMETER["central_meridian",9],    PARAMETER["scale_factor",0.9996],    PARAMETER["false_easting",500000],    PARAMETER["false_northing",0],    UNIT["metre",1,        AUTHORITY["EPSG","9001"]],    AXIS["Easting",EAST],    AXIS["Northing",NORTH],    AUTHORITY["EPSG","32632"]]';
-            var secondProjection = "EPSG:4326";
+  i=1
+  var rasterset = ["1feb","28feb","1sep"];
+  
+  
  $('#getNext').on('click',function() {
-	    console.log(viewer.clock.currentTime);
+	   
+        if(i<rasterset.length-1){ i++ ;
+         console.log(viewer.clock.currentTime);
         viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, 60, new Cesium.JulianDate());
-     Cesium.loadWithXhr({
-    url : './data/1sep.tif',
-    responseType : 'arraybuffer'
-}).then( loadRasterToMap).otherwise(function(error) { console.log(error);
-    // an error occurred
-});
+  callRaster(rasterset[i])
+  }
    
 	});
-            $('#getPrevius').on('click',function() {
-	    console.log(viewer.clock.currentTime);
-        viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, 60, new Cesium.JulianDate());
-     Cesium.loadWithXhr({
-    url : './data/28feb.tif',
-    responseType : 'arraybuffer'
-}).then(loadRasterToMap).otherwise(function(error) { console.log(error);
-    // an error occurred
-});
-   
+ $('#getPrevius').on('click',function() {
+	    
+ if(i>0){ i--  
+   console.log(viewer.clock.currentTime);
+        viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, -60, new Cesium.JulianDate());
+     callRaster(rasterset[i])
+}
 	});
     
+   
     
+    // on time change
 viewer.clock.onTick.addEventListener(function(clock) {
     var entity = viewer.selectedEntity;
  
@@ -281,11 +282,12 @@ viewer.clock.onTick.addEventListener(function(clock) {
   //   viewer.trackedEntity = entity
     var dataSources = viewer.dataSources;
    // console.log(dataSources)
-    console.log(entity.model.nodeTransformations.Y_UP_Transform.translation._value.z)
+    console.log(entity.model.nodeTransformations.Y_UP_Transform.translation._value.z);
+    console.log(entity.model);
+    
     var czmlEntities = dataSources.get(0).entities.values;
    // console.log(czmlEntities)
-    var hh = 100; 
-   // czmlEntities .forEach(function(element) {})
+    // czmlEntities .forEach(function(element) {})
  
 }
    if ( Cesium.JulianDate.equals(clock.currentTime,start )){
@@ -310,6 +312,15 @@ viewer.clock.onTick.addEventListener(function(clock) {
     
 });
 
+function callRaster (rastername){
+   Cesium.loadWithXhr({
+    url : './data/'+ rastername+'.tif',
+    responseType : 'arraybuffer'
+}).then( loadRasterToMap).otherwise(function(error) { console.log(error);
+    // an error occurred
+})
+
+}
 // call raster for a time and apply to map 
 function loadRasterToMap (response) {
    console.log(response);
@@ -317,6 +328,7 @@ function loadRasterToMap (response) {
    console.log(rasterdata);
      var dataSources = viewer.dataSources;
     var czmlEntities = dataSources.get(0).entities.values;
+ 
     
     var l =0; 
     var counter=0;
@@ -326,23 +338,18 @@ function loadRasterToMap (response) {
                         var averageHeight = parseFloat(rasterdata[0][1][counter]).toFixed(4);
                          var x=rasterdata[1][0]+ (w*rasterdata[1][1] ) ;
                     var y = rasterdata[1][3]+(h*rasterdata[1][5] );                   // console.log(h,w,x,y);
-                           var a = proj4(firstProjection,secondProjection,[x,y ]);
+                         //  var a = proj4(firstProjection,secondProjection,[x,y ]);
 
 
-                           var poly2 ={ 
-                
-                    id : "point"+counter,    name : counter +"p" +averageHeight, 	position : new Cesium.Cartesian3.fromDegrees(a[0],a[1],300),  
-                   "point" : {
-                   
-                 pixelSize:9
-      
-                        } ,
-         }            
+                           //var poly2 ={    id : "point"+counter,    name : counter +"p" +averageHeight, 	position : new Cesium.Cartesian3.fromDegrees(a[0],a[1],300),  
+                            //            "point" : {        pixelSize:9        }                         
+                              //          }            
 
-   //    viewer. entities.add(poly2)  ;
-                         if(  czmlEntities[l]){  
+                        //    viewer. entities.add(poly2)  ;
+                         if(   czmlEntities[l] && czmlEntities[l].model){  
                         
                         var color =  setColor(averageHeight);
+                //        console.log(czmlEntities[l])
                         czmlEntities[l].model.nodeTransformations.Y_UP_Transform.translation = (new Cesium.Cartesian3(0,0,averageHeight) ) ;
                         czmlEntities[l].model.color = color
                    
@@ -381,7 +388,7 @@ function loadRasterToMap (response) {
         "id" : "document",
         "name" : "CZML Point",
         "version" : "1.0"  }];
-     var kmlPath = "./data/waterbody/Tiles/0/0/pigel_Tile_0_0_collada.kml";
+     var kmlPath = "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/waterbody/Tiles/0/0/pigel_Tile_0_0_collada.kml";
      var kmlFolder= kmlPath.replace(/\/[^\/]+$/, '');
         
     $.get(kmlPath, function(data){
