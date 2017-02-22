@@ -33,27 +33,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <link rel="icon" type="image/png" href="../../theme/img/favicon.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./../theme/img/favicon.png" sizes="16x16">
   <title>New York City demo</title>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="../../ThirdParty/Cesium/Cesium.js"></script> 
-  <script src="../../ThirdParty/Intersection/IntersectionAPI.js"></script>
-  <script src="../../js/3dcitydb-web-map.js"></script>  
-  <script src="../../js/CitydbUtil.js"></script>  
-  <script src="../../js/CitydbWebworker.js"></script>
-  <script src="../../js/CitydbSceneTransforms.js"></script> 
-  <script src="../../js/CitydbKmlHighlightingManager.js"></script>   
-  <script src="../../js/CitydbKmlTilingManager.js"></script>  
-  <script src="../../js/CitydbKmlDataSource.js"></script>    
-  <script src="../../js/CitydbKmlLayer.js"></script> 
-  <script src= "../../js/d3.js"></script>
-  <script src= "../../js/geotiff.js"></script>
-  <script src= "../../js/jquery.js"></script>
-  <script src= "../../js/proj4.js"></script>
+  <script src="./ThirdParty/Cesium/Cesium.js"></script> 
+  <script src="./ThirdParty/Intersection/IntersectionAPI.js"></script>
+  <script src="./js/3dcitydb-web-map.js"></script>  
+  <script src="./js/CitydbUtil.js"></script>  
+  <script src="./js/CitydbWebworker.js"></script>
+  <script src="./js/CitydbSceneTransforms.js"></script> 
+  <script src="./js/CitydbKmlHighlightingManager.js"></script>   
+  <script src="./js/CitydbKmlTilingManager.js"></script>  
+  <script src="./js/CitydbKmlDataSource.js"></script>    
+  <script src="./js/CitydbKmlLayer.js"></script> 
+  <script src= "./js/d3.js"></script>
+  <script src= "./js/geotiff.js"></script>
+  <script src= "./js/jquery.js"></script>
+  <script src= "./js/proj4.js"></script>
     
   <style>
-     @import url(../../ThirdParty/Cesium/Widgets/widgets.css);
+     @import url(./ThirdParty/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
           top: 0px;
           left: 0px;
@@ -78,8 +78,8 @@
 <body>
   <div id="cesiumContainer"></div>
    <div id="uiMenu">
-    <button type="button" onclick="addgltfLayers()">add waterbody gltf Layer</button>
-    <button type="button" onclick="addkmlLayers()">add waterbody kml Layer</button>
+   <!--  <button type="button" onclick="addgltfLayers()">add waterbody gltf Layer</button>
+    <button type="button" onclick="addkmlLayers()">add waterbody kml Layer</button> -->
      <span>Time Controls: </span><button id="getPrevius" style="margin-top: 5px;">Backward</button> <button id="getNext" style="margin-top: 5px;">Forward</button></br>
 
   </div>
@@ -108,25 +108,25 @@
  
  viewer.flyTo(
     viewer.dataSources.add(
-        Cesium.KmlDataSource.load('../objects/roadal.kml', {
+        Cesium.KmlDataSource.load('./data/roadal.kml', {
             camera: viewer.camera,
             canvas: viewer.canvas
         })
     ))
   viewer.dataSources.add(
-        Cesium.KmlDataSource.load('../objects/betrieb.kml', {
+        Cesium.KmlDataSource.load('./data/betrieb.kml', {
             camera: viewer.camera,
             canvas: viewer.canvas
         })
     )
      viewer.dataSources.add(
-        Cesium.KmlDataSource.load('../objects/doc.kml', {
+        Cesium.KmlDataSource.load('./data/doc.kml', {
             camera: viewer.camera,
             canvas: viewer.canvas
         })
     )
      viewer.dataSources.add(
-        Cesium.KmlDataSource.load('../objects/pegel.kml', {
+        Cesium.KmlDataSource.load('./data/pegel.kml', {
             camera: viewer.camera,
             canvas: viewer.canvas
         })
@@ -138,12 +138,12 @@
  
  
  gltf= new CitydbKmlLayer({
-		 	url : '../objects/New Folder/pigel_collada_MasterJSON.json'  
+		 	url : './data/waterbody/pigel_collada_MasterJSON.json'  
            
 		});
   
 		 webMap.addLayer(gltf);
-	 	    console.log(webMap)      
+	 	    console.log(gltf)      
 
 		gltf.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
 			loadedcitydbLayer.zoomToStartPosition();
@@ -154,7 +154,7 @@
 	var addkmlLayers = function() {
 		kml = new CitydbKmlLayer({
 		 
-            url : '../objects/New Folder/pigel_extruded_MasterJSON.json'
+            url : './data/waterbody/pigel_extruded_MasterJSON.json'
 		});
 		 webMap.addLayer(kml); 
          kml.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
@@ -173,16 +173,14 @@
 
 
     
-var cssColorArray=["#a7dbc7","#d6ea9a","#fff0b1","#ffd9ad","#ffb3d3","#ffffff"];
- 
- var czml = [{"id":"document","name":"CZML Point","version":"1.0"},{"id":"DN_16","name":"DN_16","position":{"cartographicDegrees":[7.3701139,51.1419538,3.2]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/9/DN_16.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_5","name":"DN_5","position":{"cartographicDegrees":[7.367752,51.1429355,1]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/8/DN_5.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_11","name":"DN_11","position":{"cartographicDegrees":[7.3700398,51.1421139,2.2]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/15/DN_11.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_12","name":"DN_12","position":{"cartographicDegrees":[7.3699052,51.1420488,2.4]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/1/DN_12.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_6","name":"DN_6","position":{"cartographicDegrees":[7.3722347,51.1419865,1.2]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/17/DN_6.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_2","name":"DN_2","position":{"cartographicDegrees":[7.3687927,51.1425391,0.4]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/7/DN_2.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_7","name":"DN_7","position":{"cartographicDegrees":[7.3719655,51.1418563,1.4]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/10/DN_7.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_1","name":"DN_1","position":{"cartographicDegrees":[7.368898,51.1423509,0.2]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/13/DN_1.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_8","name":"DN_8","position":{"cartographicDegrees":[7.3702373,51.142338,1.6]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/16/DN_8.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_17","name":"DN_17","position":{"cartographicDegrees":[7.3700446,51.1419764,3.5]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/2/DN_17.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_3","name":"DN_3","position":{"cartographicDegrees":[7.3683733,51.1427861,0.6]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/18/DN_3.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_0","name":"DN_0","position":{"cartographicDegrees":[7.3690059,51.1423157,0.1]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/4/DN_0.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_10","name":"DN_10","position":{"cartographicDegrees":[7.3699703,51.1421446,2]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/5/DN_10.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_15","name":"DN_15","position":{"cartographicDegrees":[7.3701831,51.1419312,3]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/11/DN_15.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_9","name":"DN_9","position":{"cartographicDegrees":[7.3700365,51.1422087,1.8]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/3/DN_9.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_14","name":"DN_14","position":{"cartographicDegrees":[7.3699191,51.1420174,2.8]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/6/DN_14.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_13","name":"DN_13","position":{"cartographicDegrees":[7.3699191,51.1420174,2.6]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/12/DN_13.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}},{"id":"DN_4","name":"DN_4","position":{"cartographicDegrees":[7.3729122,51.1421856,0.8]},"model":{"gltf":"../objects/New Folder/New folder/Tiles/0/0/14/DN_4.gltf","colorBlendModes":"Replace","colorBlendAmount":1,"nodeTransformations":{"Y_UP_Transform":{"translation":{"cartesian":[0,0,0]}}}}}]
+  
 
  
- // createCzml() ;
+ //createCzml() ;
  
-var start = Cesium.JulianDate.fromDate(new Date(2015, 2, 25, 16));
+var start = Cesium.JulianDate.fromDate(new Date(2015, 1, 01, 00));
 var stop = Cesium.JulianDate.addSeconds(start, 360, new Cesium.JulianDate());
-var stop = Cesium.JulianDate.fromDate(new Date(2015, 2, 27, 16));
+//var stop = Cesium.JulianDate.fromDate(new Date(2015, 2, 27, 16));
 var middle = Cesium.JulianDate.addSeconds(start, 60, new Cesium.JulianDate());
 
 //Make sure viewer is at the desired time.
@@ -191,24 +189,23 @@ viewer.clock.stopTime = stop.clone();
 viewer.clock.currentTime = start.clone();
 viewer.clock.ClockStep = 1;
  
-viewer.clock.multiplier = 10;
+viewer.clock.multiplier = 30;
 viewer.timeline.zoomTo(start, stop);
 var start = viewer.clock.currentTime;
 //var currentTime = Cesium.JulianDate.fromDate(new Date( ));
  var currentTime = start ;
-
+console.log(viewer.clock)
  //var dataSource = Cesium.CzmlDataSource.load(czml);
  
 // viewer.dataSources.add(dataSource);
 //viewer.zoomTo(dataSource);
  
-var cssColorArray=["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#f7f7f7","#d1e5f0","#92c5de","#4393c3","#2166ac","#053061"];
 var positionN=[];
 var ellipsoid = Cesium.Ellipsoid.WGS84;
 var idList=[];
 
 Cesium.CzmlDataSource.updaters.push(czmlUpdater);
- 
+ czml = './data/simple.czml';
 var czmldataSource = Cesium.CzmlDataSource.load(czml);
 viewer.dataSources.add(czmldataSource).then(function(data){
 
@@ -218,19 +215,30 @@ var a =positionN.length
     var promis = Cesium.sampleTerrain(viewer.terrainProvider, 17, positionN);
         promis.then(function(terrainSamplePositions){ 
             var entities= data.entities;
-          
-            for (var i = 0; i < terrainSamplePositions.length; ++i) {
-     
+             for (var i = 0; i < terrainSamplePositions.length; ++i) {
                 var BaseHeight = terrainSamplePositions[i].height;//.toFixed(2);
-                var entity = entities.getById(idList[i]);
-                var cartesianOld = entity.position.getValue( currentTime);        
-                var cartesianOldToCartography= ellipsoid.cartesianToCartographic(cartesianOld);
-                var newHeight2 = BaseHeight +1* cartesianOldToCartography.height
-                entity.position.setValue(Cesium.Cartesian3.fromRadians(cartesianOldToCartography.longitude,cartesianOldToCartography.latitude,newHeight2));
-                
-                            
+            //         console.log(BaseHeight)
 
-              
+                var entity = entities.getById(idList[i]);
+                var cartesianOld = entity.position._value ;       
+ //entity.position.getValue( currentTime);        
+                var cartesianOldToCartography= ellipsoid.cartesianToCartographic(cartesianOld);
+                //var newHeight2 = BaseHeight +1* cartesianOldToCartography.height
+                var newHeight2 = 290+ cartesianOldToCartography.height
+          //      console.log(parseFloat(cartesianOldToCartography.height).toFixed(4))
+                 entity.position.setValue(Cesium.Cartesian3.fromRadians(cartesianOldToCartography.longitude,cartesianOldToCartography.latitude,newHeight2));
+                
+                var poly2 ={ 
+                
+                    id : "point"+i,    name : i +"p" , 	position : new Cesium.Cartesian3.fromRadians(cartesianOldToCartography.longitude,cartesianOldToCartography.latitude,newHeight2) , 
+                   "point" : {
+                   
+                 pixelSize:11
+      
+                        } ,
+         }            
+
+       //  entities.add(poly2)  
             }
  
         });
@@ -239,31 +247,26 @@ var a =positionN.length
  
  //node transformation of the model 
  /// change position of the model 
- 
- $('#getPrevius').on('click',function() {
+   var firstProjection = 'PROJCS["WGS 84 / UTM zone 32N",    GEOGCS["WGS 84",  DATUM["WGS_1984",  SPHEROID["WGS 84",6378137,298.257223563,                AUTHORITY["EPSG","7030"]],            AUTHORITY["EPSG","6326"]],        PRIMEM["Greenwich",0,            AUTHORITY["EPSG","8901"]],        UNIT["degree",0.0174532925199433,            AUTHORITY["EPSG","9122"]],        AUTHORITY["EPSG","4326"]],    PROJECTION["Transverse_Mercator"],    PARAMETER["latitude_of_origin",0],    PARAMETER["central_meridian",9],    PARAMETER["scale_factor",0.9996],    PARAMETER["false_easting",500000],    PARAMETER["false_northing",0],    UNIT["metre",1,        AUTHORITY["EPSG","9001"]],    AXIS["Easting",EAST],    AXIS["Northing",NORTH],    AUTHORITY["EPSG","32632"]]';
+            var secondProjection = "EPSG:4326";
+ $('#getNext').on('click',function() {
 	    console.log(viewer.clock.currentTime);
         viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, 60, new Cesium.JulianDate());
-
      Cesium.loadWithXhr({
-    url : '../objects/28feb.tif',
+    url : './data/1sep.tif',
     responseType : 'arraybuffer'
-}).then(function(response) {
-   console.log(response);
-  var rasterdata=  geotif(response);
-   console.log(rasterdata);
-     var dataSources = viewer.dataSources;
-    var czmlEntities = dataSources.get(0).entities.values;
-     
-    czmlEntities .forEach(function(element) {
-
-    element.model.nodeTransformations.Y_UP_Transform.translation = (new Cesium.Cartesian3(0,0,50) ) ;
-
-
-    
-    })
+}).then( loadRasterToMap).otherwise(function(error) { console.log(error);
+    // an error occurred
+});
    
-   
-}).otherwise(function(error) { console.log(error);
+	});
+            $('#getPrevius').on('click',function() {
+	    console.log(viewer.clock.currentTime);
+        viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, 60, new Cesium.JulianDate());
+     Cesium.loadWithXhr({
+    url : './data/28feb.tif',
+    responseType : 'arraybuffer'
+}).then(loadRasterToMap).otherwise(function(error) { console.log(error);
     // an error occurred
 });
    
@@ -275,27 +278,20 @@ viewer.clock.onTick.addEventListener(function(clock) {
  
  //console.log(clock.currentTime,middle)
     if (Cesium.defined(entity)    ) {
-     
+  //   viewer.trackedEntity = entity
     var dataSources = viewer.dataSources;
-    console.log(dataSources)
-    console.log(entity)
+   // console.log(dataSources)
+    console.log(entity.model.nodeTransformations.Y_UP_Transform.translation._value.z)
     var czmlEntities = dataSources.get(0).entities.values;
    // console.log(czmlEntities)
     var hh = 100; 
-    czmlEntities .forEach(function(element) {
-    //    var cartesianOldToCartography= ellipsoid.cartesianToCartographic(element.position.getValue(clock));
- 
-      //  element.position.setValue( Cesium.Cartesian3.fromRadians(cartesianOldToCartography.longitude,cartesianOldToCartography.latitude, hh));
-      //  hh+=10
-      
-      
- })
+   // czmlEntities .forEach(function(element) {})
  
 }
    if ( Cesium.JulianDate.equals(clock.currentTime,start )){
   //  console.log(clock)
      Cesium.loadWithXhr({
-    url : '../objects/28feb.tif',
+    url : './data/28feb.tif',
     responseType : 'arraybuffer'
 }).then(function(response) {
    console.log(response);
@@ -314,17 +310,67 @@ viewer.clock.onTick.addEventListener(function(clock) {
     
 });
 
+// call raster for a time and apply to map 
+function loadRasterToMap (response) {
+   console.log(response);
+  var rasterdata=  geotif(response);
+   console.log(rasterdata);
+     var dataSources = viewer.dataSources;
+    var czmlEntities = dataSources.get(0).entities.values;
+    
+    var l =0; 
+    var counter=0;
+            for (var h=0;h<=rasterdata[2][0];h++){
+                for(w=0;w<=rasterdata[2][1];w++){
+                    if( h>1 && w>1&& w%5==0 && h%5==0 && w%2!=0 && h%2!=0) {  
+                        var averageHeight = parseFloat(rasterdata[0][1][counter]).toFixed(4);
+                         var x=rasterdata[1][0]+ (w*rasterdata[1][1] ) ;
+                    var y = rasterdata[1][3]+(h*rasterdata[1][5] );                   // console.log(h,w,x,y);
+                           var a = proj4(firstProjection,secondProjection,[x,y ]);
 
+
+                           var poly2 ={ 
+                
+                    id : "point"+counter,    name : counter +"p" +averageHeight, 	position : new Cesium.Cartesian3.fromDegrees(a[0],a[1],300),  
+                   "point" : {
+                   
+                 pixelSize:9
+      
+                        } ,
+         }            
+
+   //    viewer. entities.add(poly2)  ;
+                         if(  czmlEntities[l]){  
+                        
+                        var color =  setColor(averageHeight);
+                        czmlEntities[l].model.nodeTransformations.Y_UP_Transform.translation = (new Cesium.Cartesian3(0,0,averageHeight) ) ;
+                        czmlEntities[l].model.color = color
+                   
+                        }
+                        l++
+                    }
+     
+                    counter++
+                }
+             
+            } 
+    
+ 
+   
+}
 //add color to any czml loaded 
   function czmlUpdater(dynamicObject, packet, dynamicObjectCollection, sourceUri) {
-  
         var height = packet.position.cartographicDegrees[2]
-        var color =  setColor(height,cssColorArray,[0,0.3]);
+      var height2 = packet.model.nodeTransformations.Y_UP_Transform.translation.cartesian[2];
+      packet.model.nodeTransformations.Y_UP_Transform.translation.cartesian[2]=  height
+    
+        var color =  setColor(height);
         color= {"rgba": [255*color.red,255*color.green ,255*color.blue,255* color.alpha]}
         packet.model.color =  color;
         currentPosition = packet.position.cartographicDegrees;
+        packet.position.cartographicDegrees = [ currentPosition[0], currentPosition[1],0]
         positionN.push(  new Cesium.Cartographic(Cesium.Math.toRadians(  currentPosition[0]), Cesium.Math.toRadians( currentPosition[1]) ));
-        idList.push(packet.id)
+        idList.push(packet.id);
       
     }
 
@@ -335,7 +381,7 @@ viewer.clock.onTick.addEventListener(function(clock) {
         "id" : "document",
         "name" : "CZML Point",
         "version" : "1.0"  }];
-     var kmlPath = "../objects/New Folder/New folder/Tiles/0/0/pigel_Tile_0_0_collada.kml";
+     var kmlPath = "./data/waterbody/Tiles/0/0/pigel_Tile_0_0_collada.kml";
      var kmlFolder= kmlPath.replace(/\/[^\/]+$/, '');
         
     $.get(kmlPath, function(data){
@@ -379,38 +425,45 @@ viewer.clock.onTick.addEventListener(function(clock) {
 }
  
 
-function setColor(height,cssColorArray,heightIntervals){
-    var startHeight= heightIntervals[0];
-    var interval = heightIntervals[1];
+function setColor(height,startHeight,intervals,cssColorArray){
+  if(!cssColorArray){cssColorArray =  ["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#f7f7f7","#d1e5f0","#92c5de","#4393c3","#2166ac","#053061","#050861"];  }
+  if(!intervals){var interval = 0.03 }
+  if(!startHeight){var startHeight = 0.01  }
+
+   // var startHeight= heightIntervals[0];
+  //  var interval = heightIntervals[1];
  //   var endHeight= heightIntervals[2];
     var rangeIndex;
     if  ( height<=startHeight){
-                rangeIndex =10;
+                rangeIndex =11;
             }else if (height >startHeight && height<=(startHeight+1*interval) ){
                 rangeIndex =10;
             }else if (height >(startHeight+1*interval) && height<=(startHeight+2*interval) ){
                 rangeIndex =9;
-            }else if (height >(startHeight+2*interval)  && height<=(startHeight+3*interval) ){
+            }else if (height >(startHeight+2*interval)  && height<=(startHeight+4*interval) ){
                 rangeIndex =8;
-            }else if (height >(startHeight+3*interval)  && height<=(startHeight+4*interval)  ){
-                rangeIndex =7;
             }else if (height >(startHeight+4*interval)  && height<=(startHeight+5*interval)  ){
-                rangeIndex =6;
+                rangeIndex =7;
             }else if (height >(startHeight+5*interval)  && height<=(startHeight+6*interval)  ){
-                rangeIndex =5;
+                rangeIndex =6;
             }else if (height >(startHeight+6*interval)  && height<=(startHeight+7*interval)  ){
+                rangeIndex =5;
+            }else if (height >(startHeight+7*interval)  && height<=(startHeight+7.5*interval)  ){
                 rangeIndex =4;
-            }else if (height >(startHeight+7*interval)  && height<=(startHeight+8*interval)  ){
+            }else if (height >(startHeight+7.5*interval)  && height<=(startHeight+8*interval)  ){
                 rangeIndex =3;
-            }else if (height >(startHeight+8*interval)  && height<=(startHeight+9*interval)  ){
+            }else if (height >(startHeight+8*interval)  && height<=(startHeight+10*interval)  ){
                 rangeIndex =2;
-            }else if (height >(startHeight+9*interval)  && height<=(startHeight+10*interval)  ){
+            }else if (height >(startHeight+10*interval)  && height<=(startHeight+15*interval)  ){
                 rangeIndex =1;
-            }else if (height >(startHeight+9*interval)  ){
+            }else if (height >(startHeight+15*interval)  && height<=(startHeight+25*interval)  ){
+                rangeIndex =0;
+            }
+            else if (height >(startHeight+25*interval)  ){
                 rangeIndex =0;
             }
     var color= new Cesium.Color.fromCssColorString(cssColorArray[rangeIndex]);
-    
+ //   console.log(rangeIndex)
     return color;
 }
 
@@ -421,7 +474,7 @@ function setColor(height,cssColorArray,heightIntervals){
  
     var tiff = GeoTIFF.parse(RR);
     var image = tiff.getImage();
- 
+
     var rasters= image.readRasters();
     var tiepoint = image.getTiePoints()[0];
     var pixelScale = image.getFileDirectory().ModelPixelScale;
