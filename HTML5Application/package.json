@@ -3,6 +3,26 @@
     "version": "1.0.0",
     "keywords": ["util", "functional", "server", "client", "browser"],
     "author": "Amir",
+     "licence": "UNLICENSED",
+  "private": true,
     "contributors": [],
-    "dependencies": {}
+    "dependencies": {
+        "proj4": "~2.3.14",
+        "jquery": "~2.2.4",
+        "cesium" :  "~1.30.0" , 
+        "geotiff" : "~0.3.5"
+    },
+      "devDependencies": {
+      
+       "grunt": "~1.0.1"
+      
+      
+      },
+    "scripts": {
+        
+        "build": "grunt build"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }
