@@ -47,11 +47,11 @@
   <script src="./js/CitydbKmlTilingManager.js"></script>  
   <script src="./js/CitydbKmlDataSource.js"></script>    
   <script src="./js/CitydbKmlLayer.js"></script> 
-  <script src= "./js/d3.js"></script>
-  <script src= "./js/geotiff.js"></script>
+<!--   <script src= "./js/d3.js"></script>
+ -->  <script src= "./js/geotiff.js"></script>
   <script src= "./js/jquery.js"></script>
-  <script src= "./js/proj4.js"></script>
-    
+<!--   <script src= "./js/proj4.js"></script>
+ -->    
   <style>
      @import url(./ThirdParty/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
@@ -101,67 +101,38 @@
 	var webMap = new WebMap3DCityDB(viewer);
 	webMap.activateViewChangedEvent(true);
 	var scene = viewer.scene;
-	var buildingLayer;
-	var lotLayer;
-	var streetLayer;
  
+  
+var positionN=[];
+var ellipsoid = Cesium.Ellipsoid.WGS84;
+var idList=[];
  
  viewer.flyTo(
     viewer.dataSources.add(
         Cesium.KmlDataSource.load('./data/roadal.kml', {
-            camera: viewer.camera,
-            canvas: viewer.canvas
-        })
+                  })
     ))
   viewer.dataSources.add(
         Cesium.KmlDataSource.load('./data/betrieb.kml', {
-            camera: viewer.camera,
-            canvas: viewer.canvas
+           
         })
     )
      viewer.dataSources.add(
         Cesium.KmlDataSource.load('./data/doc.kml', {
-            camera: viewer.camera,
-            canvas: viewer.canvas
+           
         })
     )
      viewer.dataSources.add(
         Cesium.KmlDataSource.load('./data/pegel.kml', {
-            camera: viewer.camera,
-            canvas: viewer.canvas
+          
         })
     )
       
       
-       	var addgltfLayers = function() {
- 
- 
- 
- gltf= new CitydbKmlLayer({
-		 	url : './data/waterbody/pigel_collada_MasterJSON.json'  
-           
-		});
-  
-		 webMap.addLayer(gltf);
-	 	    console.log(gltf)      
-
-		gltf.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
-			loadedcitydbLayer.zoomToStartPosition();
-		});		
-	};
+      
   viewer.scene.globe.depthTestAgainstTerrain = false;
   viewer.scene.globe.showWaterEffect =true;
-	var addkmlLayers = function() {
-		kml = new CitydbKmlLayer({
-		 
-            url : './data/waterbody/pigel_extruded_MasterJSON.json'
-		});
-		 webMap.addLayer(kml); 
-         kml.registerEventHandler("FINISHLOADING", function(loadedcitydbLayer) {
-			loadedcitydbLayer.zoomToStartPosition();
-		});	
-	};	
-    
+	 
     var terrainProvider = new Cesium.CesiumTerrainProvider({
      url: 'http://localhost/dashboard/cesium/Apps/terraincop'    
 
@@ -176,33 +147,22 @@
   
 
  
- //createCzml() ;
+  //createCzml() ;
  
-var start = Cesium.JulianDate.fromDate(new Date(2015, 1, 01, 00));
-var stop = Cesium.JulianDate.addSeconds(start, 360, new Cesium.JulianDate());
-//var stop = Cesium.JulianDate.fromDate(new Date(2015, 2, 27, 16));
-var middle = Cesium.JulianDate.addSeconds(start, 60, new Cesium.JulianDate());
-
+var start = Cesium.JulianDate.fromDate(new Date(2016, 2, 1, 00));
+//var stop = Cesium.JulianDate.addSeconds(start, 360, new Cesium.JulianDate());
+ var stop = Cesium.JulianDate.fromDate(new Date(2016, 2, 27, 00));
+ var middle = Cesium.JulianDate.fromDate(new Date(2016, 2, 15, 00));
+ 
 //Make sure viewer is at the desired time.
-viewer.clock.startTime = start.clone();
-viewer.clock.stopTime = stop.clone();
-viewer.clock.currentTime = start.clone();
-viewer.clock.ClockStep = 1;
+ viewer.clock.startTime = middle.clone();
+ viewer.clock.stopTime = stop.clone();
+ viewer.clock.currentTime = start.clone();
+ viewer.clock.ClockStep = 1;
  
-viewer.clock.multiplier = 30;
-viewer.timeline.zoomTo(start, stop);
-var start = viewer.clock.currentTime;
-//var currentTime = Cesium.JulianDate.fromDate(new Date( ));
- var currentTime = start ;
-console.log(viewer.clock)
- //var dataSource = Cesium.CzmlDataSource.load(czml);
+ viewer.clock.multiplier = 50;
+ viewer.timeline.zoomTo(start, stop);
  
-// viewer.dataSources.add(dataSource);
-//viewer.zoomTo(dataSource);
- 
-var positionN=[];
-var ellipsoid = Cesium.Ellipsoid.WGS84;
-var idList=[];
 
  czml = './data/simple.czml';
  Cesium.CzmlDataSource.updaters.push(czmlUpdater);
@@ -249,15 +209,13 @@ var a =positionN.length
  
  //node transformation of the model 
  /// change position of the model 
-  i=1
+
   var rasterset = ["1feb","28feb","1sep"];
-  
-  
+  var dates = [1,15,27]
+   var  i=1 ; 
  $('#getNext').on('click',function() {
 	   
-        if(i<rasterset.length-1){ i++ ;
-         console.log(viewer.clock.currentTime);
-        viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, 60, new Cesium.JulianDate());
+        if(i<rasterset.length-1){ i++ ;       
   callRaster(rasterset[i])
   }
    
@@ -265,9 +223,7 @@ var a =positionN.length
  $('#getPrevius').on('click',function() {
 	    
  if(i>0){ i--  
-   console.log(viewer.clock.currentTime);
-        viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, -60, new Cesium.JulianDate());
-     callRaster(rasterset[i])
+      callRaster(rasterset[i])
 }
 	});
     
@@ -313,6 +269,9 @@ viewer.clock.onTick.addEventListener(function(clock) {
 });
 
 function callRaster (rastername){
+viewer.clock.currentTime =  Cesium.JulianDate.fromDate(new Date(2016, 2, dates[i], 00));
+         console.log(viewer.clock.currentTime);
+         
    Cesium.loadWithXhr({
     url : './data/'+ rastername+'.tif',
     responseType : 'arraybuffer'
@@ -345,7 +304,7 @@ function loadRasterToMap (response) {
      
                 hash[parseInt((i*w2)+j)] = rasterdata[0][1][(py*w1)+px];
                 var cellOnOrigin = (i*w2)+j
-                var id = "CELL_"+cellOnOrigin;
+                var id = String(cellOnOrigin);
                 
                 var entity = dataSources.get(0).entities.getById(id);
                     if( entity){
@@ -393,13 +352,19 @@ function loadRasterToMap (response) {
             var that =$(this);
             var id = that.attr( "id" );
             var name = that.find( "name" ).text();
+            
+            var regex= /\d+(?=_)/ig ;
+            var reg = regex.exec(name);
+            var cellId =reg ? reg[0]: name; 
+            
+          
             var locationNode= that.find( "Location" );
             var location = [parseFloat(locationNode.find( "longitude" ).text()),parseFloat(locationNode.find( "latitude" ).text()),parseFloat(locationNode.find( "altitude" ).text())];
             var path =  that.find( "href" ).text();
             if (id){
             
                 var packet =  {
-                            "id":  name,
+                            "id":  cellId,
                             "name": name,
                             "position": {
                                 "cartographicDegrees": location
@@ -487,16 +452,7 @@ function setColor(height,startHeight,intervals,cssColorArray){
  return [rasters,geoTransform,[height,width]]
  
  }
-  minValue= 2457127
-  maxValue= 2557127
  
- function fitRange(num){
-             Number.prototype.map = function (in_min, in_max, out_min, out_max) {
-                      return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-                                     };
-                   return num.map(minValue,maxValue,0,1);//maxValue-minValue);
-        
-             }
  
 </script>
 </body>
