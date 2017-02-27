@@ -5,7 +5,7 @@
 		"clock": {
 			"interval": "2016-02-01T10:00:00Z/2016-02-27T10:00:00Z",
 			"currentTime": "2016-02-15T10:00:00Z",
-			"multiplier": 60,
+			"multiplier": 600,
 			"range": "LOOP_STOP",
 			"step": "SYSTEM_CLOCK_MULTIPLIER"
 		}

@@ -220,6 +220,38 @@ var a =positionN.length
     
    
    
+   
+   
+   
+   
+  var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://tamis.dev.52north.org/tamis-rest/api/v1/services/1/processes/org.n52.wps.server.r.tamis-interpolation",
+  "method": "POST",
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "84c891ed-f8c6-6922-fbe3-64e886456b0b"
+  },
+  "processData": false,
+  "data": "{\r\n    \"inputs\": [\r\n        {\r\n            \"id\": \"sosInputData\",\r\n            \"value\": \r\n\"http://fluggs.wupperverband.de/sos2-tamis/service?service%3DSOS&version%3D2.0.0&request%3DGetObservation&responseformat%3Dhttp://www.opengis.net/om/2.0&observedProperty%3DSchuettmenge&procedure%3DTageswert_Prozessleitsystem&namespaces%3Dxmlns%28sams%2Chttp%3A%2F%2Fwww.opengis.net%2FsamplingSpatial%2F2.0%29%2Cxmlns%28om%2Chttp%3A%2F%2Fwww.opengis.net%2Fom%2F2.0%29&temporalFilter%3Dom%3AphenomenonTime%2C2016-02-01T09:59:01.00Z%2F2016-02-02T23:59:01.00Z\",\r\n            \"type\" : \"text/plain\"\r\n        },\r\n        {\r\n            \"id\": \"target\",\r\n            \"value\" \r\n:\"https://github.com/52North/tamis/raw/master/geotiff.tiff\",\r\n            \"type\" : \"application/geotiff\"\r\n        }\r\n    ],\r\n    \"outputs\": [\r\n     \r\n      {\r\n              \"id\": \"predictions\",\r\n              \"type\": \"application/geotiff\"\r\n       }\r\n    ]\r\n}"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+}); 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     // on time change
 viewer.clock.onTick.addEventListener(function(clock) {
     var entity = viewer.selectedEntity;
@@ -229,36 +261,12 @@ viewer.clock.onTick.addEventListener(function(clock) {
   //   viewer.trackedEntity = entity
     var dataSources = viewer.dataSources;
    // console.log(dataSources)
-    console.log(entity.model.nodeTransformations.Y_UP_Transform.translation._value.z);
-  // console.log(entity.model);
-   var czmlEntities
-    for(var x; x<dataSource.length;x++){
-        var source = dataSource.get(x);
-        var czmlEntities = (source.name == "CZML"  ? source : false )
-        }
-  //  var czmlEntities = dataSources.get(0).entities.values;
- console.log(dataSources.get(0))
-    // czmlEntities .forEach(function(element) {})
+    console.log(entity.model.nodeTransformations.Y_UP_Transform.translation.intervals._intervals
+);
+   
  
 }
-   if ( Cesium.JulianDate.equals(clock.currentTime,start )){
-  //  console.log(clock)
-     Cesium.loadWithXhr({
-    url : './data/28feb.tif',
-    responseType : 'arraybuffer'
-}).then(function(response) {
- //  console.log(response);
-  var rasterdata=  geotif(response);
- //  console.log(rasterdata);
-}).otherwise(function(error) { console.log(error);
-    // an error occurred
-});
-   
-   
-   }
-  
-//var entity = viewer.selectedEntity;
-//  if (!Cesium.defined(entity) ) {  
+ 
  
     
 });
