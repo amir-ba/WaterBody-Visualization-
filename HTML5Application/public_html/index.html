@@ -147,12 +147,12 @@ var idList=[];
   
 
  
-  //createCzml() ;
+ // createCzml() ;
  
-var start = Cesium.JulianDate.fromDate(new Date(2016, 2, 1, 00));
+var start = Cesium.JulianDate.fromIso8601("2016-02-01T00:00:00Z");
 //var stop = Cesium.JulianDate.addSeconds(start, 360, new Cesium.JulianDate());
- var stop = Cesium.JulianDate.fromDate(new Date(2016, 2, 27, 00));
- var middle = Cesium.JulianDate.fromDate(new Date(2016, 2, 15, 00));
+ var stop = Cesium.JulianDate.fromIso8601("2016-02-27T00:00:00Z");
+ var middle = Cesium.JulianDate.fromIso8601("2016-02-15T00:00:00Z");
  
 //Make sure viewer is at the desired time.
  viewer.clock.startTime = middle.clone();
@@ -189,18 +189,9 @@ var a =positionN.length
                 var newHeight2 = 290+ cartesianOldToCartography.height
           //      console.log(parseFloat(cartesianOldToCartography.height).toFixed(4))
                  entity.position.setValue(Cesium.Cartesian3.fromRadians(cartesianOldToCartography.longitude,cartesianOldToCartography.latitude,newHeight2));
-                
-                var poly2 ={ 
-                
-                    id : "point"+i,    name : i +"p" , 	position : new Cesium.Cartesian3.fromRadians(cartesianOldToCartography.longitude,cartesianOldToCartography.latitude,newHeight2) , 
-                   "point" : {
-                   
-                 pixelSize:11
-      
-                        } ,
-         }            
-
-       //  entities.add(poly2)  
+             
+       
+   
             }
  
         });
@@ -210,8 +201,8 @@ var a =positionN.length
  //node transformation of the model 
  /// change position of the model 
 
-  var rasterset = ["1feb","28feb","1sep"];
-  var dates = [1,15,27]
+  var rasterset = [["2016-02-01T00:00:00Z/2016-02-02T00:00:00Z","1feb"],["2016-02-15T00:00:00Z/2016-02-16T00:00:00Z","28feb"],["2016-02-26T00:00:00Z/2016-02-27T00:00:00Z","1sep"]];
+   
    var  i=1 ; 
  $('#getNext').on('click',function() {
 	   
@@ -228,7 +219,7 @@ var a =positionN.length
 	});
     
    
-    
+   
     // on time change
 viewer.clock.onTick.addEventListener(function(clock) {
     var entity = viewer.selectedEntity;
@@ -240,9 +231,13 @@ viewer.clock.onTick.addEventListener(function(clock) {
    // console.log(dataSources)
     console.log(entity.model.nodeTransformations.Y_UP_Transform.translation._value.z);
   // console.log(entity.model);
-    
-    var czmlEntities = dataSources.get(0).entities.values;
-   // console.log(czmlEntities)
+   var czmlEntities
+    for(var x; x<dataSource.length;x++){
+        var source = dataSource.get(x);
+        var czmlEntities = (source.name == "CZML"  ? source : false )
+        }
+  //  var czmlEntities = dataSources.get(0).entities.values;
+ console.log(dataSources.get(0))
     // czmlEntities .forEach(function(element) {})
  
 }
@@ -252,9 +247,9 @@ viewer.clock.onTick.addEventListener(function(clock) {
     url : './data/28feb.tif',
     responseType : 'arraybuffer'
 }).then(function(response) {
-   console.log(response);
+ //  console.log(response);
   var rasterdata=  geotif(response);
-   console.log(rasterdata);
+ //  console.log(rasterdata);
 }).otherwise(function(error) { console.log(error);
     // an error occurred
 });
@@ -269,19 +264,47 @@ viewer.clock.onTick.addEventListener(function(clock) {
 });
 
 function callRaster (rastername){
-viewer.clock.currentTime =  Cesium.JulianDate.fromDate(new Date(2016, 2, dates[i], 00));
-         console.log(viewer.clock.currentTime);
-         
-   Cesium.loadWithXhr({
-    url : './data/'+ rastername+'.tif',
+var timeInterval = new Cesium.TimeInterval.fromIso8601({
+iso8601 : rastername[0]
+
+})
+ 
+    viewer.clock.currentTime =  timeInterval.start;
+     for(var x=0; x<viewer.dataSources.length;x++){
+        var source = viewer.dataSources.get(x);
+  //      var dateToCheck = Cesium.JulianDate.fromIso8601(rastername[0]);
+       var dateToCheck =  timeInterval.start;
+        var entities = source.entities.values
+
+        if (source.name == "CZML" && entities &&  Cesium.TimeInterval.contains(entities[0].model.nodeTransformations.Y_UP_Transform.translation.intervals, dateToCheck)  ){
+          break 
+         } else if (source.name == "CZML" && entities  &&  !Cesium.TimeInterval.contains(entities[0].model.nodeTransformations.Y_UP_Transform.translation.intervals, dateToCheck)){
+ 
+ 
+          Cesium.loadWithXhr({
+    url : './data/'+ rastername[1]+'.tif',
     responseType : 'arraybuffer'
-}).then( loadRasterToMap).otherwise(function(error) { console.log(error);
+}).then( function(response){
+
+loadRasterToMap(response,timeInterval )
+
+} ).otherwise(function(error) { console.log(error);
     // an error occurred
 })
+        }
+        
+        
+           
+    }
+    
+         
+         
+ 
 
 }
+
 // call raster for a time and apply to map 
-function loadRasterToMap (response) {
+function loadRasterToMap (response,timeInterval) {
        var rasterdata=  geotif(response);
    // console.log(rasterdata);
     var dataSources = viewer.dataSources;
@@ -293,10 +316,10 @@ function loadRasterToMap (response) {
  
     var w2 = Math.round(rasterdata[2][1]/(10));
     var h2 = Math.round(rasterdata[2][0]/(10));
-    
-    var x_ratio=w1/w2
+     var x_ratio=w1/w2
     var    y_ratio=h1/h2; 
     console.log(w1,w2,h1,h2)
+    console.log(timeInterval)
     for (var i=0;i<h2;i++){
                 for(var j=0;j<w2;j++){
                 var px = Math.floor(j*x_ratio) ;
@@ -305,30 +328,53 @@ function loadRasterToMap (response) {
                 hash[parseInt((i*w2)+j)] = rasterdata[0][1][(py*w1)+px];
                 var cellOnOrigin = (i*w2)+j
                 var id = String(cellOnOrigin);
-                
-                var entity = dataSources.get(0).entities.getById(id);
-                    if( entity){
-                       var averageHeight = rasterdata[0][1][(py*w1)+px]
-                       var color =  setColor(averageHeight);
-                        entity.model.nodeTransformations.Y_UP_Transform.translation = (new Cesium.Cartesian3(0,0,averageHeight) ) ;
-                    entity.model.color = color
-    
+                var czmlEntities =     dataSources.get(0).entities;
+                     if( czmlEntities &&  czmlEntities.getById(id) ){
+                        var entity = czmlEntities.getById(id);
+                        var averageHeight = rasterdata[0][1][(py*w1)+px]
+                        var color =  setColor(averageHeight);
+                         timeInterval.data = new Cesium.Cartesian3(0,0,averageHeight*2)
+                   //     var interval = new Cesium.TimeInterval.fromIso8601({
+                   //        iso8601 : RasterTime  ,
+                       
+                    //        data: new Cesium.Cartesian3(0,0,averageHeight) // averageHeight
+                    //    }); 
+                   var colorInterval =  Cesium.TimeInterval.clone(timeInterval);
+                   colorInterval.data = color
+                           
+                  //      console.log(entity.model)
+                        entity.model.nodeTransformations.Y_UP_Transform.translation.intervals.addInterval(timeInterval)   ;
+                         entity.model.color.intervals.addInterval(colorInterval)   ;
+                       // entity.model.nodeTransformations.Y_UP_Transform.translation = (new Cesium.Cartesian3(0,0,averageHeight) ) ;
+                    //    entity.model.color = color
+                // console.log( entity.model.color)
+
                     }   
                 }
         }  
-              
- 
+                          
+     
    
 }
 //add color to any czml loaded 
   function czmlUpdater(dynamicObject, packet, dynamicObjectCollection, sourceUri) {
         var height = packet.position.cartographicDegrees[2]
       var height2 = packet.model.nodeTransformations.Y_UP_Transform.translation.cartesian[2];
-      packet.model.nodeTransformations.Y_UP_Transform.translation.cartesian[2]=  height
-    
+      packet.model.nodeTransformations.Y_UP_Transform.translation.cartesian[2]=  height ;
+      
+     packet.model.nodeTransformations.Y_UP_Transform.translation = [{ 
+							"interval": "2016-02-15T00:00:00Z/2016-02-16T16:30:00Z",
+							"cartesian": [0, 0,   packet.position.cartographicDegrees[2]*2]
+						} ]
+  //    console.log( packet.model.nodeTransformations.Y_UP_Transform)
         var color =  setColor(height);
-        color= {"rgba": [255*color.red,255*color.green ,255*color.blue,255* color.alpha]}
-        packet.model.color =  color;
+         color= {"rgba": [255*color.red,255*color.green ,255*color.blue,255* color.alpha]} ;
+        
+     //   packet.model.color =  color;
+        packet.model.color =  [{ 
+							"interval": "2016-02-15T00:00:00Z/2016-02-16T16:30:00Z",
+							"rgba": color.rgba
+						} ];
         currentPosition = packet.position.cartographicDegrees;
         packet.position.cartographicDegrees = [ currentPosition[0], currentPosition[1],0]
         positionN.push(  new Cesium.Cartographic(Cesium.Math.toRadians(  currentPosition[0]), Cesium.Math.toRadians( currentPosition[1]) ));
@@ -375,8 +421,14 @@ function loadRasterToMap (response) {
                                 "colorBlendAmount": 1 ,
                                 "nodeTransformations": { 
                                     "Y_UP_Transform": {
-                                            "translation": {
-                                                    "cartesian":[0,0,0]}
+                                            "translation": [{
+                                                  "interval" : "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z" , 
+                                                
+                                                
+                                                "cartesian":[0,0,0]
+                                               
+                                            
+                                                   } ]
                                     }
                                 }
                                 
@@ -389,6 +441,8 @@ function loadRasterToMap (response) {
  console.log(JSON.stringify(czml));
 
    return czml;
+   
+    
 });
 }
  

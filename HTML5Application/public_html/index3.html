@@ -105,7 +105,9 @@
 	var buildingLayer;
 	var lotLayer;
 	var streetLayer;
- 
+    var rasterset = ["1feb","28feb","1sep"];
+    var dates = [1,15,27]
+
   viewer.flyTo(
     viewer.dataSources.add(
         Cesium.KmlDataSource.load('./data/roadal.kml', {
@@ -180,7 +182,8 @@ viewer.clock.startTime = start.clone();
 viewer.clock.stopTime = stop.clone();
 viewer.clock.currentTime = start.clone();
  var ellipsoid = Cesium.Ellipsoid.WGS84;
-
+  var firstProjection = 'PROJCS["WGS 84 / UTM zone 32N",    GEOGCS["WGS 84",  DATUM["WGS_1984",  SPHEROID["WGS 84",6378137,298.257223563,                AUTHORITY["EPSG","7030"]],            AUTHORITY["EPSG","6326"]],        PRIMEM["Greenwich",0,            AUTHORITY["EPSG","8901"]],        UNIT["degree",0.0174532925199433,            AUTHORITY["EPSG","9122"]],        AUTHORITY["EPSG","4326"]],    PROJECTION["Transverse_Mercator"],    PARAMETER["latitude_of_origin",0],    PARAMETER["central_meridian",9],    PARAMETER["scale_factor",0.9996],    PARAMETER["false_easting",500000],    PARAMETER["false_northing",0],    UNIT["metre",1,        AUTHORITY["EPSG","9001"]],    AXIS["Easting",EAST],    AXIS["Northing",NORTH],    AUTHORITY["EPSG","32632"]]';
+            var secondProjection = "EPSG:4326";
 viewer.clock.multiplier = 10;
   viewer.timeline.zoomTo(start, stop);
 
@@ -190,157 +193,14 @@ viewer.clock.multiplier = 10;
 var cssColorArray=["#a7dbc7","#d6ea9a","#fff0b1","#ffd9ad","#ffb3d3","#ffffff"];
 
  
-    // var promise = Cesium.CzmlDataSource.load(czml);
-   // promise.then(function(dataSource) {
-     //   viewer.dataSources.add(dataSource);
-
-        //Get the array of entities
-       // var entities = dataSource._entityCollection
                 var hashCa =[]
                 var hash =[]
          var baseHeights=[];
 var cssColorArray=["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#f7f7f7","#d1e5f0","#92c5de","#4393c3","#2166ac","#053061","#050861"];
 
-       Cesium.loadWithXhr({  
-        url :"./data/28feb.tif",//Inspector_2.tif", /" 
-    responseType : 'arraybuffer'
-}).then(function(R) {
-        
-   
-            var    rasterdata=  geotif(R);
-            
-            var h =1;
-            var w=1;
-            var firstProjection = 'PROJCS["WGS 84 / UTM zone 32N",    GEOGCS["WGS 84",  DATUM["WGS_1984",  SPHEROID["WGS 84",6378137,298.257223563,                AUTHORITY["EPSG","7030"]],            AUTHORITY["EPSG","6326"]],        PRIMEM["Greenwich",0,            AUTHORITY["EPSG","8901"]],        UNIT["degree",0.0174532925199433,            AUTHORITY["EPSG","9122"]],        AUTHORITY["EPSG","4326"]],    PROJECTION["Transverse_Mercator"],    PARAMETER["latitude_of_origin",0],    PARAMETER["central_meridian",9],    PARAMETER["scale_factor",0.9996],    PARAMETER["false_easting",500000],    PARAMETER["false_northing",0],    UNIT["metre",1,        AUTHORITY["EPSG","9001"]],    AXIS["Easting",EAST],    AXIS["Northing",NORTH],    AUTHORITY["EPSG","32632"]]';
-            var secondProjection = "EPSG:4326";
-          //  var a = proj4(firstProjection,secondProjection,coords);
-         var hash=[];
-            
-           
-           
- var counter=0;hashZ=[];
- 
-    var w1 = Math.floor(rasterdata[2][1]);
-    var h1 = Math.floor(rasterdata[2][0]);
- 
-    var w2 = Math.round(rasterdata[2][1]/(10));
-    var h2 = Math.round(rasterdata[2][0]/(10));
- 
-    var x_ratio=w1/w2
-    var    y_ratio=h1/h2; 
-    console.log(w1,w2,h1,h2)
-        for (var i=0;i<h2;i++){
-                for(var j=0;j<w2;j++){
-                var px = Math.floor(j*x_ratio) ;
-                var py = Math.floor(i*y_ratio) ;
-      var x=rasterdata[1][0]+ (j*10*rasterdata[1][1] ) ;
-                    var y = rasterdata[1][3]+(i*10*rasterdata[1][5] );
-     //          hashZ[parseInt((i*w2)+j)] = rasterdata[0][1][parseInt((py*w1)+px)];
-    var a = proj4(firstProjection,secondProjection,[x,y ]);
-             var color =  setColor(rasterdata[0][1][parseInt((py*w1)+px)]);
- 
-              var poly2 ={ 
-                
-                    id : (i*w2)+j ,    name : "i"+i +"L"+j+"_"+rasterdata[0][1][parseInt((py*w1)+px)], 	position : new Cesium.Cartesian3.fromRadians(Cesium.Math.toRadians(a[0]),Cesium.Math.toRadians(a[1]),290+rasterdata[0][1][parseInt((py*w1)+px)] ), 
-                   "point" : {
-                   'color' : color   
-             ,    pixelSize:7
-      
-                        } ,
-            }
-                            
-
-            var ent =   viewer.entities.add(poly2) ;
-        
-        
-
-        
-                }
-        }  
- /*
-         for (var i=0; i<  hash.length;i++){// hash.length;i++){ 
-            
-        
-            var color =  setColor(hashZ[i],cssColorArray,[0.1,0.1]);
+  callRaster(rasterset[1])
      
-
-        //    if(  1){// rasterdata[0][0][i]>0 && rasterdata[0][0][i]<297){
-           //     var vertex1 =proj4(firstProjection,secondProjection,hash[i])
-          //      var vertex4 = proj4(firstProjection,secondProjection,[hash[i][0]+intervx ,hash[i][1]]) ;
-         //       var vertex2 = proj4(firstProjection,secondProjection,[hash[i][0],hash[i][1]+intervy ]);
-          //      var vertex3 = proj4(firstProjection,secondProjection,[hash[i][0]+intervx ,hash[i][1]+intervy]) ;
-     
-                   
-                var poly1 ={ 
-                
-                    id : "point"+i,    name : i, 	
-                   "polygon" : {
-                          hierarchy : Cesium.Cartesian3.fromDegreesArray([vertex1[0],vertex1[1],vertex2[0],vertex2[1],vertex3[0],vertex3[1]  ,vertex4[0],vertex4[1]]),
-                       
-                      extrudedHeight:   rasterdata[0][0][i]     ,height : 230 ,
-                      Color : color,  
-                   outline : false,
-               
-                   
-                        } ,
-         }
-           
-       
-              var poly2 ={ 
-                
-                    id : "point"+i,    name : "i"+i +"L"+l+"_"+rasterdata[0][0][i], 	position : new Cesium.Cartesian3.fromRadians(hashCa[i][0],hashCa[i][1],290+hashZ[i]),//rasterdata[0][0][i] )  ,
-                   "point" : {
-                   'color' : color   
-             ,    pixelSize:7
-      
-                        } ,
-         }
-            var ent =   viewer.entities.add(poly2) ;
-
-     
-     l+=5
-
-            
-        }
  
-
-    */  
-     } );
-
-   console.log(viewer.entities)
-    
-       $('#getPraevius').on('click',function() {
-         viewer.clock.currentTime =  Cesium.JulianDate.addSeconds(viewer.clock.currentTime, -60, new Cesium.JulianDate());
-        
-   
-     Cesium.loadWithXhr({
-    url : '../objects/1feb.tif',
-    responseType : 'arraybuffer'
-}).then(function(response) {
-   var rasterdata=  geotif(response);
-     var i=0;
-     var l =0
-     hashCa.forEach(function(pos){   
-    var color = setColor(rasterdata[0][0][i],cssColorArray,[0,0.1]);
-    
-var ent = viewer.entities.values[l]    ;
-
- if (ent  ) {
-    ent.point.color.setValue(color);
-      var position =  Cesium.Cartographic.fromCartesian(ent.position._value,ellipsoid);
-
-      var tt = new Cesium.Cartesian3.fromRadians(position.longitude,position.latitude, 290+rasterdata[0][0][i] )
-        ent.name= ""+i+"ppp"+rasterdata[0][0][i]
-
- ent.position.setValue(tt) }
-   i+=5;l++;
-    })
-     }).otherwise(function(error) { console.log(error);
-    // an error occurred
-}); 
-  
-  
- })
    
 	
         
@@ -348,8 +208,6 @@ var ent = viewer.entities.values[l]    ;
        
 
    
-   var rasterset = ["1feb","28feb","1sep"];
-  var dates = [1,15,27]
    var  i=1 ; 
  $('#getNext').on('click',function() {
 	   
@@ -389,10 +247,65 @@ var ent = viewer.entities.values[l]    ;
     }
 });
      
+ function getCallbackColorFunction(argument) {
+     return function colorcallbackFunction() {
+          return     setColor(hash[argument][2] );
+    };
+}
+
  
+  function getCallbackFunction(argument) {
+    return function callbackFunction() {
+          return     new Cesium.Cartesian3.fromRadians(hash[argument][0],hash[argument][1],hash[argument][2]);
+    };
+}
+
+      
+         
+        function setPosCallback() {
+        console.log(viewer.entities.values.length, hash.length)
+        if(viewer.entities.values.length<hash.length ){
+           hash.forEach(function(element,count){
+   currentEntityId =count
+   
+           var poly2 ={ 
+                
+                    id : currentEntityId ,    name : "i"+currentEntityId +"L_", 
+                    position :
+                    new Cesium.CallbackProperty(getCallbackFunction( currentEntityId), false),             
+ 
+                   "point" : {
+              'color' :  new Cesium.CallbackProperty(getCallbackColorFunction( currentEntityId), false),        
+               pixelSize:7
+      
+                        } ,
+            }
+  
+               var ent =   viewer.entities.add(poly2) ;
+
+  
+  
+     })
+       }else{
+       
+                     
+   hash.forEach(function(element,count){
+   currentEntityId =count
+  console.log( viewer.entities);
+  
+        viewer.entities.values[count].position= new Cesium.CallbackProperty(getCallbackFunction(currentEntityId), false);
+        viewer.entities.values[count].point.color= new Cesium.CallbackProperty(getCallbackColorFunction(currentEntityId), false);
+    })
+       
+       
+       }  
+                            
+   
+   
+}
   
  function callRaster (rastername){
-viewer.clock.currentTime =  Cesium.JulianDate.fromDate(new Date(2016, 2, dates[i], 00));
+viewer.clock.currentTime =  Cesium.JulianDate.fromDate(new Date(2016, 2, dates[rastername], 00));
          console.log(viewer.clock.currentTime);
          
    Cesium.loadWithXhr({
@@ -410,6 +323,7 @@ function loadRasterToMap (response) {
     var dataSources = viewer.dataSources;
  
      hash=[];
+   //  hashZ=[];
  
     var w1 = Math.floor(rasterdata[2][1]);
     var h1 = Math.floor(rasterdata[2][0]);
@@ -419,31 +333,44 @@ function loadRasterToMap (response) {
     
     var x_ratio=w1/w2
     var    y_ratio=h1/h2; 
-    console.log(w1,w2,h1,h2)
-    for (var i=0;i<h2;i++){
+    console.log(w1,w2,h1,h2);
+     for (var i=0;i<h2;i++){
                 for(var j=0;j<w2;j++){
                 var px = Math.floor(j*x_ratio) ;
                 var py = Math.floor(i*y_ratio) ;
-     
-                hash[parseInt((i*w2)+j)] = rasterdata[0][1][(py*w1)+px];
+       var x=rasterdata[1][0]+ (j*10*rasterdata[1][1] ) ;
+                    var y = rasterdata[1][3]+(i*10*rasterdata[1][5] );
+     //          hashZ[parseInt((i*w2)+j)] = rasterdata[0][1][parseInt((py*w1)+px)];
+    var a = proj4(firstProjection,secondProjection,[x,y ]);
+    hash.push([Cesium.Math.toRadians(a[0]),Cesium.Math.toRadians(a[1]),290+2*rasterdata[0][1][parseInt((py*w1)+px)]])
+               // hashZ[parseInt((i*w2)+j)] = rasterdata[0][1][(py*w1)+px];
+                
                 var cellOnOrigin = (i*w2)+j
                 var id = String(cellOnOrigin);
                 
-                var entity = viewer.entities.getById(id);
+                
+                
+                
+                
+}
+               
+
+             var entity = viewer.entities.getById(id);
  
                     if( entity){
-                       var averageHeight = rasterdata[0][1][(py*w1)+px]
-                       var color =  setColor(averageHeight);
+                 //      var averageHeight = rasterdata[0][1][(py*w1)+px]
+                 //      var color =  setColor(averageHeight);
                       //  entity.model.nodeTransformations.Y_UP_Transform.translation = (new Cesium.Cartesian3(0,0,averageHeight) ) ;
-                    entity.point.color = color
+                //    entity.point.color = color
                     
                     }   
                 }
+                   setPosCallback();
         }  
               
- 
+
    
-}
+ 
   
   function geotif(RR){
  
@@ -480,7 +407,7 @@ function loadRasterToMap (response) {
 function setColor(height,startHeight,intervals,cssColorArray){
   if(!cssColorArray){cssColorArray =  ["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#f7f7f7","#d1e5f0","#92c5de","#4393c3","#2166ac","#053061","#050861"];  }
   if(!intervals){var interval = 0.03 }
-  if(!startHeight){var startHeight = 0.01  }
+  if(!startHeight){var startHeight =290+ 0.01  }
 
    // var startHeight= heightIntervals[0];
   //  var interval = heightIntervals[1];
@@ -490,26 +417,26 @@ function setColor(height,startHeight,intervals,cssColorArray){
                 rangeIndex =11;
             }else if (height >startHeight && height<=(startHeight+1*interval) ){
                 rangeIndex =10;
-            }else if (height >(0.03) && height<=(0.05) ){
+            }else if (height >(startHeight+0.03) && height<=(startHeight+0.05) ){
                 rangeIndex =9;
-            }else if (height >(0.05)  && height<=(0.06 )){
+            }else if (height >(startHeight+0.05)  && height<=(startHeight+0.06 )){
                 rangeIndex =8;
-            }else if (height >(0.06)  && height<=(0.08)  ){
+            }else if (height >(startHeight+0.06)  && height<=(startHeight+0.08)  ){
                 rangeIndex =7;
-            }else if (height >(0.08)  && height<=(1)  ){
+            }else if (height >(startHeight+0.08)  && height<=(startHeight+1)  ){
                 rangeIndex =6;
-            }else if (height >(1)  && height<=(1.1)  ){
+            }else if (height >(startHeight+1)  && height<=(startHeight+1.1)  ){
                 rangeIndex =5;
-            } else if (height >(1)  && height<=(1.5)  ){
+            } else if (height >(startHeight+1)  && height<=(startHeight+1.5)  ){
                 rangeIndex =4;
-            }else if (height >(1.5)  && height<=(2)  ){
+            }else if (height >(startHeight+1.5)  && height<=(startHeight+2)  ){
                 rangeIndex =3;
-            }else if (height >(2)  && height<=(2.5)  ){
+            }else if (height >(startHeight+2)  && height<=(startHeight+2.5)  ){
                 rangeIndex =2;
-            }else if (height >(2.5)  && height<=(3)  ){
+            }else if (height >(startHeight+2.5)  && height<=(startHeight+3)  ){
                 rangeIndex =1;
             }
-            else if (height >(3)  ){
+            else if (height >(startHeight+3)  ){
                 rangeIndex =0;
             }
     var color= new Cesium.Color.fromCssColorString(cssColorArray[rangeIndex]);
