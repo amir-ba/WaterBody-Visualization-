@@ -65,7 +65,7 @@ viewer.terrainProvider = terrainProvider;
 
 
 
-   createCzml() ;
+  // createCzml() ;
 
 //var start = Cesium.JulianDate.fromIso8601("2016-02-01T00:00:00Z");
 //var stop = Cesium.JulianDate.addSeconds(start, 360, new Cesium.JulianDate());
@@ -82,14 +82,14 @@ viewer.terrainProvider = terrainProvider;
 //viewer.timeline.zoomTo(start, stop);
 
 
-czml = './data/simple.czml';
+czml = './data/simple2.czml';
 //Cesium.CzmlDataSource.updaters.push(czmlUpdater);
 
-czml1 = './data/aa.czml';
+//czml1 = './data/aa.czml';
 
-var czmldataSource1 = Cesium.CzmlDataSource.load(czml1);
+//var czmldataSource1 = Cesium.CzmlDataSource.load(czml1);
 
-viewer.dataSources.add(czmldataSource1)
+//viewer.dataSources.add(czmldataSource1)
 
 
 
@@ -459,7 +459,7 @@ function createCzml() {
             "id": "document",
             "name": "CZML Point",
             "version": "1.0"}];
-    var kmlPath = "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/waterbody/Tiles/0/0/pigel_Tile_0_0_collada.kml";
+    var kmlPath = "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/waterbody1/Tiles/0/0/pigel_Tile_0_0_collada.kml";
     var kmlFolder = kmlPath.replace(/\/[^\/]+$/, '');
 
     $.get(kmlPath, function (data) {
