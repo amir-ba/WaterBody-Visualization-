@@ -52,8 +52,8 @@ viewer.scene.globe.depthTestAgainstTerrain = false;
 viewer.scene.globe.showWaterEffect = true;
 
 var terrainProvider = new Cesium.CesiumTerrainProvider({
-    url: 'http://www.3dcitydb.de/3dcitydb/fileadmin/mydata/OGC_FCP1/WaterBody_Amir/terrain/'
-
+ //   url: 'http://www.3dcitydb.de/3dcitydb/fileadmin/mydata/OGC_FCP1/WaterBody_Amir/terrain/'
+   url: 'http://localhost/dashboard/cesium/Apps/22'  
             //   url : '//assets.agi.com/stk-terrain/world'
     , requestVertexNormals: true
 
@@ -65,7 +65,7 @@ viewer.terrainProvider = terrainProvider;
 
 
 
-// createCzml() ;
+   createCzml() ;
 
 //var start = Cesium.JulianDate.fromIso8601("2016-02-01T00:00:00Z");
 //var stop = Cesium.JulianDate.addSeconds(start, 360, new Cesium.JulianDate());
@@ -83,7 +83,15 @@ viewer.terrainProvider = terrainProvider;
 
 
 czml = './data/simple.czml';
-Cesium.CzmlDataSource.updaters.push(czmlUpdater);
+//Cesium.CzmlDataSource.updaters.push(czmlUpdater);
+
+czml1 = './data/aa.czml';
+
+var czmldataSource1 = Cesium.CzmlDataSource.load(czml1);
+
+viewer.dataSources.add(czmldataSource1)
+
+
 
 var czmldataSource = Cesium.CzmlDataSource.load(czml);
 
@@ -118,7 +126,7 @@ viewer.dataSources.add(czmldataSource)
                
             });
             */
- onTick();
+ //onTick();
 
         });
 
@@ -158,7 +166,8 @@ wpsInputValue= "http://fluggs.wupperverband.de/sos2-tamis/service?service%3DSOS&
   var data = {
     "inputs": [
         {
-            "id": "sosInputData",
+         //   "id": "sosInputData",
+         id: "timeseries",
              "type": "text/plain"
         },
         {
@@ -178,7 +187,7 @@ wpsInputValue= "http://fluggs.wupperverband.de/sos2-tamis/service?service%3DSOS&
 
 
 
-var url = "http://tamis.dev.52north.org/tamis-rest/api/v1/services/1/processes/org.n52.wps.server.r.tamis-interpolation/"
+var url = "http://tamis.dev.52north.org/tamis-rest/api/v1/services/1/processes//org.n52.wps.server.r.tamis-rest-interpolation-wasserstand/"
 
 
 
@@ -219,7 +228,7 @@ if ( entitySelect && entitySelect.model.nodeTransformations.Y_UP_Transform.trans
         //   var  endTime = Cesium.JulianDate.addMinutes(clock.currentTime, 2280, new Cesium.JulianDate()) ;
             startTimeWps =   Cesium.JulianDate.toIso8601(startTime,2); // "2016-02-01T09:59:01.00Z";
             endTimeWps =   Cesium.JulianDate.toIso8601(endTime,2); //"2016-02-02T23:59:01.00Z";
-            data.inputs[0].value = wpsInputValue  + startTimeWps + "%2F" + endTimeWps;
+            data.inputs[0].value =  startTimeWps + "%2F" + endTimeWps;
         //    console.log(startTimeWps);
           // console.log(data.inputs[0].value )
             option.data= JSON.stringify(data);
