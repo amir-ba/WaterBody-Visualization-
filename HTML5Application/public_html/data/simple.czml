@@ -3,8 +3,8 @@
 		"name": "CZML",
 		"version": "1.0",
 		"clock": {
-			"interval": "2016-02-01T09:59:00Z/2016-02-27T10:00:00Z",
-			"currentTime": "2016-02-15T10:00:00Z",
+		"interval": "2016-02-02T10:00:00Z/2016-12-01T10:00:00Z",
+			"currentTime": "2016-02-02T10:00:00Z",
 			"multiplier": 86400,
 			"range": "LOOP_STOP",
 			"step": "SYSTEM_CLOCK_MULTIPLIER"

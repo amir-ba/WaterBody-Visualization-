@@ -1,0 +1,523 @@
+[{
+		"id": "document",
+		"name": "CZML stations",
+		"version": "1.0" , 
+        "clock": {
+		"interval": "2016-02-02T10:00:00Z/2016-12-01T10:00:00Z",
+			"currentTime": "2016-02-02T10:00:00Z",
+			"multiplier": 86400,
+			"range": "LOOP_STOP",
+			"step": "SYSTEM_CLOCK_MULTIPLIER"
+		}
+	}, {
+		"id": "Station 592",
+		"name": "Bever-Talsperre, MQA1 Piezometer Wasserseite Schüttkörper",
+		"position": {
+			"cartographicDegrees": [7.369712340742324, 51.142069338292224, 297.46]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 592",
+		"name": "Bever-Talsperre, MQA1 Piezometer Wasserseite Schüttkörper",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369712340742324, 51.142069338292224, 100, 7.369712340742324, 51.142069338292224, 297.46]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 593",
+		"name": "Bever-Talsperre, MQA3 Piezometer Luftseite",
+		"position": {
+			"cartographicDegrees": [7.369667713456456, 51.141984665386836, 298.32]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 593",
+		"name": "Bever-Talsperre, MQA3 Piezometer Luftseite",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369667713456456, 51.141984665386836, 100, 7.369667713456456, 51.141984665386836, 298.32]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 594",
+		"name": "Bever-Talsperre, MQA4 Piezometer Luftseite",
+		"position": {
+			"cartographicDegrees": [7.369483274522463, 51.14182820712784, 287.07]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 594",
+		"name": "Bever-Talsperre, MQA4 Piezometer Luftseite",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369483274522463, 51.14182820712784, 100, 7.369483274522463, 51.14182820712784, 287.07]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 584",
+		"name": "Bever-Talsperre, MQA7 Piezometer Kalkzone",
+		"position": {
+			"cartographicDegrees": [7.369363283449275, 51.14162240424392, 275.67]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 584",
+		"name": "Bever-Talsperre, MQA7 Piezometer Kalkzone",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369363283449275, 51.14162240424392, 100, 7.369363283449275, 51.14162240424392, 275.67]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 585",
+		"name": "Bever-Talsperre, MQB1 Piezometer Wasserseite Schüttkörper",
+		"position": {
+			"cartographicDegrees": [7.370608134315197, 51.141813533400466, 296.71]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 585",
+		"name": "Bever-Talsperre, MQB1 Piezometer Wasserseite Schüttkörper",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370608134315197, 51.141813533400466, 100, 7.370608134315197, 51.141813533400466, 296.71]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 586",
+		"name": "Bever-Talsperre, MQB2 Piezometer Wasserseite Fels",
+		"position": {
+			"cartographicDegrees": [7.3705207997350906, 51.14171904924497, 298.43]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 586",
+		"name": "Bever-Talsperre, MQB2 Piezometer Wasserseite Fels",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.3705207997350906, 51.14171904924497, 100, 7.3705207997350906, 51.14171904924497, 298.43]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 587",
+		"name": "Bever-Talsperre, MQB4 Piezometer Luftseite",
+		"position": {
+			"cartographicDegrees": [7.370390735735749, 51.14154579939893, 287.11]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 587",
+		"name": "Bever-Talsperre, MQB4 Piezometer Luftseite",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370390735735749, 51.14154579939893, 100, 7.370390735735749, 51.14154579939893, 287.11]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 588",
+		"name": "Bever-Talsperre, MQB5 Piezometer Berme",
+		"position": {
+			"cartographicDegrees": [7.370433653670944, 51.14153557345896, 287.21]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 588",
+		"name": "Bever-Talsperre, MQB5 Piezometer Berme",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370433653670944, 51.14153557345896, 100, 7.370433653670944, 51.14153557345896, 287.21]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 589",
+		"name": "Bever-Talsperre, MQB6 Piezometer Berme",
+		"position": {
+			"cartographicDegrees": [7.370246856480172, 51.14135510695596, 275.96]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 589",
+		"name": "Bever-Talsperre, MQB6 Piezometer Berme",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370246856480172, 51.14135510695596, 100, 7.370246856480172, 51.14135510695596, 275.96]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 590",
+		"name": "Bever-Talsperre, MQB7 Piezometer Dammfuß",
+		"position": {
+			"cartographicDegrees": [7.3702862066512225, 51.141342149733894, 276.01]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 590",
+		"name": "Bever-Talsperre, MQB7 Piezometer Dammfuß",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.3702862066512225, 51.141342149733894, 100, 7.3702862066512225, 51.141342149733894, 276.01]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 596",
+		"name": "Bever-Talsperre, MQC1 Piezometer Wasserseite Schüttkörper",
+		"position": {
+			"cartographicDegrees": [7.371810068579239, 51.14143973945694, 296.26]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 596",
+		"name": "Bever-Talsperre, MQC1 Piezometer Wasserseite Schüttkörper",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371810068579239, 51.14143973945694, 100, 7.371810068579239, 51.14143973945694, 296.26]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 597",
+		"name": "Bever-Talsperre, MQC2 Piezometer Wasserseite Fels",
+		"position": {
+			"cartographicDegrees": [7.371717560732302, 51.14134621672141, 298.36]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 597",
+		"name": "Bever-Talsperre, MQC2 Piezometer Wasserseite Fels",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371717560732302, 51.14134621672141, 100, 7.371717560732302, 51.14134621672141, 298.36]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 578",
+		"name": "Bever-Talsperre, MQC4 Piezometer Luftseite",
+		"position": {
+			"cartographicDegrees": [7.371573940783131, 51.14117594807616, 287.07]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 578",
+		"name": "Bever-Talsperre, MQC4 Piezometer Luftseite",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371573940783131, 51.14117594807616, 100, 7.371573940783131, 51.14117594807616, 287.07]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 579",
+		"name": "Bever-Talsperre, MQC5 Piezometer Berme",
+		"position": {
+			"cartographicDegrees": [7.371616365879598, 51.14116276015155, 287.06]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 579",
+		"name": "Bever-Talsperre, MQC5 Piezometer Berme",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371616365879598, 51.14116276015155, 100, 7.371616365879598, 51.14116276015155, 287.06]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}, {
+		"id": "Station 580",
+		"name": "Bever-Talsperre, MQC6 Piezometer Berme",
+		"position": {
+			"cartographicDegrees": [7.371427942962189, 51.14098120802222, 275.96]
+		},
+		"cylinder": {
+			"length": 3,
+			"topRadius": 0.5,
+			"bottomRadius": 0.5,
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [0, 255, 0, 128]
+					}
+				}
+			}
+		}
+	}, {
+		"id": "Water Guideline 580",
+		"name": "Bever-Talsperre, MQC6 Piezometer Berme",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371427942962189, 51.14098120802222, 100, 7.371427942962189, 51.14098120802222, 275.96]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [255, 255, 255, 60]
+					}
+				}
+			},
+			"width": 1
+		}
+	}
+]

@@ -23,73 +23,92 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- -->
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Use correct character set. -->
-  <meta charset="utf-8">
-  <!-- Tell IE to use the latest, best version (or Chrome Frame if pre-IE11). -->
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <link rel="icon" type="image/png" href="./../theme/img/favicon.png" sizes="16x16">
-  <title>Bever-Talspare Cesium </title>
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="./ThirdParty/Cesium/Cesium.js"></script> 
-  <script src="./ThirdParty/Intersection/IntersectionAPI.js"></script>
-  <script src="./js/3dcitydb-web-map.js"></script>  
-  <script src="./js/CitydbUtil.js"></script>  
-  <script src="./js/CitydbWebworker.js"></script>
-  <script src="./js/CitydbSceneTransforms.js"></script> 
-  <script src="./js/CitydbKmlHighlightingManager.js"></script>   
-  <script src="./js/CitydbKmlTilingManager.js"></script>  
-  <script src="./js/CitydbKmlDataSource.js"></script>    
-  <script src="./js/CitydbKmlLayer.js"></script> 
-<!--   <script src= "./js/d3.js"></script>
- -->  <script src= "./js/geotiff.js"></script>
-  <script src= "./js/jquery.js"></script>
-  
-<!--   <script src= "./js/proj4.js"></script>
- -->    
-  <style>
-     @import url(./ThirdParty/Cesium/Widgets/widgets.css);
-      html, body, #cesiumContainer {
-          top: 0px;
-          left: 0px;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          z-index: -1;
-      }
-      #uiMenu {
-          border-radius:5px;
-          padding: 10px;
-          position:absolute;
-          left: 20px;
-          font-family: "Arial";
-          z-index: 99999;
-      }
-  </style>
-</head>
-<body>
-  <div id="cesiumContainer"></div>
-   <div id="uiMenu">
-   <!--  <button type="button" onclick="addgltfLayers()">add waterbody gltf Layer</button>
-    <button type="button" onclick="addkmlLayers()">add waterbody kml Layer</button> -->
-<!--     <span>Time Controls: </span><button id="getPrevius" style="margin-top: 5px;">Backward</button> <button id="getNext" style="margin-top: 5px;">Forward</button> -->
+    <head>
+        <!-- Use correct character set. -->
+        <meta charset="utf-8">
+        <!-- Tell IE to use the latest, best version (or Chrome Frame if pre-IE11). -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="./../theme/img/favicon.png" sizes="16x16">
+        <title>Bever-Talspare Cesium </title>
 
-  </div>
-  <script>
- 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./ThirdParty/Cesium/Cesium.js"></script> 
+        <script src="./ThirdParty/Intersection/IntersectionAPI.js"></script>
+        <script src="./js/3dcitydb-web-map.js"></script>  
+        <script src="./js/CitydbUtil.js"></script>  
+        <script src="./js/CitydbWebworker.js"></script>
+        <script src="./js/CitydbSceneTransforms.js"></script> 
+        <script src="./js/CitydbKmlHighlightingManager.js"></script>   
+        <script src="./js/CitydbKmlTilingManager.js"></script>  
+        <script src="./js/CitydbKmlDataSource.js"></script>    
+        <script src="./js/CitydbKmlLayer.js"></script> 
+        <!--   <script src= "./js/d3.js"></script>
+        -->  <script src= "./js/geotiff.js"></script>
+        <script src= "./js/jquery.js"></script>
 
- 
-</script>
-   <script src= "./script.js"></script>
+        <script src= "./js/proj4.js"></script>
 
-</body>
+        <style>
+            @import url(./ThirdParty/Cesium/Widgets/widgets.css);
+            html, body, #cesiumContainer {
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                z-index: -1;
+            }
+            #uiMenu {
+                border-radius:5px;
+                padding: 10px;
+                position:absolute;
+                left: 20px;
+                font-family: "Arial";
+                z-index: 99999;
+                color:white;
+            }
+            #status {
+                display: none;
+                color:white;
+                font-size: 25px;
+            }
+            #legend{
+                max-height: 100%;
+                max-width: 100%;
+                left: 10px;
+                bottom: 120px;
+                position: absolute;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cesiumContainer"></div>
+        <div id="uiMenu">
+
+
+            <button type="button" class="cesium-button" id = "cesiumbuttonwps"><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS</label></button>
+            <button type="button" class="cesium-button "id = "cesiumbuttonsos"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >SoS</label></button>
+            <button type="button" class="cesium-button "id = "cesiumbuttonwpsover"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS WaterBody Oversurface</label></button>
+            <div id="status" >LOADING...</div>
+
+
+        </div>
+        <img id="legend" src="./data/legend.png" alt="legend" >
+        <script>
+
+
+
+        </script>
+        <script src= "./script.js"></script>
+
+    </body>
 </html>

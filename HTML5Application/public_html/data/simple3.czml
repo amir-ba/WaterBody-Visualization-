@@ -1,0 +1,3754 @@
+[{
+		"id": "document",
+		"name": "CZML Over",
+		"version": "1.0"  ,
+        
+         "clock": {
+			"interval": "2016-02-02T10:00:00Z/2016-12-01T10:00:00Z",
+			"currentTime": "2016-02-01T10:00:00Z",
+			"multiplier": 86400,
+			"range": "LOOP_STOP",
+			"step": "SYSTEM_CLOCK_MULTIPLIER"
+		}
+	}, {
+		"id": "u17",
+		"name": "CELL_17_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3711353, 51.1430015, 262.971]
+		},
+		"model": {
+			"gltf": "0/15/CELL_17_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u7",
+		"name": "CELL_7_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3684203, 51.1429636, 262.578]
+		},
+		"model": {
+			"gltf": "0/7/CELL_7_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u23",
+		"name": "CELL_23_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3727643, 51.1430242, 263.207]
+		},
+		"model": {
+			"gltf": "0/19/CELL_23_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u5",
+		"name": "CELL_5_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3678773, 51.1429561, 262.499]
+		},
+		"model": {
+			"gltf": "0/4/CELL_5_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u1",
+		"name": "CELL_1_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3670626, 51.1429503, 262.342]
+		},
+		"model": {
+			"gltf": "0/2/CELL_1_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u12",
+		"name": "CELL_12_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3697778, 51.1429826, 262.774]
+		},
+		"model": {
+			"gltf": "0/9/CELL_12_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u32",
+		"name": "CELL_32_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3684263, 51.1427929, 262.492]
+		},
+		"model": {
+			"gltf": "0/28/CELL_32_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u0",
+		"name": "CELL_0_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3665607, 51.1431085, 262.302]
+		},
+		"model": {
+			"gltf": "0/1/CELL_0_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u38",
+		"name": "CELL_38_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3700553, 51.1428156, 262.728]
+		},
+		"model": {
+			"gltf": "0/33/CELL_38_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u37",
+		"name": "CELL_37_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3697838, 51.1428118, 262.688]
+		},
+		"model": {
+			"gltf": "0/32/CELL_37_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u41",
+		"name": "CELL_41_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3708698, 51.1428269, 262.846]
+		},
+		"model": {
+			"gltf": "0/38/CELL_41_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u48",
+		"name": "CELL_48_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3727703, 51.1428534, 263.121]
+		},
+		"model": {
+			"gltf": "0/40/CELL_48_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u53",
+		"name": "CELL_53_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3676122, 51.1427709, 262.248]
+		},
+		"model": {
+			"gltf": "0/45/CELL_53_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u10",
+		"name": "CELL_10_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3692348, 51.142975, 262.696]
+		},
+		"model": {
+			"gltf": "0/50/CELL_10_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u9",
+		"name": "CELL_9_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3689633, 51.1429712, 262.656]
+		},
+		"model": {
+			"gltf": "0/48/CELL_9_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u60",
+		"name": "CELL_60_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3692468, 51.1426334, 262.523]
+		},
+		"model": {
+			"gltf": "0/49/CELL_60_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u62",
+		"name": "CELL_62_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3697898, 51.142641, 262.602]
+		},
+		"model": {
+			"gltf": "0/57/CELL_62_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u65",
+		"name": "CELL_65_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3706043, 51.1426524, 262.72]
+		},
+		"model": {
+			"gltf": "0/60/CELL_65_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u81",
+		"name": "CELL_81_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3681618, 51.1425914, 262.28]
+		},
+		"model": {
+			"gltf": "0/70/CELL_81_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u47",
+		"name": "CELL_47_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3724988, 51.1428496, 263.082]
+		},
+		"model": {
+			"gltf": "0/43/CELL_47_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u57",
+		"name": "CELL_57_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3684323, 51.1426221, 262.405]
+		},
+		"model": {
+			"gltf": "0/52/CELL_57_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u63",
+		"name": "CELL_63_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3700613, 51.1426448, 262.641]
+		},
+		"model": {
+			"gltf": "0/53/CELL_63_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u64",
+		"name": "CELL_64_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3703328, 51.1426486, 262.681]
+		},
+		"model": {
+			"gltf": "0/54/CELL_64_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u69",
+		"name": "CELL_69_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3716903, 51.1426675, 262.877]
+		},
+		"model": {
+			"gltf": "0/61/CELL_69_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u74",
+		"name": "CELL_74_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3730478, 51.1426864, 263.074]
+		},
+		"model": {
+			"gltf": "0/66/CELL_74_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u85",
+		"name": "CELL_85_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3692528, 51.1424626, 262.437]
+		},
+		"model": {
+			"gltf": "0/78/CELL_85_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u99",
+		"name": "CELL_99_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3730538, 51.1425156, 262.988]
+		},
+		"model": {
+			"gltf": "0/86/CELL_99_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u120",
+		"name": "CELL_120_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3719738, 51.1423297, 262.744]
+		},
+		"model": {
+			"gltf": "0/96/CELL_120_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u121",
+		"name": "CELL_121_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3722453, 51.1423335, 262.784]
+		},
+		"model": {
+			"gltf": "0/100/CELL_121_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u118",
+		"name": "CELL_118_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3714308, 51.1423221, 262.666]
+		},
+		"model": {
+			"gltf": "0/101/CELL_118_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u119",
+		"name": "CELL_119_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3717023, 51.1423259, 262.705]
+		},
+		"model": {
+			"gltf": "0/103/CELL_119_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u137",
+		"name": "CELL_137_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3698079, 51.1421287, 262.329]
+		},
+		"model": {
+			"gltf": "0/108/CELL_137_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u135",
+		"name": "CELL_135_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3692609, 51.1422324, 262.25]
+		},
+		"model": {
+			"gltf": "0/110/CELL_135_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u174",
+		"name": "CELL_174_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3730718, 51.1420032, 262.729]
+		},
+		"model": {
+			"gltf": "0/135/CELL_174_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u171",
+		"name": "CELL_171_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3722573, 51.1419919, 262.611]
+		},
+		"model": {
+			"gltf": "0/133/CELL_171_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u136",
+		"name": "CELL_136_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3695879, 51.1421256, 262.283]
+		},
+		"model": {
+			"gltf": "0/117/CELL_136_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u188",
+		"name": "CELL_188_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3703601, 51.1418734, 262.247]
+		},
+		"model": {
+			"gltf": "0/138/CELL_188_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u190",
+		"name": "CELL_190_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3706344, 51.1417984, 262.341]
+		},
+		"model": {
+			"gltf": "0/139/CELL_190_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u191",
+		"name": "CELL_191_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3709059, 51.1418022, 262.341]
+		},
+		"model": {
+			"gltf": "0/141/CELL_191_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u8",
+		"name": "CELL_8_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3686918, 51.1429674, 262.617]
+		},
+		"model": {
+			"gltf": "0/20/CELL_8_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u31",
+		"name": "CELL_31_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3681548, 51.1427891, 262.452]
+		},
+		"model": {
+			"gltf": "0/29/CELL_31_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u39",
+		"name": "CELL_39_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3703268, 51.1428194, 262.767]
+		},
+		"model": {
+			"gltf": "0/34/CELL_39_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u46",
+		"name": "CELL_46_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3722273, 51.1428458, 263.042]
+		},
+		"model": {
+			"gltf": "0/42/CELL_46_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u2",
+		"name": "CELL_2_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3670792, 51.1429449, 262.381]
+		},
+		"model": {
+			"gltf": "0/30/CELL_2_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u54",
+		"name": "CELL_54_DN_8",
+		"position": {
+			"cartographicDegrees": [7.367887, 51.1426811, 262.287]
+		},
+		"model": {
+			"gltf": "0/51/CELL_54_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u61",
+		"name": "CELL_61_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3695183, 51.1426372, 262.563]
+		},
+		"model": {
+			"gltf": "0/58/CELL_61_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u73",
+		"name": "CELL_73_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3727763, 51.1426826, 263.035]
+		},
+		"model": {
+			"gltf": "0/62/CELL_73_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u66",
+		"name": "CELL_66_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3708758, 51.1426561, 262.759]
+		},
+		"model": {
+			"gltf": "0/67/CELL_66_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u86",
+		"name": "CELL_86_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3695243, 51.1424664, 262.476]
+		},
+		"model": {
+			"gltf": "0/79/CELL_86_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u98",
+		"name": "CELL_98_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3727823, 51.1425118, 262.948]
+		},
+		"model": {
+			"gltf": "0/81/CELL_98_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u88",
+		"name": "CELL_88_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3700673, 51.142474, 262.555]
+		},
+		"model": {
+			"gltf": "0/82/CELL_88_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u95",
+		"name": "CELL_95_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3719678, 51.1425005, 262.83]
+		},
+		"model": {
+			"gltf": "0/91/CELL_95_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u110",
+		"name": "CELL_110_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3692588, 51.1422919, 262.351]
+		},
+		"model": {
+			"gltf": "0/98/CELL_110_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u124",
+		"name": "CELL_124_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3730598, 51.1423448, 262.902]
+		},
+		"model": {
+			"gltf": "0/102/CELL_124_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u134",
+		"name": "CELL_134_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3692609, 51.1422324, 262.225]
+		},
+		"model": {
+			"gltf": "0/106/CELL_134_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u139",
+		"name": "CELL_139_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3703508, 51.1421362, 262.422]
+		},
+		"model": {
+			"gltf": "0/111/CELL_139_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u141",
+		"name": "CELL_141_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3708938, 51.1421438, 262.501]
+		},
+		"model": {
+			"gltf": "0/113/CELL_141_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u45",
+		"name": "CELL_45_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3719558, 51.142842, 263.003]
+		},
+		"model": {
+			"gltf": "0/47/CELL_45_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u142",
+		"name": "CELL_142_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3711653, 51.1421476, 262.54]
+		},
+		"model": {
+			"gltf": "0/114/CELL_142_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u143",
+		"name": "CELL_143_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3714368, 51.1421513, 262.579]
+		},
+		"model": {
+			"gltf": "0/115/CELL_143_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u59",
+		"name": "CELL_59_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3689753, 51.1426296, 262.484]
+		},
+		"model": {
+			"gltf": "0/56/CELL_59_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u144",
+		"name": "CELL_144_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3717083, 51.1421551, 262.619]
+		},
+		"model": {
+			"gltf": "0/116/CELL_144_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u67",
+		"name": "CELL_67_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3711473, 51.1426599, 262.799]
+		},
+		"model": {
+			"gltf": "0/134/CELL_67_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u172",
+		"name": "CELL_172_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3725288, 51.1419957, 262.651]
+		},
+		"model": {
+			"gltf": "0/136/CELL_172_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u192",
+		"name": "CELL_192_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3711773, 51.141806, 262.368]
+		},
+		"model": {
+			"gltf": "0/140/CELL_192_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u149",
+		"name": "CELL_149_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3730658, 51.142174, 262.815]
+		},
+		"model": {
+			"gltf": "0/142/CELL_149_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u194",
+		"name": "CELL_194_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3717203, 51.1418136, 262.446]
+		},
+		"model": {
+			"gltf": "0/143/CELL_194_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u193",
+		"name": "CELL_193_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3714488, 51.1418098, 262.407]
+		},
+		"model": {
+			"gltf": "0/144/CELL_193_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u196",
+		"name": "CELL_196_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3722633, 51.1418211, 262.525]
+		},
+		"model": {
+			"gltf": "0/145/CELL_196_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u195",
+		"name": "CELL_195_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3719918, 51.1418173, 262.486]
+		},
+		"model": {
+			"gltf": "0/146/CELL_195_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u197",
+		"name": "CELL_197_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3725348, 51.1418249, 262.564]
+		},
+		"model": {
+			"gltf": "0/147/CELL_197_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u189",
+		"name": "CELL_189_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3705914, 51.1417978, 262.317]
+		},
+		"model": {
+			"gltf": "0/148/CELL_189_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u198",
+		"name": "CELL_198_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3728063, 51.1418287, 262.604]
+		},
+		"model": {
+			"gltf": "0/149/CELL_198_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u199",
+		"name": "CELL_199_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3730778, 51.1418325, 262.643]
+		},
+		"model": {
+			"gltf": "0/150/CELL_199_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u214",
+		"name": "CELL_214_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3705914, 51.1417978, 262.274]
+		},
+		"model": {
+			"gltf": "0/151/CELL_214_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u217",
+		"name": "CELL_217_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3711834, 51.1416352, 262.281]
+		},
+		"model": {
+			"gltf": "0/152/CELL_217_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u218",
+		"name": "CELL_218_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3714548, 51.141639, 262.32]
+		},
+		"model": {
+			"gltf": "0/153/CELL_218_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u215",
+		"name": "CELL_215_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3709097, 51.1416939, 262.276]
+		},
+		"model": {
+			"gltf": "0/154/CELL_215_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u216",
+		"name": "CELL_216_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3709097, 51.1416939, 262.267]
+		},
+		"model": {
+			"gltf": "0/155/CELL_216_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u219",
+		"name": "CELL_219_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3717263, 51.1416428, 262.36]
+		},
+		"model": {
+			"gltf": "0/156/CELL_219_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u223",
+		"name": "CELL_223_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3728123, 51.1416579, 262.517]
+		},
+		"model": {
+			"gltf": "0/157/CELL_223_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u222",
+		"name": "CELL_222_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3725408, 51.1416541, 262.478]
+		},
+		"model": {
+			"gltf": "0/158/CELL_222_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u299",
+		"name": "CELL_299_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3731018, 51.1411493, 262.298]
+		},
+		"model": {
+			"gltf": "0/182/CELL_299_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u349",
+		"name": "CELL_349_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3733827, 51.1408861, 262.126]
+		},
+		"model": {
+			"gltf": "0/184/CELL_349_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u21",
+		"name": "CELL_21_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3722213, 51.1430166, 263.128]
+		},
+		"model": {
+			"gltf": "0/25/CELL_21_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u35",
+		"name": "CELL_35_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3692408, 51.1428042, 262.61]
+		},
+		"model": {
+			"gltf": "0/37/CELL_35_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u43",
+		"name": "CELL_43_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3714128, 51.1428345, 262.924]
+		},
+		"model": {
+			"gltf": "0/44/CELL_43_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u55",
+		"name": "CELL_55_DN_8",
+		"position": {
+			"cartographicDegrees": [7.367887, 51.1426811, 262.327]
+		},
+		"model": {
+			"gltf": "0/119/CELL_55_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u146",
+		"name": "CELL_146_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3722513, 51.1421627, 262.697]
+		},
+		"model": {
+			"gltf": "0/120/CELL_146_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u147",
+		"name": "CELL_147_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3725228, 51.1421665, 262.737]
+		},
+		"model": {
+			"gltf": "0/121/CELL_147_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u163",
+		"name": "CELL_163_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3700853, 51.1419631, 262.293]
+		},
+		"model": {
+			"gltf": "0/122/CELL_163_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u162",
+		"name": "CELL_162_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3700853, 51.1419631, 262.228]
+		},
+		"model": {
+			"gltf": "0/123/CELL_162_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u148",
+		"name": "CELL_148_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3727943, 51.1421702, 262.776]
+		},
+		"model": {
+			"gltf": "0/124/CELL_148_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u161",
+		"name": "CELL_161_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3695879, 51.1421256, 262.169]
+		},
+		"model": {
+			"gltf": "0/125/CELL_161_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u164",
+		"name": "CELL_164_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3703569, 51.1419654, 262.355]
+		},
+		"model": {
+			"gltf": "0/126/CELL_164_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u167",
+		"name": "CELL_167_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3711713, 51.1419768, 262.454]
+		},
+		"model": {
+			"gltf": "0/127/CELL_167_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u168",
+		"name": "CELL_168_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3714428, 51.1419806, 262.493]
+		},
+		"model": {
+			"gltf": "0/128/CELL_168_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u169",
+		"name": "CELL_169_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3717143, 51.1419843, 262.533]
+		},
+		"model": {
+			"gltf": "0/129/CELL_169_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u165",
+		"name": "CELL_165_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3706283, 51.1419692, 262.385]
+		},
+		"model": {
+			"gltf": "0/130/CELL_165_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u170",
+		"name": "CELL_170_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3719858, 51.1419881, 262.572]
+		},
+		"model": {
+			"gltf": "0/131/CELL_170_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u166",
+		"name": "CELL_166_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3708998, 51.141973, 262.415]
+		},
+		"model": {
+			"gltf": "0/137/CELL_166_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u173",
+		"name": "CELL_173_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3728003, 51.1419995, 262.69]
+		},
+		"model": {
+			"gltf": "0/132/CELL_173_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u220",
+		"name": "CELL_220_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3719978, 51.1416466, 262.399]
+		},
+		"model": {
+			"gltf": "0/159/CELL_220_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u241",
+		"name": "CELL_241_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3711845, 51.1416041, 262.169]
+		},
+		"model": {
+			"gltf": "0/160/CELL_241_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u322",
+		"name": "CELL_322_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3728331, 51.1410656, 262.133]
+		},
+		"model": {
+			"gltf": "0/183/CELL_322_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u3",
+		"name": "CELL_3_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3673343, 51.1429485, 262.42]
+		},
+		"model": {
+			"gltf": "0/3/CELL_3_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u4",
+		"name": "CELL_4_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3676058, 51.1429523, 262.46]
+		},
+		"model": {
+			"gltf": "0/5/CELL_4_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u6",
+		"name": "CELL_6_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3681488, 51.1429598, 262.538]
+		},
+		"model": {
+			"gltf": "0/6/CELL_6_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u11",
+		"name": "CELL_11_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3695063, 51.1429788, 262.735]
+		},
+		"model": {
+			"gltf": "0/8/CELL_11_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u13",
+		"name": "CELL_13_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3700493, 51.1429864, 262.814]
+		},
+		"model": {
+			"gltf": "0/11/CELL_13_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u19",
+		"name": "CELL_19_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3716783, 51.1430091, 263.05]
+		},
+		"model": {
+			"gltf": "0/16/CELL_19_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u22",
+		"name": "CELL_22_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3724928, 51.1430204, 263.168]
+		},
+		"model": {
+			"gltf": "0/18/CELL_22_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u29",
+		"name": "CELL_29_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3676118, 51.1427815, 262.374]
+		},
+		"model": {
+			"gltf": "0/23/CELL_29_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u24",
+		"name": "CELL_24_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3730358, 51.1430279, 263.246]
+		},
+		"model": {
+			"gltf": "0/21/CELL_24_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u30",
+		"name": "CELL_30_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3678833, 51.1427853, 262.413]
+		},
+		"model": {
+			"gltf": "0/24/CELL_30_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u33",
+		"name": "CELL_33_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3686978, 51.1427966, 262.531]
+		},
+		"model": {
+			"gltf": "0/36/CELL_33_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u44",
+		"name": "CELL_44_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3716843, 51.1428383, 262.964]
+		},
+		"model": {
+			"gltf": "0/41/CELL_44_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u58",
+		"name": "CELL_58_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3687038, 51.1426259, 262.445]
+		},
+		"model": {
+			"gltf": "0/55/CELL_58_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u68",
+		"name": "CELL_68_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3714188, 51.1426637, 262.838]
+		},
+		"model": {
+			"gltf": "0/59/CELL_68_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u72",
+		"name": "CELL_72_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3725048, 51.1426788, 262.995]
+		},
+		"model": {
+			"gltf": "0/65/CELL_72_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u84",
+		"name": "CELL_84_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3689813, 51.1424589, 262.398]
+		},
+		"model": {
+			"gltf": "0/77/CELL_84_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u97",
+		"name": "CELL_97_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3725108, 51.142508, 262.909]
+		},
+		"model": {
+			"gltf": "0/85/CELL_97_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u117",
+		"name": "CELL_117_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3711593, 51.1423184, 262.626]
+		},
+		"model": {
+			"gltf": "0/97/CELL_117_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u123",
+		"name": "CELL_123_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3727883, 51.142341, 262.862]
+		},
+		"model": {
+			"gltf": "0/105/CELL_123_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u122",
+		"name": "CELL_122_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3725168, 51.1423373, 262.823]
+		},
+		"model": {
+			"gltf": "0/107/CELL_122_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u221",
+		"name": "CELL_221_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3722693, 51.1416503, 262.439]
+		},
+		"model": {
+			"gltf": "0/161/CELL_221_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u242",
+		"name": "CELL_242_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3714592, 51.1415144, 262.191]
+		},
+		"model": {
+			"gltf": "0/162/CELL_242_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u243",
+		"name": "CELL_243_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3714592, 51.1415144, 262.226]
+		},
+		"model": {
+			"gltf": "0/163/CELL_243_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u224",
+		"name": "CELL_224_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3730838, 51.1416617, 262.557]
+		},
+		"model": {
+			"gltf": "0/164/CELL_224_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u247",
+		"name": "CELL_247_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3725468, 51.1414833, 262.392]
+		},
+		"model": {
+			"gltf": "0/165/CELL_247_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u245",
+		"name": "CELL_245_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3720038, 51.1414758, 262.31]
+		},
+		"model": {
+			"gltf": "0/166/CELL_245_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u268",
+		"name": "CELL_268_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3715949, 51.1414701, 262.133]
+		},
+		"model": {
+			"gltf": "0/167/CELL_268_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u269",
+		"name": "CELL_269_DN_8",
+		"position": {
+			"cartographicDegrees": [7.371734, 51.1414246, 262.172]
+		},
+		"model": {
+			"gltf": "0/168/CELL_269_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u270",
+		"name": "CELL_270_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3720966, 51.1413062, 262.22]
+		},
+		"model": {
+			"gltf": "0/169/CELL_270_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u248",
+		"name": "CELL_248_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3728183, 51.1414871, 262.431]
+		},
+		"model": {
+			"gltf": "0/170/CELL_248_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u272",
+		"name": "CELL_272_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3725528, 51.1413125, 262.306]
+		},
+		"model": {
+			"gltf": "0/171/CELL_272_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u70",
+		"name": "CELL_70_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3719618, 51.1426713, 262.917]
+		},
+		"model": {
+			"gltf": "0/63/CELL_70_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u80",
+		"name": "CELL_80_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3681618, 51.1425914, 262.24]
+		},
+		"model": {
+			"gltf": "0/69/CELL_80_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u87",
+		"name": "CELL_87_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3697958, 51.1424702, 262.516]
+		},
+		"model": {
+			"gltf": "0/74/CELL_87_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u82",
+		"name": "CELL_82_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3685844, 51.1424533, 262.319]
+		},
+		"model": {
+			"gltf": "0/73/CELL_82_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u91",
+		"name": "CELL_91_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3708818, 51.1424854, 262.673]
+		},
+		"model": {
+			"gltf": "0/75/CELL_91_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u90",
+		"name": "CELL_90_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3706103, 51.1424816, 262.634]
+		},
+		"model": {
+			"gltf": "0/83/CELL_90_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u94",
+		"name": "CELL_94_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3716963, 51.1424967, 262.791]
+		},
+		"model": {
+			"gltf": "0/87/CELL_94_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u107",
+		"name": "CELL_107_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3685844, 51.1424533, 262.233]
+		},
+		"model": {
+			"gltf": "0/88/CELL_107_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u111",
+		"name": "CELL_111_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3695303, 51.1422956, 262.39]
+		},
+		"model": {
+			"gltf": "0/89/CELL_111_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u109",
+		"name": "CELL_109_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3689862, 51.1423221, 262.312]
+		},
+		"model": {
+			"gltf": "0/90/CELL_109_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u113",
+		"name": "CELL_113_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3700733, 51.1423032, 262.469]
+		},
+		"model": {
+			"gltf": "0/92/CELL_113_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u108",
+		"name": "CELL_108_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3689862, 51.1423221, 262.272]
+		},
+		"model": {
+			"gltf": "0/93/CELL_108_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u112",
+		"name": "CELL_112_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3698018, 51.1422994, 262.43]
+		},
+		"model": {
+			"gltf": "0/99/CELL_112_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u116",
+		"name": "CELL_116_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3708878, 51.1423146, 262.587]
+		},
+		"model": {
+			"gltf": "0/104/CELL_116_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u138",
+		"name": "CELL_138_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3700793, 51.1421324, 262.383]
+		},
+		"model": {
+			"gltf": "0/109/CELL_138_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u140",
+		"name": "CELL_140_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3706223, 51.14214, 262.461]
+		},
+		"model": {
+			"gltf": "0/112/CELL_140_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u145",
+		"name": "CELL_145_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3719798, 51.1421589, 262.658]
+		},
+		"model": {
+			"gltf": "0/118/CELL_145_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u298",
+		"name": "CELL_298_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3728303, 51.1411455, 262.259]
+		},
+		"model": {
+			"gltf": "0/180/CELL_298_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u323",
+		"name": "CELL_323_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3728331, 51.1410656, 262.173]
+		},
+		"model": {
+			"gltf": "0/186/CELL_323_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u83",
+		"name": "CELL_83_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3687098, 51.1424551, 262.358]
+		},
+		"model": {
+			"gltf": "0/71/CELL_83_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u92",
+		"name": "CELL_92_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3711533, 51.1424891, 262.712]
+		},
+		"model": {
+			"gltf": "0/80/CELL_92_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u296",
+		"name": "CELL_296_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3725584, 51.1411554, 262.18]
+		},
+		"model": {
+			"gltf": "0/181/CELL_296_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u14",
+		"name": "CELL_14_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3703208, 51.1429901, 262.853]
+		},
+		"model": {
+			"gltf": "0/10/CELL_14_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u15",
+		"name": "CELL_15_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3705923, 51.1429939, 262.892]
+		},
+		"model": {
+			"gltf": "0/12/CELL_15_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u16",
+		"name": "CELL_16_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3708638, 51.1429977, 262.932]
+		},
+		"model": {
+			"gltf": "0/13/CELL_16_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u18",
+		"name": "CELL_18_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3714068, 51.1430053, 263.01]
+		},
+		"model": {
+			"gltf": "0/14/CELL_18_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u20",
+		"name": "CELL_20_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3719498, 51.1430128, 263.089]
+		},
+		"model": {
+			"gltf": "0/17/CELL_20_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u27",
+		"name": "CELL_27_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3673374, 51.1428606, 262.295]
+		},
+		"model": {
+			"gltf": "0/22/CELL_27_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u28",
+		"name": "CELL_28_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3673374, 51.1428606, 262.334]
+		},
+		"model": {
+			"gltf": "0/26/CELL_28_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u34",
+		"name": "CELL_34_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3689693, 51.1428004, 262.57]
+		},
+		"model": {
+			"gltf": "0/27/CELL_34_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u36",
+		"name": "CELL_36_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3695123, 51.142808, 262.649]
+		},
+		"model": {
+			"gltf": "0/31/CELL_36_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u40",
+		"name": "CELL_40_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3705983, 51.1428231, 262.806]
+		},
+		"model": {
+			"gltf": "0/35/CELL_40_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u42",
+		"name": "CELL_42_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3711413, 51.1428307, 262.885]
+		},
+		"model": {
+			"gltf": "0/39/CELL_42_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u49",
+		"name": "CELL_49_DN_11",
+		"position": {
+			"cartographicDegrees": [7.3730418, 51.1428572, 263.16]
+		},
+		"model": {
+			"gltf": "0/46/CELL_49_DN_11.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u56",
+		"name": "CELL_56_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3681608, 51.1426183, 262.366]
+		},
+		"model": {
+			"gltf": "0/64/CELL_56_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u93",
+		"name": "CELL_93_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3714248, 51.1424929, 262.752]
+		},
+		"model": {
+			"gltf": "0/76/CELL_93_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u89",
+		"name": "CELL_89_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3703388, 51.1424778, 262.594]
+		},
+		"model": {
+			"gltf": "0/72/CELL_89_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u71",
+		"name": "CELL_71_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3722333, 51.142675, 262.956]
+		},
+		"model": {
+			"gltf": "0/68/CELL_71_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u96",
+		"name": "CELL_96_DN_10",
+		"position": {
+			"cartographicDegrees": [7.3722393, 51.1425043, 262.87]
+		},
+		"model": {
+			"gltf": "0/84/CELL_96_DN_10.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u114",
+		"name": "CELL_114_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3703448, 51.142307, 262.508]
+		},
+		"model": {
+			"gltf": "0/94/CELL_114_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u115",
+		"name": "CELL_115_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3706163, 51.1423108, 262.548]
+		},
+		"model": {
+			"gltf": "0/95/CELL_115_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u324",
+		"name": "CELL_324_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3731078, 51.1409785, 262.212]
+		},
+		"model": {
+			"gltf": "0/187/CELL_324_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u246",
+		"name": "CELL_246_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3722753, 51.1414796, 262.353]
+		},
+		"model": {
+			"gltf": "0/172/CELL_246_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u274",
+		"name": "CELL_274_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3730958, 51.1413201, 262.384]
+		},
+		"model": {
+			"gltf": "0/173/CELL_274_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u273",
+		"name": "CELL_273_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3728243, 51.1413163, 262.345]
+		},
+		"model": {
+			"gltf": "0/174/CELL_273_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u244",
+		"name": "CELL_244_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3717323, 51.141472, 262.265]
+		},
+		"model": {
+			"gltf": "0/175/CELL_244_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u271",
+		"name": "CELL_271_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3722813, 51.1413088, 262.266]
+		},
+		"model": {
+			"gltf": "0/176/CELL_271_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u297",
+		"name": "CELL_297_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3725584, 51.1411554, 262.219]
+		},
+		"model": {
+			"gltf": "0/177/CELL_297_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u295",
+		"name": "CELL_295_DN_8",
+		"position": {
+			"cartographicDegrees": [7.3720966, 51.1413062, 262.135]
+		},
+		"model": {
+			"gltf": "0/178/CELL_295_DN_8.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u249",
+		"name": "CELL_249_DN_9",
+		"position": {
+			"cartographicDegrees": [7.3730898, 51.1414909, 262.471]
+		},
+		"model": {
+			"gltf": "0/179/CELL_249_DN_9.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"id": "u348",
+		"name": "CELL_348_DN_7",
+		"position": {
+			"cartographicDegrees": [7.3731079, 51.1409758, 262.086]
+		},
+		"model": {
+			"gltf": "0/185/CELL_348_DN_7.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": [{
+							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
+							"cartesian": [0, 0, 0]
+						}
+					]
+				}
+			}
+		}
+	}
+]

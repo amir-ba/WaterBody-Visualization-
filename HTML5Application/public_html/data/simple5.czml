@@ -1,0 +1,268 @@
+[{
+		"id": "document",
+		"name": "CZML waterLevels",
+		"version": "1.0",
+		"clock": {
+			"interval": "2016-02-02T10:00:00Z/2016-12-01T10:00:00Z",
+			"currentTime": "2016-02-02T10:00:00Z",
+			"multiplier": 86400,
+			"range": "LOOP_STOP",
+			"step": "SYSTEM_CLOCK_MULTIPLIER"
+		}
+	}, {
+		"id": "592",
+		"name": "Bever-Talsperre, MQA1 Piezometer Wasserseite Schüttkörper",
+		"description": " <p>287.53</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369712340742324, 51.142069338292224, 100, 7.369712340742324, 51.142069338292224, 287.53]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "594",
+		"name": "Bever-Talsperre, MQA4 Piezometer Luftseite",
+		"description": "<p> 262.02</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369483274522463, 51.14182820712784, 100, 7.369483274522463, 51.14182820712784, 262.02]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "593",
+		"name": "Bever-Talsperre, MQA3 Piezometer Luftseite",
+		"description": "<p>262.02</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369667713456456, 51.141984665386836, 100, 7.369667713456456, 51.141984665386836, 262.02]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "584",
+		"name": "Bever-Talsperre, MQA7 Piezometer Kalkzone",
+		"description": " <p>262.01</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.369363283449275, 51.14162240424392, 100, 7.369363283449275, 51.14162240424392, 262.01]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "585",
+		"name": "Bever-Talsperre, MQB1 Piezometer Wasserseite Schüttkörper",
+		"description": "<p> 285.76</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370608134315197, 51.141813533400466, 100, 7.370608134315197, 51.141813533400466, 285.76]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "586",
+		"name": "Bever-Talsperre, MQB2 Piezometer Wasserseite Fels",
+		"description": "<p> 262.63</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.3705207997350906, 51.14171904924497, 100, 7.3705207997350906, 51.14171904924497, 262.63]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "587",
+		"name": "Bever-Talsperre, MQB4 Piezometer Luftseite",
+		"description": " <p>262.18</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370390735735749, 51.14154579939893, 100, 7.370390735735749, 51.14154579939893, 262.18]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "588",
+		"name": "Bever-Talsperre, MQB5 Piezometer Berme",
+		"description": "<p> 262.2</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370433653670944, 51.14153557345896, 100, 7.370433653670944, 51.14153557345896, 262.2]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "589",
+		"name": "Bever-Talsperre, MQB6 Piezometer Berme",
+		"description": " <p>262.1</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.370246856480172, 51.14135510695596, 100, 7.370246856480172, 51.14135510695596, 262.1]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "590",
+		"name": "Bever-Talsperre, MQB7 Piezometer Dammfuß",
+		"description": " <p>262.1</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.3702862066512225, 51.141342149733894, 100, 7.3702862066512225, 51.141342149733894, 262.1]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "597",
+		"name": "Bever-Talsperre, MQC2 Piezometer Wasserseite Fels",
+		"description": " <p>262.08</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371717560732302, 51.14134621672141, 100, 7.371717560732302, 51.14134621672141, 262.08]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "596",
+		"name": "Bever-Talsperre, MQC1 Piezometer Wasserseite Schüttkörper",
+		"description": " <p>292.27</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371810068579239, 51.14143973945694, 100, 7.371810068579239, 51.14143973945694, 292.27]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "578",
+		"name": "Bever-Talsperre, MQC4 Piezometer Luftseite",
+		"description": "<p>263.4</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371573940783131, 51.14117594807616, 100, 7.371573940783131, 51.14117594807616, 263.4]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "579",
+		"name": "Bever-Talsperre, MQC5 Piezometer Berme",
+		"description": " <p>262.29</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371616365879598, 51.14116276015155, 100, 7.371616365879598, 51.14116276015155, 262.29]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}, {
+		"id": "580",
+		"name": "Bever-Talsperre, MQC6 Piezometer Berme",
+		"description": "<p> 261.64</p>",
+		"polyline": {
+			"positions": {
+				"cartographicDegrees": [7.371427942962189, 51.14098120802222, 100, 7.371427942962189, 51.14098120802222, 261.64]
+			},
+			"material": {
+				"solidColor": {
+					"color": {
+						"rgba": [30, 144, 255, 255]
+					}
+				}
+			},
+			"width": 4
+		}
+	}
+]
