@@ -25,7 +25,7 @@
           <heading>358.7280439</heading>
         </Orientation>
         <Link>
-          <href>8/52.dae</href>
+          <href>8/52.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -42,7 +42,7 @@
           <heading>358.7318881</heading>
         </Orientation>
         <Link>
-          <href>4/27.dae</href>
+          <href>4/27.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -59,7 +59,7 @@
           <heading>358.7284042</heading>
         </Orientation>
         <Link>
-          <href>7/51.dae</href>
+          <href>7/51.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -76,7 +76,7 @@
           <heading>358.7339196</heading>
         </Orientation>
         <Link>
-          <href>6/29.dae</href>
+          <href>6/29.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -93,7 +93,7 @@
           <heading>358.729827</heading>
         </Orientation>
         <Link>
-          <href>1/1.dae</href>
+          <href>1/1.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -110,7 +110,7 @@
           <heading>358.7356284</heading>
         </Orientation>
         <Link>
-          <href>2/2.dae</href>
+          <href>2/2.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -127,7 +127,7 @@
           <heading>358.7318881</heading>
         </Orientation>
         <Link>
-          <href>5/28.dae</href>
+          <href>5/28.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -144,7 +144,7 @@
           <heading>358.7333709</heading>
         </Orientation>
         <Link>
-          <href>3/26.dae</href>
+          <href>3/26.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -161,7 +161,7 @@
           <heading>358.7361523</heading>
         </Orientation>
         <Link>
-          <href>10/54.dae</href>
+          <href>10/54.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -178,7 +178,7 @@
           <heading>358.72351</heading>
         </Orientation>
         <Link>
-          <href>9/53.dae</href>
+          <href>9/53.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -195,7 +195,7 @@
           <heading>358.7361523</heading>
         </Orientation>
         <Link>
-          <href>11/55.dae</href>
+          <href>11/55.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -212,7 +212,7 @@
           <heading>358.7312731</heading>
         </Orientation>
         <Link>
-          <href>12/56.dae</href>
+          <href>12/56.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -229,7 +229,7 @@
           <heading>358.7343491</heading>
         </Orientation>
         <Link>
-          <href>13/77.dae</href>
+          <href>13/77.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -246,7 +246,7 @@
           <heading>358.7395585</heading>
         </Orientation>
         <Link>
-          <href>14/78.dae</href>
+          <href>14/78.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -263,7 +263,7 @@
           <heading>358.7395585</heading>
         </Orientation>
         <Link>
-          <href>15/79.dae</href>
+          <href>15/79.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -280,7 +280,7 @@
           <heading>358.7409047</heading>
         </Orientation>
         <Link>
-          <href>16/80.dae</href>
+          <href>16/80.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -297,7 +297,7 @@
           <heading>358.7412249</heading>
         </Orientation>
         <Link>
-          <href>17/81.dae</href>
+          <href>17/81.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -314,7 +314,7 @@
           <heading>358.7298968</heading>
         </Orientation>
         <Link>
-          <href>18/83.dae</href>
+          <href>18/83.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -331,7 +331,7 @@
           <heading>358.7344774</heading>
         </Orientation>
         <Link>
-          <href>19/103.dae</href>
+          <href>19/103.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -348,7 +348,7 @@
           <heading>358.7360243</heading>
         </Orientation>
         <Link>
-          <href>20/104.dae</href>
+          <href>20/104.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -365,7 +365,7 @@
           <heading>358.7247788</heading>
         </Orientation>
         <Link>
-          <href>21/82.dae</href>
+          <href>21/82.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -382,7 +382,7 @@
           <heading>358.7360243</heading>
         </Orientation>
         <Link>
-          <href>22/105.dae</href>
+          <href>22/105.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -399,7 +399,7 @@
           <heading>358.7375637</heading>
         </Orientation>
         <Link>
-          <href>23/106.dae</href>
+          <href>23/106.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -416,7 +416,7 @@
           <heading>358.7390955</heading>
         </Orientation>
         <Link>
-          <href>24/107.dae</href>
+          <href>24/107.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -433,7 +433,7 @@
           <heading>358.7298968</heading>
         </Orientation>
         <Link>
-          <href>25/108.dae</href>
+          <href>25/108.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -450,7 +450,7 @@
           <heading>358.7285227</heading>
         </Orientation>
         <Link>
-          <href>26/109.dae</href>
+          <href>26/109.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -467,7 +467,7 @@
           <heading>358.7317614</heading>
         </Orientation>
         <Link>
-          <href>27/110.dae</href>
+          <href>27/110.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -484,7 +484,7 @@
           <heading>358.7347775</heading>
         </Orientation>
         <Link>
-          <href>28/128.dae</href>
+          <href>28/128.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -501,7 +501,7 @@
           <heading>358.7311548</heading>
         </Orientation>
         <Link>
-          <href>29/129.dae</href>
+          <href>29/129.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -518,7 +518,7 @@
           <heading>358.7328948</heading>
         </Orientation>
         <Link>
-          <href>30/130.dae</href>
+          <href>30/130.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -535,7 +535,7 @@
           <heading>358.7328948</heading>
         </Orientation>
         <Link>
-          <href>31/131.dae</href>
+          <href>31/131.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -552,7 +552,7 @@
           <heading>358.7346274</heading>
         </Orientation>
         <Link>
-          <href>32/132.dae</href>
+          <href>32/132.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -569,7 +569,7 @@
           <heading>358.7363523</heading>
         </Orientation>
         <Link>
-          <href>33/133.dae</href>
+          <href>33/133.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -586,7 +586,7 @@
           <heading>358.7236637</heading>
         </Orientation>
         <Link>
-          <href>34/134.dae</href>
+          <href>34/134.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -603,7 +603,7 @@
           <heading>358.7320958</heading>
         </Orientation>
         <Link>
-          <href>35/158.dae</href>
+          <href>35/158.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -620,7 +620,7 @@
           <heading>358.7359243</heading>
         </Orientation>
         <Link>
-          <href>36/160.dae</href>
+          <href>36/160.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -637,7 +637,7 @@
           <heading>358.7431761</heading>
         </Orientation>
         <Link>
-          <href>37/161.dae</href>
+          <href>37/161.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -654,7 +654,7 @@
           <heading>358.7241092</heading>
         </Orientation>
         <Link>
-          <href>39/162.dae</href>
+          <href>39/162.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -671,7 +671,7 @@
           <heading>358.7241092</heading>
         </Orientation>
         <Link>
-          <href>40/163.dae</href>
+          <href>40/163.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -688,7 +688,7 @@
           <heading>358.7303865</heading>
         </Orientation>
         <Link>
-          <href>53/164.dae</href>
+          <href>53/164.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -705,7 +705,7 @@
           <heading>358.7359072</heading>
         </Orientation>
         <Link>
-          <href>38/135.dae</href>
+          <href>38/135.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -722,7 +722,7 @@
           <heading>358.7252651</heading>
         </Orientation>
         <Link>
-          <href>41/180.dae</href>
+          <href>41/180.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -739,7 +739,7 @@
           <heading>358.7395964</heading>
         </Orientation>
         <Link>
-          <href>42/181.dae</href>
+          <href>42/181.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -756,7 +756,7 @@
           <heading>358.7382283</heading>
         </Orientation>
         <Link>
-          <href>43/182.dae</href>
+          <href>43/182.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -773,7 +773,7 @@
           <heading>358.7278504</heading>
         </Orientation>
         <Link>
-          <href>44/183.dae</href>
+          <href>44/183.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -790,7 +790,7 @@
           <heading>358.7299692</heading>
         </Orientation>
         <Link>
-          <href>45/184.dae</href>
+          <href>45/184.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -807,7 +807,7 @@
           <heading>358.7320803</heading>
         </Orientation>
         <Link>
-          <href>46/185.dae</href>
+          <href>46/185.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -824,7 +824,7 @@
           <heading>358.7341838</heading>
         </Orientation>
         <Link>
-          <href>47/186.dae</href>
+          <href>47/186.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -841,7 +841,7 @@
           <heading>358.7362796</heading>
         </Orientation>
         <Link>
-          <href>48/187.dae</href>
+          <href>48/187.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -858,7 +858,7 @@
           <heading>358.7427907</heading>
         </Orientation>
         <Link>
-          <href>49/188.dae</href>
+          <href>49/188.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -875,7 +875,7 @@
           <heading>358.7435191</heading>
         </Orientation>
         <Link>
-          <href>50/189.dae</href>
+          <href>50/189.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -892,7 +892,7 @@
           <heading>358.7435191</heading>
         </Orientation>
         <Link>
-          <href>51/190.dae</href>
+          <href>51/190.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -909,7 +909,7 @@
           <heading>358.7341442</heading>
         </Orientation>
         <Link>
-          <href>52/207.dae</href>
+          <href>52/207.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -926,7 +926,7 @@
           <heading>358.7310567</heading>
         </Orientation>
         <Link>
-          <href>54/209.dae</href>
+          <href>54/209.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -943,7 +943,7 @@
           <heading>358.7282474</heading>
         </Orientation>
         <Link>
-          <href>56/210.dae</href>
+          <href>56/210.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -960,7 +960,7 @@
           <heading>358.7305516</heading>
         </Orientation>
         <Link>
-          <href>57/211.dae</href>
+          <href>57/211.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -977,7 +977,7 @@
           <heading>358.7328481</heading>
         </Orientation>
         <Link>
-          <href>58/212.dae</href>
+          <href>58/212.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -994,7 +994,7 @@
           <heading>358.7351369</heading>
         </Orientation>
         <Link>
-          <href>59/213.dae</href>
+          <href>59/213.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1011,7 +1011,7 @@
           <heading>358.737418</heading>
         </Orientation>
         <Link>
-          <href>60/214.dae</href>
+          <href>60/214.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1028,7 +1028,7 @@
           <heading>358.7370005</heading>
         </Orientation>
         <Link>
-          <href>61/215.dae</href>
+          <href>61/215.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1045,7 +1045,7 @@
           <heading>358.7246397</heading>
         </Orientation>
         <Link>
-          <href>76/261.dae</href>
+          <href>76/261.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1062,7 +1062,7 @@
           <heading>358.7367329</heading>
         </Orientation>
         <Link>
-          <href>77/266.dae</href>
+          <href>77/266.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1079,7 +1079,7 @@
           <heading>358.7386907</heading>
         </Orientation>
         <Link>
-          <href>78/267.dae</href>
+          <href>78/267.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1096,7 +1096,7 @@
           <heading>358.7413434</heading>
         </Orientation>
         <Link>
-          <href>81/268.dae</href>
+          <href>81/268.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1113,7 +1113,7 @@
           <heading>358.7386836</heading>
         </Orientation>
         <Link>
-          <href>83/269.dae</href>
+          <href>83/269.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1130,7 +1130,7 @@
           <heading>358.7402736</heading>
         </Orientation>
         <Link>
-          <href>87/290.dae</href>
+          <href>87/290.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1147,7 +1147,7 @@
           <heading>358.7369975</heading>
         </Orientation>
         <Link>
-          <href>88/292.dae</href>
+          <href>88/292.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1164,7 +1164,7 @@
           <heading>358.7391484</heading>
         </Orientation>
         <Link>
-          <href>89/293.dae</href>
+          <href>89/293.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1181,7 +1181,7 @@
           <heading>358.7293497</heading>
         </Orientation>
         <Link>
-          <href>94/296.dae</href>
+          <href>94/296.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1198,7 +1198,7 @@
           <heading>358.7328466</heading>
         </Orientation>
         <Link>
-          <href>98/317.dae</href>
+          <href>98/317.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1215,7 +1215,7 @@
           <heading>358.7376669</heading>
         </Orientation>
         <Link>
-          <href>99/318.dae</href>
+          <href>99/318.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1232,7 +1232,7 @@
           <heading>358.740011</heading>
         </Orientation>
         <Link>
-          <href>100/319.dae</href>
+          <href>100/319.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1249,7 +1249,7 @@
           <heading>358.726093</heading>
         </Orientation>
         <Link>
-          <href>101/321.dae</href>
+          <href>101/321.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1266,7 +1266,7 @@
           <heading>358.7291175</heading>
         </Orientation>
         <Link>
-          <href>104/322.dae</href>
+          <href>104/322.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1283,7 +1283,7 @@
           <heading>358.7287349</heading>
         </Orientation>
         <Link>
-          <href>105/343.dae</href>
+          <href>105/343.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1300,7 +1300,7 @@
           <heading>358.7255337</heading>
         </Orientation>
         <Link>
-          <href>107/344.dae</href>
+          <href>107/344.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1317,7 +1317,7 @@
           <heading>358.7412785</heading>
         </Orientation>
         <Link>
-          <href>108/345.dae</href>
+          <href>108/345.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1334,7 +1334,7 @@
           <heading>358.7445094</heading>
         </Orientation>
         <Link>
-          <href>109/346.dae</href>
+          <href>109/346.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1351,7 +1351,7 @@
           <heading>358.7277463</heading>
         </Orientation>
         <Link>
-          <href>110/347.dae</href>
+          <href>110/347.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1368,7 +1368,7 @@
           <heading>358.7275151</heading>
         </Orientation>
         <Link>
-          <href>111/348.dae</href>
+          <href>111/348.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1385,7 +1385,7 @@
           <heading>358.7260016</heading>
         </Orientation>
         <Link>
-          <href>117/242.dae</href>
+          <href>117/242.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1402,7 +1402,7 @@
           <heading>358.7421098</heading>
         </Orientation>
         <Link>
-          <href>115/372.dae</href>
+          <href>115/372.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1419,7 +1419,7 @@
           <heading>358.7386836</heading>
         </Orientation>
         <Link>
-          <href>74/244.dae</href>
+          <href>74/244.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1436,7 +1436,7 @@
           <heading>358.7292358</heading>
         </Orientation>
         <Link>
-          <href>75/263.dae</href>
+          <href>75/263.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1453,7 +1453,7 @@
           <heading>358.7313914</heading>
         </Orientation>
         <Link>
-          <href>79/264.dae</href>
+          <href>79/264.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1470,7 +1470,7 @@
           <heading>358.724304</heading>
         </Orientation>
         <Link>
-          <href>85/288.dae</href>
+          <href>85/288.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1487,7 +1487,7 @@
           <heading>358.7341379</heading>
         </Orientation>
         <Link>
-          <href>90/291.dae</href>
+          <href>90/291.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1504,7 +1504,7 @@
           <heading>358.7407767</heading>
         </Orientation>
         <Link>
-          <href>112/297.dae</href>
+          <href>112/297.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1521,7 +1521,7 @@
           <heading>358.7340139</heading>
         </Orientation>
         <Link>
-          <href>122/159.dae</href>
+          <href>122/159.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1538,7 +1538,7 @@
           <heading>358.728237</heading>
         </Orientation>
         <Link>
-          <href>96/155.dae</href>
+          <href>96/155.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1555,7 +1555,7 @@
           <heading>358.7311267</heading>
         </Orientation>
         <Link>
-          <href>116/154.dae</href>
+          <href>116/154.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1572,7 +1572,7 @@
           <heading>358.7396963</heading>
         </Orientation>
         <Link>
-          <href>114/371.dae</href>
+          <href>114/371.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1589,7 +1589,7 @@
           <heading>358.7288978</heading>
         </Orientation>
         <Link>
-          <href>123/208.dae</href>
+          <href>123/208.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1606,7 +1606,7 @@
           <heading>358.7364245</heading>
         </Orientation>
         <Link>
-          <href>119/369.dae</href>
+          <href>119/369.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1623,7 +1623,7 @@
           <heading>358.7402527</heading>
         </Orientation>
         <Link>
-          <href>55/136.dae</href>
+          <href>55/136.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1640,7 +1640,7 @@
           <heading>358.7402527</heading>
         </Orientation>
         <Link>
-          <href>91/137.dae</href>
+          <href>91/137.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1657,7 +1657,7 @@
           <heading>358.7370005</heading>
         </Orientation>
         <Link>
-          <href>62/216.dae</href>
+          <href>62/216.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1674,7 +1674,7 @@
           <heading>358.7313944</heading>
         </Orientation>
         <Link>
-          <href>63/217.dae</href>
+          <href>63/217.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1691,7 +1691,7 @@
           <heading>358.7407767</heading>
         </Orientation>
         <Link>
-          <href>93/298.dae</href>
+          <href>93/298.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1708,7 +1708,7 @@
           <heading>358.7364573</heading>
         </Orientation>
         <Link>
-          <href>95/315.dae</href>
+          <href>95/315.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1725,7 +1725,7 @@
           <heading>358.7364573</heading>
         </Orientation>
         <Link>
-          <href>97/316.dae</href>
+          <href>97/316.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1742,7 +1742,7 @@
           <heading>358.7310567</heading>
         </Orientation>
         <Link>
-          <href>64/234.dae</href>
+          <href>64/234.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1759,7 +1759,7 @@
           <heading>358.7430492</heading>
         </Orientation>
         <Link>
-          <href>102/320.dae</href>
+          <href>102/320.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1776,7 +1776,7 @@
           <heading>358.7459294</heading>
         </Orientation>
         <Link>
-          <href>103/323.dae</href>
+          <href>103/323.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1793,7 +1793,7 @@
           <heading>358.7382985</heading>
         </Orientation>
         <Link>
-          <href>65/235.dae</href>
+          <href>65/235.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1810,7 +1810,7 @@
           <heading>358.7287349</heading>
         </Orientation>
         <Link>
-          <href>106/342.dae</href>
+          <href>106/342.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1827,7 +1827,7 @@
           <heading>358.7364245</heading>
         </Orientation>
         <Link>
-          <href>113/370.dae</href>
+          <href>113/370.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1844,7 +1844,7 @@
           <heading>358.7246397</heading>
         </Orientation>
         <Link>
-          <href>66/236.dae</href>
+          <href>66/236.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1861,7 +1861,7 @@
           <heading>358.7419939</heading>
         </Orientation>
         <Link>
-          <href>118/294.dae</href>
+          <href>118/294.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1878,7 +1878,7 @@
           <heading>358.7294278</heading>
         </Orientation>
         <Link>
-          <href>67/237.dae</href>
+          <href>67/237.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1895,7 +1895,7 @@
           <heading>358.7319173</heading>
         </Orientation>
         <Link>
-          <href>68/238.dae</href>
+          <href>68/238.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1912,7 +1912,7 @@
           <heading>358.734399</heading>
         </Orientation>
         <Link>
-          <href>69/239.dae</href>
+          <href>69/239.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1929,7 +1929,7 @@
           <heading>358.736873</heading>
         </Orientation>
         <Link>
-          <href>70/240.dae</href>
+          <href>70/240.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1946,7 +1946,7 @@
           <heading>358.738638</heading>
         </Orientation>
         <Link>
-          <href>71/241.dae</href>
+          <href>71/241.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1963,7 +1963,7 @@
           <heading>358.7260016</heading>
         </Orientation>
         <Link>
-          <href>72/243.dae</href>
+          <href>72/243.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1980,7 +1980,7 @@
           <heading>358.7292358</heading>
         </Orientation>
         <Link>
-          <href>73/262.dae</href>
+          <href>73/262.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -1997,7 +1997,7 @@
           <heading>358.734066</heading>
         </Orientation>
         <Link>
-          <href>80/265.dae</href>
+          <href>80/265.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -2014,7 +2014,7 @@
           <heading>358.7303733</heading>
         </Orientation>
         <Link>
-          <href>82/270.dae</href>
+          <href>82/270.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -2031,7 +2031,7 @@
           <heading>358.7293497</heading>
         </Orientation>
         <Link>
-          <href>84/271.dae</href>
+          <href>84/271.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -2048,7 +2048,7 @@
           <heading>358.724304</heading>
         </Orientation>
         <Link>
-          <href>86/289.dae</href>
+          <href>86/289.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -2065,7 +2065,7 @@
           <heading>358.7448314</heading>
         </Orientation>
         <Link>
-          <href>92/295.dae</href>
+          <href>92/295.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -2082,7 +2082,7 @@
           <heading>358.7301702</heading>
         </Orientation>
         <Link>
-          <href>120/157.dae</href>
+          <href>120/157.gltf</href>
         </Link>
       </Model>
     </Placemark>
@@ -2099,7 +2099,7 @@
           <heading>358.7301702</heading>
         </Orientation>
         <Link>
-          <href>121/156.dae</href>
+          <href>121/156.gltf</href>
         </Link>
       </Model>
     </Placemark>
