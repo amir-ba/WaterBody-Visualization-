@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Written by 3D City Database Importer/Exporter, version "3.3-build1" -->
+<!-- Chair of Geoinformatics, Technical University of Munich, Germany, https://www.gis.bgu.tum.de/ -->
+<kml xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <name>wall</name>
+    <open>true</open>
+    <LookAt>
+      <longitude>7.36996454106016</longitude>
+      <latitude>51.141532752021874</latitude>
+      <altitude>0.0</altitude>
+      <heading>0.0</heading>
+      <tilt>60.0</tilt>
+      <range>970.0</range>
+    </LookAt>
+    <Style id="frameStyle">
+      <LineStyle>
+        <width>4.0</width>
+      </LineStyle>
+    </Style>
+    <Placemark>
+      <name>Tile border</name>
+      <styleUrl>#frameStyle</styleUrl>
+      <LineString>
+        <tessellate>true</tessellate>
+        <coordinates>7.366513767604058,51.139862996476815 7.373415314516261,51.139862996476815 7.373415314516261,51.14320250756693 7.366513767604058,51.14320250756693 7.366513767604058,51.139862996476815</coordinates>
+      </LineString>
+    </Placemark>
+    <Folder>
+      <name>wall_Tile_0_0</name>
+      <NetworkLink>
+        <name>Display as collada</name>
+        <Region>
+          <LatLonAltBox>
+            <north>51.14320250756693</north>
+            <south>51.139862996476815</south>
+            <east>7.373415314516261</east>
+            <west>7.366513767604058</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>0.0</minLodPixels>
+            <maxLodPixels>-1.0</maxLodPixels>
+          </Lod>
+        </Region>
+        <Link>
+          <href>Tiles\0\0\wall_Tile_0_0_collada.kml</href>
+          <viewRefreshMode>onRegion</viewRefreshMode>
+          <viewFormat/>
+        </Link>
+      </NetworkLink>
+    </Folder>
+  </Document>
+</kml>
