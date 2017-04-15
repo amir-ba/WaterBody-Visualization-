@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 
-
+/*jslint white: true plusplus: true*/
+/*global cesium */
 var s = 51.139942;
 var n = 51.143203;
 var w = 7.366514;
@@ -14,7 +15,7 @@ var czml = './data/simple2.czml';
 var czmlOver = './data/simple3.czml';
 var stationCzml = './data/simple4.czml';
 var waterLevelCzml = './data/simple5.czml';
-
+var wallCzml = './data/simple6Wall.czml';
 
 
 var TimeSeriesOfInterest = {
@@ -48,41 +49,17 @@ var TimeSeriesOfInterest = {
 
 
 
-}
+};
 
 var positionN = [];
-//var positionN2 = [];
 var idList = [];
-//var idList2 = [];
 var alphaList = [];
-//var alphaList2 = [];
 
 var running = false;
+var loadingSeepage = false;
 var url =
     "http://tamis.dev.52north.org/tamis-rest/api/v1/services/1/processes//org.n52.wps.server.r.tamis-rest-interpolation-wasserstand/";
-var data =
-    {
-        "inputs": [
-            {
-                "id": "timespan",
-                //     "value": "2016-02-01T10:00:00.00Z%2F2016-02-15T10:00:00.00Z",
-                "type": "text/plain"
-            },
-            {
-                "id": "target",
-                "value"
-                    : "https://github.com/52North/tamis/raw/master/geotiff.tiff",
-                "type": "application/geotiff"
-            }
-        ],
-        "outputs": [
-            {
-                "id": "predictions",
-                "type": "application/geotiff"
-            }
 
-        ]
-    }
 
 
 // code to create the czml from sos data or the 3DCityDb
@@ -99,7 +76,6 @@ viewer.camera.setView({destination: extent})
 var webMap = new WebMap3DCityDB(viewer);
 webMap.activateViewChangedEvent(true);
 var scene = viewer.scene;
-
 
 
 // add KML data
@@ -121,10 +97,10 @@ viewer.dataSources.add(
     })
     );
 
+
 viewer.scene.globe.depthTestAgainstTerrain = false;
 viewer.scene.globe.showWaterEffect = true;
 viewer.scene.globe.enableLighting = true;
-
 // add terrain
 var terrainProvider = new Cesium.CesiumTerrainProvider({
     //   url: 'http://www.3dcitydb.de/3dcitydb/fileadmin/mydata/OGC_FCP1/WaterBody_Amir/terrain/'
@@ -141,53 +117,108 @@ viewer.terrainProvider = terrainProvider;
 Cesium.CzmlDataSource.updaters.push(czmlUpdater);
 
 var czmldataSourceWaterBodyUnder = Cesium.CzmlDataSource.load(czml);
-var czmldataSourceWaterBodyover = Cesium.CzmlDataSource.load(czmlOver);
+//var czmldataSourceWaterBodyover = Cesium.CzmlDataSource.load(czmlOver);
 var czmldataSourceStations = Cesium.CzmlDataSource.load(stationCzml);
 var czmldataSourcewaterLevel = Cesium.CzmlDataSource.load(waterLevelCzml);
+var czmldataSourceWall = Cesium.CzmlDataSource.load(wallCzml)
+
 
 viewer.dataSources.add(czmldataSourceStations);
-viewer.dataSources.add(czmldataSourcewaterLevel) ;
+//viewer.dataSources.add(czmldataSourceWaterBodyover);
 
-viewer.dataSources.add(czmldataSourceWaterBodyover).then(function () {
+viewer.dataSources.add(czmldataSourcewaterLevel).then(function () {
     viewer.dataSources.add(czmldataSourceWaterBodyUnder).then(function (data) {
         var promis = Cesium.sampleTerrain(viewer.terrainProvider, 15,
             positionN);
         promis.then(function (terrainSamplePositions) {
             var entities = data.entities;
             console.log(terrainSamplePositions.length);
-            for (var i = 0, j= terrainSamplePositions.length; i<j; ++i) {
+
+            for (var i = 0, j = terrainSamplePositions.length; i < j; ++i) {
                 var BaseHeight = terrainSamplePositions[i].height;//.toFixed(2);
                 var entity = entities.getById(idList[i]);
+                //    console.log(entity)
                 var oldHeight = entity.model.nodeTransformations.Y_UP_Transform.translation.intervals.get(0).data.z;
-              if (BaseHeight > oldHeight) {
+                if (BaseHeight > oldHeight) {
                     if (oldHeight - BaseHeight < -35) {
-                                           //           console.log(BaseHeight -oldHeight)
+                        //           console.log(BaseHeight -oldHeight)
 
-                        alphaList[ idList[i]] = fitRange(oldHeight - BaseHeight, [-49,-30, 0.3, 0.6]);
+                        alphaList[ idList[i]] = fitRange(oldHeight - BaseHeight, [-49, -30, 0.3, 0.6]);
                     } else {
                         alphaList[ idList[i]] = fitRange(oldHeight - BaseHeight, [-35, 1, 0.5, 0.95]);
                     }
                     entity.model.color.intervals._intervals[0].data.alpha = alphaList[ idList[i]];
-                 }
+                }
             }
             viewer.clock.shouldAnimate = true;
             viewer.clock.canAnimate = true;
+
             onTick();
 
         });
-      
-//    Cesium.knockout.getObservable(viewer, '_selectedEntity').subscribe(function (entity) {
-//        if (!Cesium.defined(entity)) {
-//            console.log('De-selected entity.');
-//        } else {
-//            console.log('Selected entity ' + (  entity.id));
-//        }
-//    }); 
+
+
     });
 
 });
 
+viewer.dataSources.add(czmldataSourceWall).then(function (czmlwall) {
 
+    Cesium.loadWithXhr({
+        url: './data/' + 'seepage.tif',
+        responseType: 'arraybuffer'
+    }).then(seepageTifToGltf).otherwise(function (error) {
+        console.log(error);
+        // an error occurred
+    });
+
+
+
+
+});
+
+function seepageTifToGltf(request) {
+    var interval = "2016-02-02T10:00:00Z/2016-02-15T10:00:00Z";
+    var rasterdata = geotif(request);
+    var options = interval;
+
+    var w1 = Math.floor(rasterdata[2][1]);
+    var h1 = Math.floor(rasterdata[2][0]);
+    var w2 = Math.round(rasterdata[2][1] / (10));
+    var h2 = Math.round(rasterdata[2][0] / (10));
+    var x_ratio = w1 / w2;
+    var y_ratio = h1 / h2;
+    var sourceCzmlWall = sourceFincer("CZML Wall");
+    var timeInterval = new Cesium.TimeInterval({
+        start: Cesium.JulianDate.fromIso8601('2016-02-02T10:00:00Z'),
+        stop: Cesium.JulianDate.fromIso8601('2016-02-15T10:00:00Z')
+    });
+    var showInterval = createTimeIntervalInstanse(timeInterval, "");
+
+    for (var i = 0; i < h2; i++) {
+        for (var j = 0; j < w2; j++) {
+            var px = Math.floor(j * x_ratio);
+            var py = Math.floor(i * y_ratio);
+            var cellOnOrigin = (i * w2) + j;
+            var id = String(cellOnOrigin);
+            var cellValue = rasterdata[0][1][(py * w1) + px]
+            var color = setSeepageColor(cellValue);
+            color.alpha = 0.6;
+            px = j * x_ratio;
+            py = i * y_ratio;
+            var colorInterval = createTimeIntervalInstanse(timeInterval, color);
+            var descriptionInterval = createTimeIntervalInstanse(timeInterval, cellValue);
+            var modelCzmlSources = sourceCzmlWall;
+            var entity = modelCzmlSources.entities.getById(id);
+            if (entity) {
+                entity.model.color.intervals.addInterval(colorInterval);
+                entity.availability._intervals.push(showInterval);
+                entity.description.intervals.addInterval(descriptionInterval);
+            }
+
+        }
+    }
+}
 
 function setLoadingIndicator(testVarible) {
 
@@ -201,19 +232,43 @@ function setLoadingIndicator(testVarible) {
 }
 function onTick() {
 
-   toggleLayer('#cesiumbuttonwps', "CZML");
-   toggleLayer('#cesiumbuttonsos' , "CZML waterLevels");  
-      toggleLayer('#cesiumbuttonwpsover' , "CZML Over"); 
-     // on time change
+    toggleLayer('#cesiumbuttonwps', "CZML");
+    toggleLayer('#cesiumbuttonsos', "CZML waterLevels");
+    toggleLayer('#cesiumbuttonwpsover', "CZML Over");
+    toggleLayer('#cesiumbuttonwpswall', "CZML Wall");
+    // on time change
     viewer.clock.onTick.addEventListener(function (clock) {
         if (viewer.clock.shouldAnimate && viewer.clock.canAnimate) {
             var startTime = clock.currentTime;
+
             callRaster(startTime);
         }
     });
 }
-function createPostRequestParam(startTime, leapDays) {
-    if (!leapDays) leapDays = 14
+function createPostRequestParam(startTime, leapDays ,data) {
+    if (!leapDays) leapDays = 14 ;
+     if (!data) data = {
+        "inputs": [
+            {
+                "id": "timespan",
+                //     "value": "2016-02-01T10:00:00.00Z%2F2016-02-15T10:00:00.00Z",
+                "type": "text/plain"
+            },
+            {
+                "id": "target",
+                "value"
+                    : "https://github.com/52North/tamis/raw/master/geotiff.tiff",
+                "type": "application/geotiff"
+            }
+        ],
+        "outputs": [
+            {
+                "id": "predictions",
+                "type": "application/geotiff"
+            }
+
+        ]
+    } ;
     var option = {
         url: url,
         type: 'post'
@@ -235,16 +290,17 @@ function createPostRequestParam(startTime, leapDays) {
     option.timeInterval = timeInterval;
     return option;
 }
+
 function toggleLayer(layerId, layerName) {
-     
+
     $(layerId).click(function () {
-         for (var x = 0; x < viewer.dataSources.length; x++) {
+        for (var x = 0; x < viewer.dataSources.length; x++) {
             var source = viewer.dataSources.get(x);
             if (source.name === layerName) {
                 source.show = !source.show
-                var checked= $(layerId).find('input[type="checkbox"]') [0].checked
-                $(layerId).find('input[type="checkbox"]') [0].checked=!checked
-             }
+                var checked = $(layerId).find('input[type="checkbox"]') [0].checked
+                $(layerId).find('input[type="checkbox"]') [0].checked = !checked
+            }
         }
     });
 
@@ -270,7 +326,7 @@ function ajaxgetLoop(response, callback) {
 
         },
         error: function (jqXhr, textStatus, errorThrown) {
-            console.log(textStatus);
+            console.log(textStatus, errorThrown);
         }
 
     }
@@ -362,9 +418,13 @@ function callRaster(startTime) {
     var sourceCzml = sourceFincer("CZML");
     var czmlEntities = sourceCzml.entities.values;
     var sourceCzmlOver = sourceFincer("CZML Over");
-    var CzmlOverEntities = sourceCzmlOver.entities.values;
+    var CzmlOverEntities = (sourceCzmlOver ? sourceCzmlOver.entities.values : null);
     var sourceCzmlWaterLevel = sourceFincer("CZML waterLevels");
-    var CzmlWaterLevelEntities = sourceCzmlWaterLevel.entities.values;
+    var CzmlWaterLevelEntities = (sourceCzmlWaterLevel ? sourceCzmlWaterLevel.entities.values : null);
+    var sourceWallCzml = sourceFincer("CZML Wall");
+    var CzmlWallEntities = (sourceWallCzml ? sourceWallCzml.entities.values : null);
+
+    // sourceCzmlWaterLevel.entities.values;
     if (czmlEntities) {
         var dateToCheckStart = czmlEntities[1].model.nodeTransformations.Y_UP_Transform.translation.intervals.contains(
             postParam.timeInterval.start);
@@ -373,14 +433,14 @@ function callRaster(startTime) {
         setLoadingIndicator(dateToCheckStart);
 
         if (dateToCheckStart && !running) {
-            running = true;
+            //  running = true;
             var intervals = czmlEntities[1].model.nodeTransformations.Y_UP_Transform.translation.intervals._intervals;
             var postParamNew = createPostRequestParam(intervals[intervals.length - 1].stop);
             console.log(Cesium.TimeInterval.toIso8601(postParamNew.timeInterval, 2));
             loadPridictionMap(postParamNew)
 
         } else if (!dateToCheckStart && !dateToCheckStop && !running) {
-            running = true;
+            //  running = true;
             viewer.clock.shouldAnimate = false;
             viewer.clock.canAnimate = false;
             console.log(Cesium.TimeInterval.toIso8601(postParam.timeInterval, 2));
@@ -390,7 +450,6 @@ function callRaster(startTime) {
             viewer.clock.canAnimate = false;
         }
     }
-
 
     if (CzmlWaterLevelEntities) {
         var dateToCheck = postParam.timeInterval.start;
@@ -403,8 +462,61 @@ function callRaster(startTime) {
     }
 
 
+    if (CzmlWallEntities) {
+     	var data = {
+		"inputs": [{
+				"id": "sosInputData",
+				"value":
+				"http://fluggs.wupperverband.de/sos2-tamis/service?service%3DSOS&version%3D2.0.0&request%3DGetObservation&responseformat%3Dhttp://www.opengis.net/om/2.0&observedProperty%3DSchuettmenge&procedure%3DTageswert_Prozessleitsystem&namespaces%3Dxmlns%28sams%2Chttp%3A%2F%2Fwww.opengis.net%2FsamplingSpatial%2F2.0%29%2Cxmlns%28om%2Chttp%3A%2F%2Fwww.opengis.net%2Fom%2F2.0%29&temporalFilter%3Dom%3AphenomenonTime%2C2016-02-01T10:00:00.00Z%2F2016-02-03T10:00:00.00Z",
+				"type": "text/plain"
+			}, {
+				"id": "target",
+				"value"
+				: "https://github.com/52North/tamis/raw/master/geotiff.tiff",
+				"type": "application/geotiff"
+			}
+		],
+		"outputs": [{
+				"id": "predictions",
+				"type": "application/geotiff"
+			}
+
+		]
+	}
+        var dateToCheckStart =
+            CzmlWallEntities[1].model.color.intervals.contains(
+            postParam.timeInterval.start);
+        var dateToCheckStop =
+            CzmlWallEntities[1].model.color.intervals.contains(
+            postParam.timeInterval.stop);
+        setLoadingIndicator(dateToCheckStart);
+        console.log(CzmlWallEntities);
+        if (dateToCheckStart && !running) {
+            //  running = true;
+            var intervals = CzmlWallEntities[1].model.color.intervals._intervals;
+            var postParamNew = createPostRequestParam(intervals[intervals.length - 1].stop);
+            console.log(Cesium.TimeInterval.toIso8601(postParamNew.timeInterval, 2));
+            loadPridictionMap(postParamNew);
+
+        } else if (!dateToCheckStart && !dateToCheckStop && !running) {
+            //  running = true;
+            viewer.clock.shouldAnimate = false;
+            viewer.clock.canAnimate = false;
+            console.log(Cesium.TimeInterval.toIso8601(postParam.timeInterval, 2));
+            loadPridictionMap(postParam,2,data);
+        } else if (!dateToCheckStart && !dateToCheckStop && running) {
+            viewer.clock.shouldAnimate = false;
+            viewer.clock.canAnimate = false;
+        }
+    }
+
+
+
 
 }
+
+
+
 function loadPridictionMap(postParam) {
     ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
         var output = jQxhr.getResponseHeader("Location");
@@ -480,8 +592,9 @@ function loadRasterToMap(response, interval) {
             var id = String(cellOnOrigin);
             var czmlSource = sourceFincer('CZML');
             var sourceCzmlOver = sourceFincer("CZML Over");
-            var czmlEntities = czmlSource.entities;
-            var czmlOverEntities = sourceCzmlOver.entities;
+            //   var czmlEntities = czmlSource.entities;
+            //  var CzmlOverEntities =  (sourceCzmlOver ? sourceCzmlOver.entities.values : null);  
+            //sourceCzmlOver.entities;
             var averageHeight = rasterdata[0][1][(py * w1) + px];
             var color = setColor(averageHeight);
 
@@ -489,11 +602,11 @@ function loadRasterToMap(response, interval) {
             var showInterval = createTimeIntervalInstanse(options.timeInterval, "");
             var descriptionInterval = createTimeIntervalInstanse(options.timeInterval,
                 averageHeight.toString());
-          for (var x = 0; x < viewer.dataSources.length; x++) {
-              var modelCzmlSources = viewer.dataSources.get(x);
-           if (modelCzmlSources.name === 'CZML') {
+            for (var x = 0; x < viewer.dataSources.length; x++) {
+                var modelCzmlSources = viewer.dataSources.get(x);
+                if (modelCzmlSources.name === 'CZML') {
                     if (modelCzmlSources.entities.getById(id)) {
-                         var entity = modelCzmlSources.entities.getById(id);
+                        var entity = modelCzmlSources.entities.getById(id);
                         var transformIntervalCzml = createTimeIntervalInstanse(options.timeInterval,
                             new Cesium.Cartesian3(0, 0, (averageHeight)));
                         if (alphaList[id]) color.alpha = alphaList[id];
@@ -504,13 +617,13 @@ function loadRasterToMap(response, interval) {
                         entity.description.intervals.addInterval(descriptionInterval);
                     }
 
-               }
+                }
 
-               if (modelCzmlSources.name === "CZML Over") {
-                    if (modelCzmlSources.entities.getById("u" + id)) {   
+                if (modelCzmlSources.name === "CZML Over") {
+                    if (modelCzmlSources.entities.getById("u" + id)) {
 
                         var entity1 = modelCzmlSources.entities.getById("u" + id);
- 
+
                         var transformIntervalCzmlOver = createTimeIntervalInstanse(options.timeInterval,
                             new Cesium.Cartesian3(0, 0, (averageHeight - 260)));
                         entity1.model.nodeTransformations.Y_UP_Transform.translation.intervals.addInterval(
@@ -525,14 +638,14 @@ function loadRasterToMap(response, interval) {
 
                     }
 
-                 }
+                }
 
-             }
+            }
 
-            //   px = j * x_ratio;
-            //   py = i * y_ratio;
-//drawSickerWasser(rasterdata, px, py, x_ratio, y_ratio);
-
+            //       px = j * x_ratio;
+            //          py = i * y_ratio;
+//drawSickerWasser(rasterdata, px, py, x_ratio, y_ratio,color,id);
+//console.log(viewer.scene.primitives);
         }
     }
     running = false;
@@ -540,36 +653,7 @@ function loadRasterToMap(response, interval) {
     viewer.clock.canAnimate = true;
 }
 
-function drawSickerWasser(rasterdata, px, py, x_ratio, y_ratio) {
 
-    var firstProjection =
-        'PROJCS["WGS 84 / UTM zone 32N",    GEOGCS["WGS 84",  DATUM["WGS_1984",  SPHEROID["WGS 84",6378137,298.257223563,                AUTHORITY["EPSG","7030"]],            AUTHORITY["EPSG","6326"]],        PRIMEM["Greenwich",0,            AUTHORITY["EPSG","8901"]],        UNIT["degree",0.0174532925199433,            AUTHORITY["EPSG","9122"]],        AUTHORITY["EPSG","4326"]],    PROJECTION["Transverse_Mercator"],    PARAMETER["latitude_of_origin",0],    PARAMETER["central_meridian",9],    PARAMETER["scale_factor",0.9996],    PARAMETER["false_easting",500000],    PARAMETER["false_northing",0],    UNIT["metre",1,        AUTHORITY["EPSG","9001"]],    AXIS["Easting",EAST],    AXIS["Northing",NORTH],    AUTHORITY["EPSG","32632"]]';
-    var secondProjection = "EPSG:4326";
-
-    var box = [rasterdata[1][0] + px * rasterdata[1][1], rasterdata[1][3] + py * rasterdata[1][5]]
-    var vertex1 = proj4(firstProjection, secondProjection, box)
-    var vertex4 = proj4(firstProjection, secondProjection, [box[0] + x_ratio * rasterdata[1][1], box[1]]);
-    var vertex2 = proj4(firstProjection, secondProjection, [box[0], box[1] + y_ratio * rasterdata[1][5]]);
-    var vertex3 = proj4(firstProjection, secondProjection, [box[0] + x_ratio * rasterdata[1][1], box[1] + y_ratio
-            * rasterdata[1][5]]);
-
-    var polygon = new Cesium.PolygonGeometry({
-        polygonHierarchy: new Cesium.PolygonHierarchy(
-            Cesium.Cartesian3.fromDegreesArray([
-                vertex1[0], vertex1[1], vertex2[0], vertex2[1], vertex3[0], vertex3[1], vertex4[0], vertex4[1]
-            ])
-            )
-    });
-    var rectangleInstance2 = new Cesium.GeometryInstance({
-        geometry: polygon,
-        id: 'rectangle',
-        attributes: {
-            color: new Cesium.ColorGeometryInstanceAttribute(1.0, 1.0, 1.0, 0.3)
-        }
-    });
-    viewer.scene.primitives.add(new Cesium.GroundPrimitive({geometryInstances: rectangleInstance2}));
-
-}
 function createTimeIntervalInstanse(timeinterval, data) {
     var newInterval = Cesium.TimeInterval.clone(
         timeinterval);
@@ -611,7 +695,7 @@ function czmlUpdater(dynamicObject, packet, dynamicObjectCollection, sourceUri) 
         var heightNew = packet.position.cartographicDegrees[2] - 260
         packet.model.nodeTransformations.Y_UP_Transform.translation = [{
                 "interval": interval,
-                "cartesian": [0, 0, heightNew+setheight(height)] 
+                "cartesian": [0, 0, heightNew + setheight(height)]
             }];
         var color = setColor(height);
         color = {"rgba": [255 * color.red, 255 * color.green, 255 * color.blue,
@@ -648,15 +732,35 @@ function czmlUpdater(dynamicObject, packet, dynamicObjectCollection, sourceUri) 
                 "string": packet.description
             }];
         packet.availability = interval;
+    } else if (sourceUri == wallCzml) {
+        //  console.log(sourceUri)
+
+        var color = setColor(200);
+        //color.alpha
+        color = {"rgba": [255 * color.red, 255 * color.green, 255 * color.blue, 255 * 0.4]};
+        packet.model.color = [{
+                "interval": interval,
+                "rgba": color.rgba
+            }];
+         packet.description = [{
+                "interval": interval,
+                "string": 200
+            }];
+        packet.availability = interval;
+//        packet.description = [{
+//                "interval": interval,
+//                "string": height
+//            }];
+
     }
 }
 
-function createCzml() {
+function createCzml(kmlPath) {
     var czml = [{
             "id": "document",
             "name": "CZML Point",
             "version": "1.0"}];
-    var kmlPath = './data/0/inside_Tile_0_0_collada.kml';
+    if (!kmlPath) var kmlPath = './data/0/inside_Tile_0_0_collada.kml';
     //    "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/waterbody1/Tiles/0/0/pigel_Tile_0_0_collada.kml";
 
     var kmlFolder = kmlPath.replace(/\/[^\/]+$/, '');
@@ -931,6 +1035,81 @@ function setheight(height, startHeight, intervals, cssColorArray) {
     return height;
 }
 
+function setSeepageColor(height, startHeight, intervals, cssColorArray) {
+    if (!cssColorArray) {
+        cssColorArray = ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7",
+            "#f7f7f7", "#d1e5f0", "#92c5de", "#4393c3", "#2166ac", "#053061",
+            "#050861"];
+    }
+    if (!intervals) {
+        var interval = 0.3;
+    }
+    if (!startHeight) {
+        var startHeight = 0;
+    }
+
+    // var startHeight= heightIntervals[0];
+    //  var interval = heightIntervals[1];
+    //   var endHeight= heightIntervals[2];
+    var rangeIndex;
+    if (height <= startHeight) {
+        rangeIndex = 11;
+    } else if (height > startHeight && height <= (startHeight + 1
+        * interval)) {
+        rangeIndex = 10;
+    } else if (height > (startHeight + 1
+        * interval) && height <= (startHeight + 2
+        * interval)) {
+        rangeIndex = 9;
+    } else if (height > (startHeight + 2
+        * interval) && height <= (startHeight + 3
+        * interval)) {
+        rangeIndex = 8;
+    } else if (height > (startHeight + 3
+        * interval) && height <= (startHeight + 4
+        * interval)) {
+        rangeIndex = 7;
+    } else if (height > (startHeight + 4
+        * interval) && height <= (startHeight + 5
+        * interval)) {
+        rangeIndex = 6;
+    } else if (height > (startHeight + 5
+        * interval) && height <= (startHeight + 6
+        * interval)) {
+        rangeIndex = 5;
+    } else if (height > (startHeight + 6
+        * interval) && height <= (startHeight + 7
+        * interval)) {
+        rangeIndex = 4;
+    } else if (height > (startHeight + 7
+        * interval) && height <= (startHeight + 8
+        * interval)) {
+        rangeIndex = 3;
+    } else if (height > (startHeight + 8
+        * interval) && height <= (startHeight + 9
+        * interval)) {
+        rangeIndex = 2;
+    } else if (height > (startHeight + 9
+        * interval) && height <= (startHeight + 10
+        * interval)) {
+        rangeIndex = 1;
+    } else if (height > (startHeight + 10
+        * interval) && height <= (startHeight + 11
+        * interval)) {
+        rangeIndex = 1;
+    } else if (height > (startHeight + 11
+        * interval) && height <= (startHeight + 12
+        * interval)) {
+        rangeIndex = 0;
+    } else if (height > (startHeight + 12
+        * interval)) {
+        rangeIndex = 0;
+    }
+
+    var color = new Cesium.Color.fromCssColorString(cssColorArray[rangeIndex]);
+    //color.alpha = rangeIndex/10
+    return color;
+}
 function geotif(RR) {
 
     var tiff = GeoTIFF.parse(RR);
