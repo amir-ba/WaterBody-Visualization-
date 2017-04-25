@@ -77,16 +77,32 @@
             }
             #status {
                 display: none;
-                color:white;
                 font-size: 25px;
+                background: rgba(48, 51, 54, 0.65);
+                border: 1px solid #444;
+                color: #edffff;
+                width: 20%;
+                padding: 1%;
             }
             #legend{
                 max-height: 100%;
                 max-width: 100%;
                 left: 10px;
-                bottom: 120px;
+                bottom: 110px;
                 position: absolute;
 
+            }
+              #legend2{
+                max-height: 100%;
+                max-width: 100%;
+                left: 10px;
+                top: 60px;
+                position: absolute;
+
+            }
+            #legends {
+                
+                display:block
             }
         </style>
     </head>
@@ -95,23 +111,24 @@
         <div id="uiMenu">
 
 
-            <button type="button" class="cesium-button" id = "cesiumbuttonwps"><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS</label></button>
-            <button type="button" class="cesium-button "id = "cesiumbuttonsos"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >SoS</label></button>
-            <button type="button" class="cesium-button "id = "cesiumbuttonwpsover"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS WaterBody Oversurface</label></button>
+            <button type="button" class="cesium-button" id = "cesiumbuttonwps"><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS Water level surface</label></button>
+            <button type="button" class="cesium-button "id = "cesiumbuttonsos"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >SoS Water Tubes</label></button>
+<!--            <button type="button" class="cesium-button "id = "cesiumbuttonwpsover"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS WaterBody Oversurface</label></button>-->
             <button type="button" class="cesium-button "id = "cesiumbuttonwpswall"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >WPS Seepage on Dam Wall</label></button>
-            
-            
+            <button type="button" class="cesium-button "id = "cesiumbuttondepth"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >See Underground</label></button>
+<button type="button" class="cesium-button "id = "cesiumbuttonlegend"  ><label style="pointer-events: none;"><input type="checkbox"       style="pointer-events: none;" checked >Legends</label></button>
             <div id="status" >LOADING...</div>
 
 
         </div>
+        
+     
+<div id ="legends"  >
         <div id="legend"  >
-        <img src="./data/legend.png" alt="legend" ></div>
-        <script>
-
-
-
-        </script>
+            <img src="./data/legend.png" alt="legend" ></div>
+          <div id="legend2"  >
+            <img src="./data/legend2.png" alt="legend" ></div>
+           </div>
         <script src= "./script.js"></script>
 
     </body>

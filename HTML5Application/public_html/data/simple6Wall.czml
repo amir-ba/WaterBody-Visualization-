@@ -1,2135 +1,147 @@
 [{
 		"id": "document",
 		"name": "CZML Wall",
-		"version": "1.0",
-		"clock": {
+		"version": "1.0" ,
+        "clock": {
 			"interval": "2016-02-02T10:00:00Z/2016-12-01T10:00:00Z",
 			"currentTime": "2016-02-02T10:00:00Z",
-			"multiplier": 86400,
+			"multiplier": 10000,
 			"range": "LOOP_STOP",
 			"step": "SYSTEM_CLOCK_MULTIPLIER"
 		}
-
-	}, {
-		"id": "158",
-		"name": "158",
+	},{
+		"id": "52",
+		"name": "52",
 		"position": {
-			"cartographicDegrees": [7.3687279, 51.1419427, 281.6369783]
+			"cartographicDegrees": [7.3671873, 51.1426047, 294.7593643]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/25/158.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/8/52.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "81",
-		"name": "81",
-		"position": {
-			"cartographicDegrees": [7.3682022, 51.142448, 297.4198411]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/21/81.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "25",
-		"name": "25",
-		"position": {
-			"cartographicDegrees": [7.3667973, 51.1427715, 297.6819802]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/1/25.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "160",
-		"name": "160",
-		"position": {
-			"cartographicDegrees": [7.3692709, 51.1419503, 292.1093804]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/27/160.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "156",
-		"name": "156",
-		"position": {
-			"cartographicDegrees": [7.3684564, 51.1419389, 278.5654347]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/23/156.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "159",
-		"name": "159",
-		"position": {
-			"cartographicDegrees": [7.3689994, 51.1419465, 285.5361778]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/26/159.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "155",
-		"name": "155",
-		"position": {
-			"cartographicDegrees": [7.3681849, 51.1419351, 279.9123497]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/22/155.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "157",
-		"name": "157",
-		"position": {
-			"cartographicDegrees": [7.3684564, 51.1419389, 278.5654347]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/24/157.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "161",
-		"name": "161",
-		"position": {
-			"cartographicDegrees": [7.3695424, 51.1419541, 295.132702]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/28/161.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "180",
-		"name": "180",
-		"position": {
-			"cartographicDegrees": [7.3681872, 51.1418713, 279.060164]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/29/180.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "181",
-		"name": "181",
-		"position": {
-			"cartographicDegrees": [7.3684622, 51.1417759, 275.3553125]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/30/181.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "182",
-		"name": "182",
-		"position": {
-			"cartographicDegrees": [7.3687339, 51.1417719, 274.92008]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/31/182.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "183",
-		"name": "183",
-		"position": {
-			"cartographicDegrees": [7.3687339, 51.1417719, 274.92008]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/32/183.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "184",
-		"name": "184",
-		"position": {
-			"cartographicDegrees": [7.3690054, 51.1417757, 278.8252062]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/33/184.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "185",
-		"name": "185",
-		"position": {
-			"cartographicDegrees": [7.3692769, 51.1417795, 283.3361915]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/34/185.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "186",
-		"name": "186",
-		"position": {
-			"cartographicDegrees": [7.3695484, 51.1417833, 286.8271229]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/35/186.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "188",
-		"name": "188",
-		"position": {
-			"cartographicDegrees": [7.3700914, 51.1417909, 296.5252443]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/36/188.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "207",
-		"name": "207",
-		"position": {
-			"cartographicDegrees": [7.3687372, 51.1416804, 272.4226839]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/38/207.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "208",
-		"name": "208",
-		"position": {
-			"cartographicDegrees": [7.3689568, 51.1416042, 271.1784118]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/39/208.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "209",
-		"name": "209",
-		"position": {
-			"cartographicDegrees": [7.3690114, 51.1416049, 271.4271351]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/40/209.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "210",
-		"name": "210",
-		"position": {
-			"cartographicDegrees": [7.3692829, 51.1416087, 274.5019055]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/41/210.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "106",
-		"name": "106",
-		"position": {
-			"cartographicDegrees": [7.3681729, 51.1422767, 289.608999]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/2/106.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "107",
-		"name": "107",
-		"position": {
-			"cartographicDegrees": [7.3684444, 51.1422805, 294.4104036]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/3/107.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "108",
-		"name": "108",
-		"position": {
-			"cartographicDegrees": [7.3687157, 51.1422877, 297.7942231]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/4/108.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "128",
-		"name": "128",
-		"position": {
-			"cartographicDegrees": [7.3676333, 51.1421736, 287.4413538]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/5/128.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "129",
-		"name": "129",
-		"position": {
-			"cartographicDegrees": [7.3679074, 51.1421021, 285.0158838]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/6/129.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.9366474747657776
 	}, {
 		"id": "27",
 		"name": "27",
 		"position": {
-			"cartographicDegrees": [7.367154, 51.1427751, 297.9132497]
+			"cartographicDegrees": [7.3673363, 51.1428915, 294.1981511]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/8/27.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/4/27.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "26",
-		"name": "26",
-		"position": {
-			"cartographicDegrees": [7.3667992, 51.1427701, 297.6769267]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/7/26.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.9511294960975647
 	}, {
 		"id": "51",
 		"name": "51",
 		"position": {
-			"cartographicDegrees": [7.3670748, 51.1426031, 294.9684104]
+			"cartographicDegrees": [7.3670723, 51.1426748, 295.7148306]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/9/51.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/7/51.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "52",
-		"name": "52",
-		"position": {
-			"cartographicDegrees": [7.3670748, 51.1426031, 294.9684104]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/10/52.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "53",
-		"name": "53",
-		"position": {
-			"cartographicDegrees": [7.3673463, 51.1426069, 295.1102476]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/11/53.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "54",
-		"name": "54",
-		"position": {
-			"cartographicDegrees": [7.3676781, 51.1426115, 297.5676812]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/12/54.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "76",
-		"name": "76",
-		"position": {
-			"cartographicDegrees": [7.3670759, 51.1425722, 294.5872457]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/13/76.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "77",
-		"name": "77",
-		"position": {
-			"cartographicDegrees": [7.3673524, 51.1424361, 292.6311824]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/14/77.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "130",
-		"name": "130",
-		"position": {
-			"cartographicDegrees": [7.3681789, 51.1421059, 283.0522676]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/15/130.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "78",
-		"name": "78",
-		"position": {
-			"cartographicDegrees": [7.3676239, 51.1424399, 291.4159617]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/16/78.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "102",
-		"name": "102",
-		"position": {
-			"cartographicDegrees": [7.3673546, 51.1423729, 291.8011066]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/17/102.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "133",
-		"name": "133",
-		"position": {
-			"cartographicDegrees": [7.3687219, 51.1421135, 291.0595821]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/18/133.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "134",
-		"name": "134",
-		"position": {
-			"cartographicDegrees": [7.3689934, 51.1421173, 295.0209125]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/19/134.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "154",
-		"name": "154",
-		"position": {
-			"cartographicDegrees": [7.3679119, 51.1419743, 283.50117]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/20/154.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "187",
-		"name": "187",
-		"position": {
-			"cartographicDegrees": [7.3698199, 51.1417871, 290.5715198]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/37/187.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "211",
-		"name": "211",
-		"position": {
-			"cartographicDegrees": [7.3695544, 51.1416125, 278.148215]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/42/211.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "212",
-		"name": "212",
-		"position": {
-			"cartographicDegrees": [7.3698259, 51.1416163, 282.7006802]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/43/212.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "213",
-		"name": "213",
-		"position": {
-			"cartographicDegrees": [7.3700974, 51.1416201, 286.9214221]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/44/213.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "214",
-		"name": "214",
-		"position": {
-			"cartographicDegrees": [7.3703689, 51.1416239, 291.1606041]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/45/214.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "215",
-		"name": "215",
-		"position": {
-			"cartographicDegrees": [7.3706404, 51.1416277, 295.6930198]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/46/215.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "233",
-		"name": "233",
-		"position": {
-			"cartographicDegrees": [7.3690121, 51.141585, 270.5087363]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/47/233.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "234",
-		"name": "234",
-		"position": {
-			"cartographicDegrees": [7.3690121, 51.141585, 270.5087363]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/48/234.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "235",
-		"name": "235",
-		"position": {
-			"cartographicDegrees": [7.36943, 51.1414399, 269.3058256]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/49/235.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "236",
-		"name": "236",
-		"position": {
-			"cartographicDegrees": [7.3695604, 51.1414417, 272.4784535]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/50/236.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "237",
-		"name": "237",
-		"position": {
-			"cartographicDegrees": [7.3698319, 51.1414455, 275.7205019]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/51/237.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "238",
-		"name": "238",
-		"position": {
-			"cartographicDegrees": [7.3701034, 51.1414493, 278.5525642]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/52/238.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "239",
-		"name": "239",
-		"position": {
-			"cartographicDegrees": [7.3703749, 51.1414531, 282.8603398]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/53/239.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "241",
-		"name": "241",
-		"position": {
-			"cartographicDegrees": [7.3709179, 51.1414606, 291.6678841]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/54/241.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "242",
-		"name": "242",
-		"position": {
-			"cartographicDegrees": [7.3711894, 51.1414644, 296.076464]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/56/242.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "260",
-		"name": "260",
-		"position": {
-			"cartographicDegrees": [7.36943, 51.1414399, 269.3058256]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/57/260.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "261",
-		"name": "261",
-		"position": {
-			"cartographicDegrees": [7.3698371, 51.1412986, 268.6145708]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/58/261.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "262",
-		"name": "262",
-		"position": {
-			"cartographicDegrees": [7.3698371, 51.1412986, 268.6145708]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/59/262.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "263",
-		"name": "263",
-		"position": {
-			"cartographicDegrees": [7.3701094, 51.1412785, 271.3892424]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/60/263.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "103",
-		"name": "103",
-		"position": {
-			"cartographicDegrees": [7.3676299, 51.1422691, 288.4726327]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/55/103.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "264",
-		"name": "264",
-		"position": {
-			"cartographicDegrees": [7.3703809, 51.1412823, 275.389107]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/61/264.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "265",
-		"name": "265",
-		"position": {
-			"cartographicDegrees": [7.3706524, 51.1412861, 280.7474583]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/62/265.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "266",
-		"name": "266",
-		"position": {
-			"cartographicDegrees": [7.3709239, 51.1412899, 283.4290176]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/63/266.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "267",
-		"name": "267",
-		"position": {
-			"cartographicDegrees": [7.3711954, 51.1412936, 286.9984441]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/64/267.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "268",
-		"name": "268",
-		"position": {
-			"cartographicDegrees": [7.3714669, 51.1412974, 293.0257992]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/65/268.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "269",
-		"name": "269",
-		"position": {
-			"cartographicDegrees": [7.3717384, 51.1413012, 297.0552874]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/66/269.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "287",
-		"name": "287",
-		"position": {
-			"cartographicDegrees": [7.3699033, 51.1412756, 268.6740177]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/67/287.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "288",
-		"name": "288",
-		"position": {
-			"cartographicDegrees": [7.3703766, 51.1411114, 268.0964328]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/68/288.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "289",
-		"name": "289",
-		"position": {
-			"cartographicDegrees": [7.3703869, 51.1411115, 268.2353644]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/69/289.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "290",
-		"name": "290",
-		"position": {
-			"cartographicDegrees": [7.3706584, 51.1411153, 271.6313068]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/70/290.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "291",
-		"name": "291",
-		"position": {
-			"cartographicDegrees": [7.3709299, 51.1411191, 275.1542158]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/71/291.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "293",
-		"name": "293",
-		"position": {
-			"cartographicDegrees": [7.3714729, 51.1411266, 284.2194552]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/72/293.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "294",
-		"name": "294",
-		"position": {
-			"cartographicDegrees": [7.3717444, 51.1411304, 287.5018646]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/73/294.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "295",
-		"name": "295",
-		"position": {
-			"cartographicDegrees": [7.3720159, 51.1411342, 294.3619184]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/74/295.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "296",
-		"name": "296",
-		"position": {
-			"cartographicDegrees": [7.3722873, 51.141138, 297.203946]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/75/296.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "313",
-		"name": "313",
-		"position": {
-			"cartographicDegrees": [7.3703766, 51.1411114, 268.0964328]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/76/313.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "314",
-		"name": "314",
-		"position": {
-			"cartographicDegrees": [7.370662, 51.1410123, 267.7424051]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/77/314.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "315",
-		"name": "315",
-		"position": {
-			"cartographicDegrees": [7.3708498, 51.1409471, 267.6695643]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/78/315.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "316",
-		"name": "316",
-		"position": {
-			"cartographicDegrees": [7.3709359, 51.1409483, 268.7727864]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/79/316.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "317",
-		"name": "317",
-		"position": {
-			"cartographicDegrees": [7.3712074, 51.1409521, 272.1856216]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/80/317.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "342",
-		"name": "342",
-		"position": {
-			"cartographicDegrees": [7.371212, 51.1408214, 267.0360027]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/105/342.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "345",
-		"name": "345",
-		"position": {
-			"cartographicDegrees": [7.3720279, 51.1407926, 276.4408591]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/92/345.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "348",
-		"name": "348",
-		"position": {
-			"cartographicDegrees": [7.3728392, 51.1408921, 293.8623007]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/95/348.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "370",
-		"name": "370",
-		"position": {
-			"cartographicDegrees": [7.3720291, 51.1407575, 275.090592]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/100/370.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "131",
-		"name": "131",
-		"position": {
-			"cartographicDegrees": [7.3681789, 51.1421059, 283.0522676]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/102/131.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "322",
-		"name": "322",
-		"position": {
-			"cartographicDegrees": [7.3725648, 51.140971, 293.9961932]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/86/322.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "323",
-		"name": "323",
-		"position": {
-			"cartographicDegrees": [7.3728363, 51.1409748, 296.5894919]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/87/323.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "340",
-		"name": "340",
-		"position": {
-			"cartographicDegrees": [7.3708498, 51.1409471, 267.6695643]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/88/340.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "341",
-		"name": "341",
-		"position": {
-			"cartographicDegrees": [7.371212, 51.1408214, 267.0360027]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/89/341.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "343",
-		"name": "343",
-		"position": {
-			"cartographicDegrees": [7.3714849, 51.1407851, 269.600808]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/90/343.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "346",
-		"name": "346",
-		"position": {
-			"cartographicDegrees": [7.3722991, 51.1408024, 282.7953503]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/94/346.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "369",
-		"name": "369",
-		"position": {
-			"cartographicDegrees": [7.3717591, 51.1407126, 271.1862681]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/99/369.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "240",
-		"name": "240",
-		"position": {
-			"cartographicDegrees": [7.3706464, 51.1414569, 287.0308165]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/103/240.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "105",
-		"name": "105",
-		"position": {
-			"cartographicDegrees": [7.3679014, 51.1422729, 287.6359103]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/93/105.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "132",
-		"name": "132",
-		"position": {
-			"cartographicDegrees": [7.3684504, 51.1421097, 285.5313669]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/101/132.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "104",
-		"name": "104",
-		"position": {
-			"cartographicDegrees": [7.3679014, 51.1422729, 287.6359103]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/81/104.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "292",
-		"name": "292",
-		"position": {
-			"cartographicDegrees": [7.3712014, 51.1411229, 279.1150831]
-		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/104/292.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
-	}, {
-		"id": "318",
-		"name": "318",
-		"position": {
-			"cartographicDegrees": [7.3714789, 51.1409559, 276.696198]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/82/318.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.9631859660148621
 	}, {
-		"id": "319",
-		"name": "319",
+		"id": "29",
+		"name": "29",
 		"position": {
-			"cartographicDegrees": [7.3717504, 51.1409596, 279.6672798]
+			"cartographicDegrees": [7.3676109, 51.1428076, 294.4082657]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/83/319.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/6/29.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "320",
-		"name": "320",
-		"position": {
-			"cartographicDegrees": [7.3720219, 51.1409634, 284.802776]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/84/320.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.899074137210846
 	}, {
-		"id": "321",
-		"name": "321",
+		"id": "26",
+		"name": "26",
 		"position": {
-			"cartographicDegrees": [7.3722933, 51.1409672, 288.2317972]
+			"cartographicDegrees": [7.3670628, 51.1429447, 294.9535816]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/85/321.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/3/26.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "344",
-		"name": "344",
-		"position": {
-			"cartographicDegrees": [7.3717564, 51.1407889, 273.7639482]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/91/344.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.9731025695800781
 	}, {
-		"id": "347",
-		"name": "347",
+		"id": "1",
+		"name": "1",
 		"position": {
-			"cartographicDegrees": [7.3725692, 51.1408472, 286.6401148]
+			"cartographicDegrees": [7.3670619, 51.1429697, 294.7065386]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/96/347.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/1/1.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "367",
-		"name": "367",
-		"position": {
-			"cartographicDegrees": [7.3713231, 51.1407828, 267.0365271]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/97/367.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.9839609265327454
 	}, {
-		"id": "368",
-		"name": "368",
+		"id": "2",
+		"name": "2",
 		"position": {
-			"cartographicDegrees": [7.371601, 51.1406863, 266.7614517]
+			"cartographicDegrees": [7.3671579, 51.142946, 294.4085855]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/98/368.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/2/2.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
-	}, {
-		"id": "79",
-		"name": "79",
-		"position": {
-			"cartographicDegrees": [7.3676239, 51.1424399, 291.4159617]
 		},
-		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/106/79.gltf",
-			"colorBlendModes": "Replace",
-			"colorBlendAmount": 1,
-			"nodeTransformations": {
-				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
-				}
-			}
-		}
+		"description": 0.9660969376564026
 	}, {
 		"id": "80",
 		"name": "80",
@@ -2137,18 +149,2202 @@
 			"cartographicDegrees": [7.3678954, 51.1424437, 294.2511977]
 		},
 		"model": {
-			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/107/80.gltf",
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/16/80.gltf",
 			"colorBlendModes": "Replace",
 			"colorBlendAmount": 1,
 			"nodeTransformations": {
 				"Y_UP_Transform": {
-					"translation": [{
-							"interval": "2016-02-15T16:00:00Z/2016-02-24T16:30:00Z",
-							"cartesian": [0, 0, 0]
-						}
-					]
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
 				}
 			}
-		}
+		},
+		"description": 0.7856683135032654
+	}, {
+		"id": "83",
+		"name": "83",
+		"position": {
+			"cartographicDegrees": [7.3687626, 51.1424558, 294.0482854]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/18/83.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5919708013534546
+	}, {
+		"id": "78",
+		"name": "78",
+		"position": {
+			"cartographicDegrees": [7.3676239, 51.1424399, 291.4159617]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/14/78.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.888750433921814
+	}, {
+		"id": "82",
+		"name": "82",
+		"position": {
+			"cartographicDegrees": [7.3687092, 51.1424721, 294.5260816]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/21/82.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.6473666429519653
+	}, {
+		"id": "104",
+		"name": "104",
+		"position": {
+			"cartographicDegrees": [7.3679014, 51.1422729, 287.6359103]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/20/104.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8273581862449646
+	}, {
+		"id": "107",
+		"name": "107",
+		"position": {
+			"cartographicDegrees": [7.3684444, 51.1422805, 294.4104036]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/24/107.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5572741031646729
+	}, {
+		"id": "108",
+		"name": "108",
+		"position": {
+			"cartographicDegrees": [7.3687626, 51.1424558, 294.0482854]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/25/108.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.43905332684516907
+	}, {
+		"id": "110",
+		"name": "110",
+		"position": {
+			"cartographicDegrees": [7.3692584, 51.1423044, 294.5500704]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/27/110.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5487085580825806
+	}, {
+		"id": "128",
+		"name": "128",
+		"position": {
+			"cartographicDegrees": [7.3676306, 51.1422493, 288.2579754]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/28/128.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8824338316917419
+	}, {
+		"id": "129",
+		"name": "129",
+		"position": {
+			"cartographicDegrees": [7.3679074, 51.1421021, 285.0158838]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/29/129.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8256076574325562
+	}, {
+		"id": "131",
+		"name": "131",
+		"position": {
+			"cartographicDegrees": [7.3681789, 51.1421059, 283.0522676]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/31/131.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.6432148218154907
+	}, {
+		"id": "132",
+		"name": "132",
+		"position": {
+			"cartographicDegrees": [7.3684504, 51.1421097, 285.5313669]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/32/132.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.49414700269699097
+	}, {
+		"id": "133",
+		"name": "133",
+		"position": {
+			"cartographicDegrees": [7.3687219, 51.1421135, 291.0595821]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/33/133.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.2897014319896698
+	}, {
+		"id": "158",
+		"name": "158",
+		"position": {
+			"cartographicDegrees": [7.3687279, 51.1419427, 281.6369783]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/35/158.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.3218192160129547
+	}, {
+		"id": "161",
+		"name": "161",
+		"position": {
+			"cartographicDegrees": [7.3698079, 51.1421287, 294.5222108]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/37/161.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.6124292612075806
+	}, {
+		"id": "162",
+		"name": "162",
+		"position": {
+			"cartographicDegrees": [7.3700821, 51.1420529, 294.2037286]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/39/162.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.7344344854354858
+	}, {
+		"id": "164",
+		"name": "164",
+		"position": {
+			"cartographicDegrees": [7.3703679, 51.1419656, 294.3049487]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/53/164.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.1147243976593018
+	}, {
+		"id": "160",
+		"name": "160",
+		"position": {
+			"cartographicDegrees": [7.3692709, 51.1419503, 292.1093804]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/36/160.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.4513939619064331
+	}, {
+		"id": "163",
+		"name": "163",
+		"position": {
+			"cartographicDegrees": [7.3700821, 51.1420529, 294.2037286]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/40/163.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.308222770690918
+	}, {
+		"id": "135",
+		"name": "135",
+		"position": {
+			"cartographicDegrees": [7.369533, 51.1422206, 294.4796906]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/38/135.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.34740328788757324
+	}, {
+		"id": "182",
+		"name": "182",
+		"position": {
+			"cartographicDegrees": [7.3686673, 51.141771, 274.3952357]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/43/182.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.6544575691223145
+	}, {
+		"id": "180",
+		"name": "180",
+		"position": {
+			"cartographicDegrees": [7.3681854, 51.1419205, 279.7174143]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/41/180.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.821434497833252
+	}, {
+		"id": "184",
+		"name": "184",
+		"position": {
+			"cartographicDegrees": [7.3690054, 51.1417757, 278.8252062]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/45/184.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5622156262397766
+	}, {
+		"id": "187",
+		"name": "187",
+		"position": {
+			"cartographicDegrees": [7.3698199, 51.1417871, 290.5715198]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/48/187.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 3.0346264839172363
+	}, {
+		"id": "188",
+		"name": "188",
+		"position": {
+			"cartographicDegrees": [7.3703569, 51.1419654, 294.3327763]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/49/188.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.9392690658569336
+	}, {
+		"id": "186",
+		"name": "186",
+		"position": {
+			"cartographicDegrees": [7.3695484, 51.1417833, 286.8271229]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/47/186.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.954339325428009
+	}, {
+		"id": "190",
+		"name": "190",
+		"position": {
+			"cartographicDegrees": [7.3706315, 51.141881, 293.9680226]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/51/190.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.9840701818466187
+	}, {
+		"id": "207",
+		"name": "207",
+		"position": {
+			"cartographicDegrees": [7.3687347, 51.1417501, 274.2787448]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/52/207.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8012993335723877
+	}, {
+		"id": "212",
+		"name": "212",
+		"position": {
+			"cartographicDegrees": [7.3698259, 51.1416163, 282.7006802]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/58/212.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.7466015815734863
+	}, {
+		"id": "189",
+		"name": "189",
+		"position": {
+			"cartographicDegrees": [7.3706315, 51.141881, 293.9680226]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/50/189.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.358933448791504
+	}, {
+		"id": "55",
+		"name": "55",
+		"position": {
+			"cartographicDegrees": [7.3678855, 51.1427237, 294.5825622]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/11/55.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8270285129547119
+	}, {
+		"id": "214",
+		"name": "214",
+		"position": {
+			"cartographicDegrees": [7.3703689, 51.1416239, 291.1606041]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/60/214.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.3212108612060547
+	}, {
+		"id": "267",
+		"name": "267",
+		"position": {
+			"cartographicDegrees": [7.3711954, 51.1412936, 286.9984441]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/78/267.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.9612351655960083
+	}, {
+		"id": "210",
+		"name": "210",
+		"position": {
+			"cartographicDegrees": [7.3692829, 51.1416087, 274.5019055]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/56/210.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.0996229648590088
+	}, {
+		"id": "268",
+		"name": "268",
+		"position": {
+			"cartographicDegrees": [7.3714669, 51.1412974, 293.0257992]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/81/268.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.3413407802581787
+	}, {
+		"id": "290",
+		"name": "290",
+		"position": {
+			"cartographicDegrees": [7.3706571, 51.1411535, 273.3674843]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/87/290.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.6594141721725464
+	}, {
+		"id": "292",
+		"name": "292",
+		"position": {
+			"cartographicDegrees": [7.3712014, 51.1411229, 279.1150831]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/88/292.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.9084426164627075
+	}, {
+		"id": "296",
+		"name": "296",
+		"position": {
+			"cartographicDegrees": [7.3724077, 51.1413105, 294.2768599]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/94/296.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.254280149936676
+	}, {
+		"id": "318",
+		"name": "318",
+		"position": {
+			"cartographicDegrees": [7.3714789, 51.1409559, 276.696198]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/99/318.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.654133677482605
+	}, {
+		"id": "269",
+		"name": "269",
+		"position": {
+			"cartographicDegrees": [7.3718978, 51.1414743, 294.1207906]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/83/269.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.2121081352233887
+	}, {
+		"id": "319",
+		"name": "319",
+		"position": {
+			"cartographicDegrees": [7.3717504, 51.1409596, 279.6672798]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/100/319.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.025869369506836
+	}, {
+		"id": "317",
+		"name": "317",
+		"position": {
+			"cartographicDegrees": [7.3712063, 51.1409831, 273.5533392]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/98/317.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.6489624977111816
+	}, {
+		"id": "322",
+		"name": "322",
+		"position": {
+			"cartographicDegrees": [7.3725648, 51.140971, 293.9961932]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/104/322.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.16007225215435028
+	}, {
+		"id": "343",
+		"name": "343",
+		"position": {
+			"cartographicDegrees": [7.3714809, 51.1408978, 273.6402531]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/105/343.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.2090094089508057
+	}, {
+		"id": "344",
+		"name": "344",
+		"position": {
+			"cartographicDegrees": [7.3717555, 51.1408126, 273.8322096]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/107/344.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8370886445045471
+	}, {
+		"id": "347",
+		"name": "347",
+		"position": {
+			"cartographicDegrees": [7.3725708, 51.1408002, 284.8870279]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/110/347.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.2537705600261688
+	}, {
+		"id": "348",
+		"name": "348",
+		"position": {
+			"cartographicDegrees": [7.3728405, 51.1408547, 291.7790749]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/111/348.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.39086270332336426
+	}, {
+		"id": "242",
+		"name": "242",
+		"position": {
+			"cartographicDegrees": [7.3714556, 51.1416163, 294.6272204]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/117/242.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.8181276321411133
+	}, {
+		"id": "372",
+		"name": "372",
+		"position": {
+			"cartographicDegrees": [7.3725709, 51.1407994, 284.857917]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/115/372.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.42434659600257874
+	}, {
+		"id": "288",
+		"name": "288",
+		"position": {
+			"cartographicDegrees": [7.3703824, 51.1412387, 273.2856841]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/85/288.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.7152860164642334
+	}, {
+		"id": "244",
+		"name": "244",
+		"position": {
+			"cartographicDegrees": [7.3718978, 51.1414743, 294.1207906]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/74/244.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.719469666481018
+	}, {
+		"id": "291",
+		"name": "291",
+		"position": {
+			"cartographicDegrees": [7.3709299, 51.1411191, 275.1542158]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/90/291.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.7046732902526855
+	}, {
+		"id": "297",
+		"name": "297",
+		"position": {
+			"cartographicDegrees": [7.3728293, 51.1411751, 294.4035846]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/112/297.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.29630520939826965
+	}, {
+		"id": "159",
+		"name": "159",
+		"position": {
+			"cartographicDegrees": [7.3689994, 51.1419465, 285.5361778]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/122/159.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.12206316739320755
+	}, {
+		"id": "154",
+		"name": "154",
+		"position": {
+			"cartographicDegrees": [7.3679108, 51.1420057, 283.8104539]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/116/154.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8430757522583008
+	}, {
+		"id": "155",
+		"name": "155",
+		"position": {
+			"cartographicDegrees": [7.3681849, 51.1419351, 279.9123497]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/96/155.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7704766392707825
+	}, {
+		"id": "53",
+		"name": "53",
+		"position": {
+			"cartographicDegrees": [7.3673463, 51.1426069, 295.1102476]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/9/53.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.9051916003227234
+	}, {
+		"id": "371",
+		"name": "371",
+		"position": {
+			"cartographicDegrees": [7.3723006, 51.1407616, 280.8167277]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/114/371.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.443895548582077
+	}, {
+		"id": "208",
+		"name": "208",
+		"position": {
+			"cartographicDegrees": [7.3690093, 51.1416649, 273.4409698]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/123/208.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7933504581451416
+	}, {
+		"id": "137",
+		"name": "137",
+		"position": {
+			"cartographicDegrees": [7.3698076, 51.1421368, 294.4633152]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/91/137.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.3172223567962646
+	}, {
+		"id": "136",
+		"name": "136",
+		"position": {
+			"cartographicDegrees": [7.3698076, 51.1421368, 294.4633152]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/55/136.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8160046339035034
+	}, {
+		"id": "216",
+		"name": "216",
+		"position": {
+			"cartographicDegrees": [7.3709062, 51.1417927, 294.1982319]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/62/216.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.774223804473877
+	}, {
+		"id": "217",
+		"name": "217",
+		"position": {
+			"cartographicDegrees": [7.3711809, 51.1417045, 294.4858165]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/63/217.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.694751501083374
+	}, {
+		"id": "298",
+		"name": "298",
+		"position": {
+			"cartographicDegrees": [7.3728293, 51.1411751, 294.4035846]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/93/298.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.43503817915916443
+	}, {
+		"id": "369",
+		"name": "369",
+		"position": {
+			"cartographicDegrees": [7.3720291, 51.1407578, 275.0963697]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/119/369.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8191200494766235
+	}, {
+		"id": "323",
+		"name": "323",
+		"position": {
+			"cartographicDegrees": [7.3730949, 51.1410899, 294.3925391]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/103/323.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.36364609003067017
+	}, {
+		"id": "316",
+		"name": "316",
+		"position": {
+			"cartographicDegrees": [7.3709317, 51.1410683, 273.3818578]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/97/316.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.578863501548767
+	}, {
+		"id": "235",
+		"name": "235",
+		"position": {
+			"cartographicDegrees": [7.3695586, 51.1414944, 273.569881]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/65/235.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.3421210050582886
+	}, {
+		"id": "320",
+		"name": "320",
+		"position": {
+			"cartographicDegrees": [7.3720219, 51.1409634, 284.802776]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/102/320.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.24440987408161163
+	}, {
+		"id": "236",
+		"name": "236",
+		"position": {
+			"cartographicDegrees": [7.3697211, 51.141444, 273.5347491]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/66/236.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.7383596897125244
+	}, {
+		"id": "294",
+		"name": "294",
+		"position": {
+			"cartographicDegrees": [7.3717444, 51.1411304, 287.5018646]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/118/294.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.0277650356292725
+	}, {
+		"id": "238",
+		"name": "238",
+		"position": {
+			"cartographicDegrees": [7.3701034, 51.1414493, 278.5525642]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/68/238.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.2815582752227783
+	}, {
+		"id": "237",
+		"name": "237",
+		"position": {
+			"cartographicDegrees": [7.3698319, 51.1414455, 275.7205019]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/67/237.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.1760449409484863
+	}, {
+		"id": "342",
+		"name": "342",
+		"position": {
+			"cartographicDegrees": [7.3714809, 51.1408978, 273.6402531]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/106/342.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.3716342449188232
+	}, {
+		"id": "240",
+		"name": "240",
+		"position": {
+			"cartographicDegrees": [7.3706464, 51.1414569, 287.0308165]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/70/240.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.8756672143936157
+	}, {
+		"id": "243",
+		"name": "243",
+		"position": {
+			"cartographicDegrees": [7.3714556, 51.1416163, 294.6272204]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/72/243.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.8940168619155884
+	}, {
+		"id": "239",
+		"name": "239",
+		"position": {
+			"cartographicDegrees": [7.3703749, 51.1414531, 282.8603398]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/69/239.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.0878288745880127
+	}, {
+		"id": "262",
+		"name": "262",
+		"position": {
+			"cartographicDegrees": [7.3701078, 51.141324, 273.2788152]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/73/262.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.8586267232894897
+	}, {
+		"id": "265",
+		"name": "265",
+		"position": {
+			"cartographicDegrees": [7.3706524, 51.1412861, 280.7474583]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/80/265.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.7653820514678955
+	}, {
+		"id": "105",
+		"name": "105",
+		"position": {
+			"cartographicDegrees": [7.3679014, 51.1422729, 287.6359103]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/22/105.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7581923007965088
+	}, {
+		"id": "157",
+		"name": "157",
+		"position": {
+			"cartographicDegrees": [7.3684564, 51.1419389, 278.5654347]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/120/157.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5254802703857422
+	}, {
+		"id": "28",
+		"name": "28",
+		"position": {
+			"cartographicDegrees": [7.3673363, 51.1428915, 294.1981511]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/5/28.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.9262851476669312
+	}, {
+		"id": "271",
+		"name": "271",
+		"position": {
+			"cartographicDegrees": [7.3724077, 51.1413105, 294.2768599]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/84/271.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.631031334400177
+	}, {
+		"id": "79",
+		"name": "79",
+		"position": {
+			"cartographicDegrees": [7.3676239, 51.1424399, 291.4159617]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/15/79.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8423494100570679
+	}, {
+		"id": "54",
+		"name": "54",
+		"position": {
+			"cartographicDegrees": [7.3678855, 51.1427237, 294.5825622]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/10/54.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8684659004211426
+	}, {
+		"id": "181",
+		"name": "181",
+		"position": {
+			"cartographicDegrees": [7.3684601, 51.1418353, 276.3028126]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/42/181.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7470816373825073
+	}, {
+		"id": "183",
+		"name": "183",
+		"position": {
+			"cartographicDegrees": [7.3687339, 51.1417719, 274.92008]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/44/183.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5610896348953247
+	}, {
+		"id": "130",
+		"name": "130",
+		"position": {
+			"cartographicDegrees": [7.3681789, 51.1421059, 283.0522676]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/30/130.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7490183711051941
+	}, {
+		"id": "209",
+		"name": "209",
+		"position": {
+			"cartographicDegrees": [7.3691942, 51.1416075, 273.3723376]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/54/209.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.8746362924575806
+	}, {
+		"id": "211",
+		"name": "211",
+		"position": {
+			"cartographicDegrees": [7.3695544, 51.1416125, 278.148215]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/57/211.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.666500449180603
+	}, {
+		"id": "103",
+		"name": "103",
+		"position": {
+			"cartographicDegrees": [7.3676299, 51.1422691, 288.4726327]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/19/103.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.880785346031189
+	}, {
+		"id": "109",
+		"name": "109",
+		"position": {
+			"cartographicDegrees": [7.3689838, 51.1423883, 294.5406049]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/26/109.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.39121466875076294
+	}, {
+		"id": "266",
+		"name": "266",
+		"position": {
+			"cartographicDegrees": [7.3709239, 51.1412899, 283.4290176]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/77/266.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.770850658416748
+	}, {
+		"id": "261",
+		"name": "261",
+		"position": {
+			"cartographicDegrees": [7.3697211, 51.141444, 273.5347491]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/76/261.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.651089072227478
+	}, {
+		"id": "293",
+		"name": "293",
+		"position": {
+			"cartographicDegrees": [7.3714729, 51.1411266, 284.2194552]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/89/293.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.3365836143493652
+	}, {
+		"id": "185",
+		"name": "185",
+		"position": {
+			"cartographicDegrees": [7.3692769, 51.1417795, 283.3361915]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/46/185.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7425535321235657
+	}, {
+		"id": "321",
+		"name": "321",
+		"position": {
+			"cartographicDegrees": [7.3722933, 51.1409672, 288.2317972]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/101/321.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.01746714860200882
+	}, {
+		"id": "346",
+		"name": "346",
+		"position": {
+			"cartographicDegrees": [7.3722994, 51.1407964, 282.5396246]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/109/346.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.21850311756134033
+	}, {
+		"id": "315",
+		"name": "315",
+		"position": {
+			"cartographicDegrees": [7.3709317, 51.1410683, 273.3818578]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/95/315.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.5591806173324585
+	}, {
+		"id": "345",
+		"name": "345",
+		"position": {
+			"cartographicDegrees": [7.3720279, 51.1407926, 276.4408591]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/108/345.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.4426509737968445
+	}, {
+		"id": "263",
+		"name": "263",
+		"position": {
+			"cartographicDegrees": [7.3701078, 51.141324, 273.2788152]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/75/263.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.9306515455245972
+	}, {
+		"id": "370",
+		"name": "370",
+		"position": {
+			"cartographicDegrees": [7.3720291, 51.1407578, 275.0963697]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/113/370.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.5876073241233826
+	}, {
+		"id": "270",
+		"name": "270",
+		"position": {
+			"cartographicDegrees": [7.3722798, 51.1413516, 294.3367948]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/82/270.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.0413539409637451
+	}, {
+		"id": "77",
+		"name": "77",
+		"position": {
+			"cartographicDegrees": [7.3673508, 51.1424809, 292.9311248]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/13/77.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.926352858543396
+	}, {
+		"id": "289",
+		"name": "289",
+		"position": {
+			"cartographicDegrees": [7.3703824, 51.1412387, 273.2856841]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/86/289.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.6895769834518433
+	}, {
+		"id": "106",
+		"name": "106",
+		"position": {
+			"cartographicDegrees": [7.3681729, 51.1422767, 289.608999]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/23/106.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.6687893867492676
+	}, {
+		"id": "295",
+		"name": "295",
+		"position": {
+			"cartographicDegrees": [7.3720159, 51.1411342, 294.3619184]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/92/295.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.19983652234077454
+	}, {
+		"id": "241",
+		"name": "241",
+		"position": {
+			"cartographicDegrees": [7.3709179, 51.1414606, 291.6678841]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/71/241.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.7770562171936035
+	}, {
+		"id": "234",
+		"name": "234",
+		"position": {
+			"cartographicDegrees": [7.3691942, 51.1416075, 273.3723376]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/64/234.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.109620213508606
+	}, {
+		"id": "134",
+		"name": "134",
+		"position": {
+			"cartographicDegrees": [7.3692588, 51.1422919, 294.6618189]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/34/134.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.10197382420301437
+	}, {
+		"id": "156",
+		"name": "156",
+		"position": {
+			"cartographicDegrees": [7.3684564, 51.1419389, 278.5654347]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/121/156.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.6695310473442078
+	}, {
+		"id": "213",
+		"name": "213",
+		"position": {
+			"cartographicDegrees": [7.3700974, 51.1416201, 286.9214221]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/59/213.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 2.7759439945220947
+	}, {
+		"id": "56",
+		"name": "56",
+		"position": {
+			"cartographicDegrees": [7.3682274, 51.1426192, 294.5879058]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/12/56.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7836910486221313
+	}, {
+		"id": "215",
+		"name": "215",
+		"position": {
+			"cartographicDegrees": [7.3709062, 51.1417927, 294.1982319]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/61/215.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.9711663722991943
+	}, {
+		"id": "264",
+		"name": "264",
+		"position": {
+			"cartographicDegrees": [7.3703809, 51.1412823, 275.389107]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/79/264.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 1.8579394817352295
+	}, {
+		"id": "81",
+		"name": "81",
+		"position": {
+			"cartographicDegrees": [7.3684347, 51.1425559, 294.5799897]
+		},
+		"model": {
+			"gltf": "https://raw.githubusercontent.com/amir-ba/WaterBody-Visualization-/master/HTML5Application/public_html/data/wall/Tiles/0/0/17/81.gltf",
+			"colorBlendModes": "Replace",
+			"colorBlendAmount": 1,
+			"nodeTransformations": {
+				"Y_UP_Transform": {
+					"translation": {
+						"cartesian": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"description": 0.7187894582748413
 	}
 ]
