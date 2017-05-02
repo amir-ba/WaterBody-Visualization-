@@ -32,7 +32,7 @@
 		"name": "Bever-Talsperre, MQA1 Piezometer Wasserseite Schüttkörper",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.369712340742324, 51.142069338292224, 100, 7.369712340742324, 51.142069338292224, 297.46]
+				"cartographicDegrees": [7.369712340742324, 51.142069338292224, 245, 7.369712340742324, 51.142069338292224, 297.46]
 			},
 			"material": {
 				"solidColor": {
@@ -66,7 +66,7 @@
 		"name": "Bever-Talsperre, MQA3 Piezometer Luftseite",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.369667713456456, 51.141984665386836, 100, 7.369667713456456, 51.141984665386836, 298.32]
+				"cartographicDegrees": [7.369667713456456, 51.141984665386836, 245, 7.369667713456456, 51.141984665386836, 298.32]
 			},
 			"material": {
 				"solidColor": {
@@ -100,7 +100,7 @@
 		"name": "Bever-Talsperre, MQA4 Piezometer Luftseite",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.369483274522463, 51.14182820712784, 100, 7.369483274522463, 51.14182820712784, 287.07]
+				"cartographicDegrees": [7.369483274522463, 51.14182820712784, 245, 7.369483274522463, 51.14182820712784, 287.07]
 			},
 			"material": {
 				"solidColor": {
@@ -134,7 +134,7 @@
 		"name": "Bever-Talsperre, MQA7 Piezometer Kalkzone",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.369363283449275, 51.14162240424392, 100, 7.369363283449275, 51.14162240424392, 275.67]
+				"cartographicDegrees": [7.369363283449275, 51.14162240424392, 245, 7.369363283449275, 51.14162240424392, 275.67]
 			},
 			"material": {
 				"solidColor": {
@@ -168,7 +168,7 @@
 		"name": "Bever-Talsperre, MQB1 Piezometer Wasserseite Schüttkörper",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.370608134315197, 51.141813533400466, 100, 7.370608134315197, 51.141813533400466, 296.71]
+				"cartographicDegrees": [7.370608134315197, 51.141813533400466, 245, 7.370608134315197, 51.141813533400466, 296.71]
 			},
 			"material": {
 				"solidColor": {
@@ -202,7 +202,7 @@
 		"name": "Bever-Talsperre, MQB2 Piezometer Wasserseite Fels",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.3705207997350906, 51.14171904924497, 100, 7.3705207997350906, 51.14171904924497, 298.43]
+				"cartographicDegrees": [7.3705207997350906, 51.14171904924497, 245, 7.3705207997350906, 51.14171904924497, 298.43]
 			},
 			"material": {
 				"solidColor": {
@@ -236,7 +236,7 @@
 		"name": "Bever-Talsperre, MQB4 Piezometer Luftseite",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.370390735735749, 51.14154579939893, 100, 7.370390735735749, 51.14154579939893, 287.11]
+				"cartographicDegrees": [7.370390735735749, 51.14154579939893, 245, 7.370390735735749, 51.14154579939893, 287.11]
 			},
 			"material": {
 				"solidColor": {
@@ -270,7 +270,7 @@
 		"name": "Bever-Talsperre, MQB5 Piezometer Berme",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.370433653670944, 51.14153557345896, 100, 7.370433653670944, 51.14153557345896, 287.21]
+				"cartographicDegrees": [7.370433653670944, 51.14153557345896, 245, 7.370433653670944, 51.14153557345896, 287.21]
 			},
 			"material": {
 				"solidColor": {
@@ -304,7 +304,7 @@
 		"name": "Bever-Talsperre, MQB6 Piezometer Berme",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.370246856480172, 51.14135510695596, 100, 7.370246856480172, 51.14135510695596, 275.96]
+				"cartographicDegrees": [7.370246856480172, 51.14135510695596, 245, 7.370246856480172, 51.14135510695596, 275.96]
 			},
 			"material": {
 				"solidColor": {
@@ -338,7 +338,7 @@
 		"name": "Bever-Talsperre, MQB7 Piezometer Dammfuß",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.3702862066512225, 51.141342149733894, 100, 7.3702862066512225, 51.141342149733894, 276.01]
+				"cartographicDegrees": [7.3702862066512225, 51.141342149733894, 245, 7.3702862066512225, 51.141342149733894, 276.01]
 			},
 			"material": {
 				"solidColor": {
@@ -372,7 +372,7 @@
 		"name": "Bever-Talsperre, MQC1 Piezometer Wasserseite Schüttkörper",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.371810068579239, 51.14143973945694, 100, 7.371810068579239, 51.14143973945694, 296.26]
+				"cartographicDegrees": [7.371810068579239, 51.14143973945694, 245, 7.371810068579239, 51.14143973945694, 296.26]
 			},
 			"material": {
 				"solidColor": {
@@ -406,7 +406,7 @@
 		"name": "Bever-Talsperre, MQC2 Piezometer Wasserseite Fels",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.371717560732302, 51.14134621672141, 100, 7.371717560732302, 51.14134621672141, 298.36]
+				"cartographicDegrees": [7.371717560732302, 51.14134621672141, 245, 7.371717560732302, 51.14134621672141, 298.36]
 			},
 			"material": {
 				"solidColor": {
@@ -440,7 +440,7 @@
 		"name": "Bever-Talsperre, MQC4 Piezometer Luftseite",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.371573940783131, 51.14117594807616, 100, 7.371573940783131, 51.14117594807616, 287.07]
+				"cartographicDegrees": [7.371573940783131, 51.14117594807616, 245, 7.371573940783131, 51.14117594807616, 287.07]
 			},
 			"material": {
 				"solidColor": {
@@ -474,7 +474,7 @@
 		"name": "Bever-Talsperre, MQC5 Piezometer Berme",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.371616365879598, 51.14116276015155, 100, 7.371616365879598, 51.14116276015155, 287.06]
+				"cartographicDegrees": [7.371616365879598, 51.14116276015155, 245, 7.371616365879598, 51.14116276015155, 287.06]
 			},
 			"material": {
 				"solidColor": {
@@ -508,7 +508,7 @@
 		"name": "Bever-Talsperre, MQC6 Piezometer Berme",
 		"polyline": {
 			"positions": {
-				"cartographicDegrees": [7.371427942962189, 51.14098120802222, 100, 7.371427942962189, 51.14098120802222, 275.96]
+				"cartographicDegrees": [7.371427942962189, 51.14098120802222, 245, 7.371427942962189, 51.14098120802222, 275.96]
 			},
 			"material": {
 				"solidColor": {
