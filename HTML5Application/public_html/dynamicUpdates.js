@@ -14,7 +14,7 @@
 function onTick() {
 
     var gauge = Highcharts.charts[1];
-  
+
     var position = $("#container1").offset();
     createGaugeOnMap(gauge, position);
 
@@ -122,21 +122,28 @@ function createPostRequestParam(startTime, param) {
     var startTimeWps, endTimeWps;
     startTime = Cesium.JulianDate.addMinutes(startTime, 1, new Cesium.JulianDate());
     var endTime = Cesium.JulianDate.addDays(startTime, param.leapDays, new Cesium.JulianDate());
-    startTimeWps = Cesium.JulianDate.toIso8601(startTime, 2); // "2016-02-01T09:59:01.00Z";
-    endTimeWps = Cesium.JulianDate.toIso8601(endTime, 2); //"2016-02-02T23:59:01.00Z";
-    startTimeWps = startTimeWps.substring(0, 11) + "9:00:02.00Z";
-    endTimeWps = endTimeWps.substring(0, 11) + "23:59:01.00Z";
-    var defaultDataValue = param.defaultValue;
-    param.data.inputs[0]["value"] = (defaultDataValue ? defaultDataValue + startTimeWps + "%2F" + endTimeWps
-        : startTimeWps + "%2F" + endTimeWps);
-    option.data = (typeof param.data === 'object' ? JSON.stringify(param.data) : param.data);
-    var timeInterval = new Cesium.TimeInterval({
-        start: startTime, // Cesium.JulianDate.fromIso8601(startTimeWps)   ,
-        stop: endTime// Cesium.JulianDate.fromIso8601(endTimeWps)
-    });
-    option.timeInterval = timeInterval;
-    option.leapDays = param.leapDays;
-    return option;
+    var notExeedToday = Cesium.JulianDate.compare(endTime, new Cesium.JulianDate.now);
+    var notExeedTimeFrame = Cesium.JulianDate.compare(endTime, viewer.clock.stopTime);
+    console.log(notExeedTimeFrame)
+    if (notExeedToday < 0 && notExeedTimeFrame < 17) {
+        startTimeWps = Cesium.JulianDate.toIso8601(startTime, 2); // "2016-02-01T09:59:01.00Z";
+        endTimeWps = Cesium.JulianDate.toIso8601(endTime, 2); //"2016-02-02T23:59:01.00Z";
+        startTimeWps = startTimeWps.substring(0, 11) + "9:00:02.00Z";
+        endTimeWps = endTimeWps.substring(0, 11) + "23:59:01.00Z";
+        var defaultDataValue = param.defaultValue;
+        param.data.inputs[0]["value"] = (defaultDataValue ? defaultDataValue + startTimeWps + "%2F" + endTimeWps
+            : startTimeWps + "%2F" + endTimeWps);
+        option.data = (typeof param.data === 'object' ? JSON.stringify(param.data) : param.data);
+        var timeInterval = new Cesium.TimeInterval({
+            start: startTime, // Cesium.JulianDate.fromIso8601(startTimeWps)   ,
+            stop: endTime// Cesium.JulianDate.fromIso8601(endTimeWps)
+        });
+        option.timeInterval = timeInterval;
+        option.leapDays = param.leapDays;
+        return option;
+    } else {
+        return null
+    }
 }
 function ajaxgetLoop(response, callback) {
 
@@ -193,19 +200,22 @@ function callajx(response, rep) {
         var requestParam = {leapDays: response.interval.leapDays + repeat, url: response.interval.url,
             data: response.interval.data, defaultValue: response.interval.defaultValue}
         var postParam = createPostRequestParam(response.interval.timeInterval.start, requestParam);
+
         repeat++;
         if (repeat > 4) repeat += 7;
-        ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
-            var output = jQxhr.getResponseHeader("Location");
-            console.log("RE" + Cesium.TimeInterval.toIso8601(postParam.timeInterval, 2))
+        if (postParam) {
+            ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
+                var output = jQxhr.getResponseHeader("Location");
+                console.log("RE" + Cesium.TimeInterval.toIso8601(postParam.timeInterval, 2))
 
-            console.log(output);
-            var opp = {};
-            opp.url = output;
-            opp.interval = postParam;
-            opp.repeat = repeat;
-            ajaxgetLoop(opp, callajx);
-        });
+                console.log(output);
+                var opp = {};
+                opp.url = output;
+                opp.interval = postParam;
+                opp.repeat = repeat;
+                ajaxgetLoop(opp, callajx);
+            });
+        }
     } else if (rep.StatusInfo.Status === "Accepted") {
         animation(false)
         //  viewer.clock.shouldAnimate = false;
@@ -300,9 +310,12 @@ function callRaster(startTime, showSelectionOnChart) {
         }
 
     }
-    if (CzmlWallEntities && showSeepage) {
-        CzmlWallEntities.show = true;
-//console.log(111)
+    // if (sourceWallCzml.show) console.log(sourceWallCzml.show)
+
+    if (CzmlWallEntities && sourceWallCzml.show) {
+        // CzmlWallEntities.show = true;
+
+        //console.log(111)
         var data = {
             "inputs": [
                 {
@@ -333,7 +346,7 @@ function callRaster(startTime, showSelectionOnChart) {
         }
         checkAndAddSeepage(CzmlWallEntities, data, postRequestParam, startTime);
     }
-    s
+
 
     checkAndUpdateChartTimeseries(Highcharts.charts[0], startTime, 6, showSelectionOnChart);
 }
@@ -343,13 +356,17 @@ function checkAndAddWaterLevels(czmlEntities, postParam) {
         postParam.timeInterval.start);
     var dateToCheckStop = czmlEntities[1].model.nodeTransformations.Y_UP_Transform.translation.intervals.contains(
         postParam.timeInterval.stop);
-    setLoadingIndicator(dateToCheckStart);
+
+    setLoadingIndicator(dateToCheckStart, 'waterlevel');
     if (dateToCheckStart && !isRunning) {
 
         var intervals = czmlEntities[1].model.nodeTransformations.Y_UP_Transform.translation.intervals._intervals;
         var postParamNew = createPostRequestParam(intervals[intervals.length - 1].stop);
+
         console.log("WATERLEVEL", Cesium.TimeInterval.toIso8601(postParam.timeInterval, 2));
+
         loadPridictionMap(postParamNew)
+
 
     } else if (!dateToCheckStart && !dateToCheckStop && !isRunning) {
 //  running = true;
@@ -375,7 +392,7 @@ function checkAndAddSeepage(CzmlWallEntities, data, postRequestParam, startTime)
     var dateToCheckStop =
         CzmlWallEntities[1].model.color.intervals.contains(
         postParamWall.timeInterval.stop);
-    setLoadingIndicator(dateToCheckStart);
+    setLoadingIndicator(dateToCheckStart, "seepage");
     if (dateToCheckStart && !isRunning2) {
 
         var intervals = CzmlWallEntities[1].model.color.intervals._intervals;
@@ -386,6 +403,7 @@ function checkAndAddSeepage(CzmlWallEntities, data, postRequestParam, startTime)
         animation(false);
         // viewer.clock.shouldAnimate = false;
         // viewer.clock.canAnimate = false;
+
         console.log("WALL", Cesium.TimeInterval.toIso8601(postParamWall.timeInterval, 2));
         loadSeepagePridictionMap(postParamWall);
     } else if (!dateToCheckStart && !dateToCheckStop && isRunning2) {
@@ -401,26 +419,30 @@ function checkAndAddSeepage(CzmlWallEntities, data, postRequestParam, startTime)
 }
 function loadPridictionMap(postParam) {
     isRunning = true;
-    ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
-        var output = jQxhr.getResponseHeader("Location");
-        console.log(output);
-        var opp = {};
-        opp.url = output;
-        opp.interval = postParam;
-        ajaxgetLoop(opp, callajx);
-    });
+    if (postParam) {
+        ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
+            var output = jQxhr.getResponseHeader("Location");
+            console.log(output);
+            var opp = {};
+            opp.url = output;
+            opp.interval = postParam;
+            ajaxgetLoop(opp, callajx);
+        });
+    }
 }
 function loadSeepagePridictionMap(postParam) {
     isRunning2 = true;
     //console.log(postParam)
-    ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
-        var output = jQxhr.getResponseHeader("Location");
-        console.log(output);
-        var opp = {};
-        opp.url = output;
-        opp.interval = postParam;
-        ajaxgetLoop(opp, callajx);
-    });
+    if (postParam) {
+        ajaxgetLoop(postParam, function (input1, output1, jQxhr) {
+            var output = jQxhr.getResponseHeader("Location");
+            console.log(output);
+            var opp = {};
+            opp.url = output;
+            opp.interval = postParam;
+            ajaxgetLoop(opp, callajx);
+        });
+    }
 }
 function getSosDataLast14Days(series, option, source) {
 

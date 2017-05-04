@@ -249,9 +249,8 @@ viewer.dataSources.add(czmldataSourceStations).then(function () {
  
 });
 viewer.dataSources.add(czmldataSourceWall).then(function (entities) {
-     if (!showSeepage){
         entities.show=false
-    }
+    
     
 });
 viewer.dataSources.add(czmldataSourcewaterLevel).then(function () {

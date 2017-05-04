@@ -73,7 +73,6 @@ var idList = [];
 var alphaList = [];
 var isRunning = false;
 var isRunning2 = false;
-showSeepage = false;
 var waterLevelColorArray = ['#a50026', '#d73027', '#f46d43', '#fdae61', '#fee090', '#e0f3f8', '#abd9e9', '#74add1',
     '#4575b4', '#313695']
 waterLevelColorArray = waterLevelColorArray.reverse()
@@ -106,7 +105,7 @@ var scene = viewer.scene;
 viewer.scene.backgroundColor = Cesium.Color.BLACK;
 //Set the globe base color to transparent
 //viewer.scene.globe.baseColor = Cesium.Color.BLACK;
- viewer.scene.fxaa = true;
+viewer.scene.fxaa = true;
 viewer.infoBox.frame.removeAttribute('sandbox');
 // add KML data
 viewer.flyTo(
@@ -191,14 +190,22 @@ function callSeriesManager(chart) {
     });
 }
 
-function setLoadingIndicator(testVarible) {
+function setLoadingIndicator(dataExists, elementClass) {
 
-    if (testVarible) {
-        $('#status').css('display', 'none');
+    if (dataExists) {
+        $('#status').removeClass(elementClass);
+        if (!($('#status').hasClass("waterlevel")) && !($('#status').hasClass("seepage"))) {
+            // $('#status').css('display', 'none');
+
+            $('#status').addClass("hide")
+        }
+
 
     } else {
-        $('#status').css('display', 'block');
+        //    $('#status').css('display', 'block');
+        $('#status').removeClass("hide")
 
+        $('#status').addClass(elementClass)
     }
 
 
@@ -283,7 +290,6 @@ function toggleLayer(layerId, layerName) {
 
                 var checked = $(layerId).find('input[type="checkbox"]') [0].checked
                 $(layerId).find('input[type="checkbox"]') [0].checked = !checked
-                showSeepage = $(layerId).find('input[type="checkbox"]') [0].checked;
 
             }
         }

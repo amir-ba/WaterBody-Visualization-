@@ -31,7 +31,7 @@ html, body, #cesiumContainer {
     width:80%;
 }
 #status {
-    display: none;
+/*    display: none;*/
     font-size: 25px;
     background: rgba(48, 51, 54, 0.65);
     border: 1px solid #444;
@@ -120,5 +120,15 @@ html, body, #cesiumContainer {
     position: absolute;
     top: 50%;
     font-family: "Arial";
+
+}
+.waterlevel {
+    display:block
+}
+.seepage{
+        display:block
+}
+.hide{
+        display:none; 
 
 }
