@@ -3,7 +3,7 @@
 <Document>
 	<name>kml.kml</name>
 	<open>1</open>
-	<Style id="PolyStyle100">
+	<Style id="PolyStyle102">
 		<LabelStyle>
 			<color>00000000</color>
 			<scale>0</scale>
@@ -13,32 +13,32 @@
 			<width>0.1</width>
 		</LineStyle>
 		<PolyStyle>
-			<color>752b261d</color>
-		</PolyStyle>
-	</Style>
-	<Style id="PolyStyle10">
-		<LabelStyle>
-			<color>00000000</color>
-			<scale>0</scale>
-		</LabelStyle>
-		<LineStyle>
-			<color>2bacacac</color>
-			<width>0.1</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>752b261d</color>
+			<color>472b261d</color>
 		</PolyStyle>
 	</Style>
 	<StyleMap id="PolyStyle101">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#PolyStyle100</styleUrl>
+			<styleUrl>#PolyStyle1000</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#PolyStyle10</styleUrl>
+			<styleUrl>#PolyStyle102</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="PolyStyle1000">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>2bacacac</color>
+			<width>0.1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>472b261d</color>
+		</PolyStyle>
+	</Style>
 	<Folder id="GroupLayer0">
 		<name>kml</name>
 		<open>1</open>

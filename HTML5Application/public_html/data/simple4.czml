@@ -22,7 +22,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -56,7 +56,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -90,7 +90,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -124,7 +124,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -158,7 +158,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -192,7 +192,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -226,7 +226,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -260,7 +260,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -294,7 +294,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -328,7 +328,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -362,7 +362,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -396,7 +396,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -430,7 +430,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -464,7 +464,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
@@ -498,7 +498,7 @@
 			"material": {
 				"solidColor": {
 					"color": {
-						"rgba": [0, 255, 0, 128]
+						"rgba": [0, 255, 0, 255]
 					}
 				}
 			}
