@@ -124,7 +124,7 @@ function createPostRequestParam(startTime, param) {
     var endTime = Cesium.JulianDate.addDays(startTime, param.leapDays, new Cesium.JulianDate());
     var notExeedToday = Cesium.JulianDate.compare(endTime, new Cesium.JulianDate.now);
     var notExeedTimeFrame = Cesium.JulianDate.compare(endTime, viewer.clock.stopTime);
-    console.log(notExeedTimeFrame)
+  ////  console.log(notExeedTimeFrame)
     if (notExeedToday < 0 && notExeedTimeFrame < 17) {
         startTimeWps = Cesium.JulianDate.toIso8601(startTime, 2); // "2016-02-01T09:59:01.00Z";
         endTimeWps = Cesium.JulianDate.toIso8601(endTime, 2); //"2016-02-02T23:59:01.00Z";

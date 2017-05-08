@@ -84,13 +84,13 @@ var seepageCssColorArray =
         '#276419']
 //['#40004b','#762a83','#9970ab','#c2a5cf','#e7d4e8','#d9f0d3','#a6dba0','#5aae61','#1b7837','#00441b']    //['#fff7fb', '#ece7f2', '#d0d1e6', '#a6bddb', '#74a9cf', '#3690c0', '#0570b0', '#045a8d', '#023858','#03253a'];
 seepageCssColorArray = seepageCssColorArray.reverse()
-
+ 
 
 Cesium.BingMapsApi.defaultKey = 'ApOW9LMkerqWIVSnFauilSeaZyp8df66byy1USCTjgTdMvhb4y1iAhEsUHQfCgzq';
 var viewer = new Cesium.Viewer($('#cesiumContainer')[0], {
     // terrainExaggeration : 1.2
     skyBox: false,
-    skyAtmosphere: false
+    skyAtmosphere: false    
     , contextOptions: {
         webgl: {
             alpha: false
@@ -103,9 +103,10 @@ var webMap = new WebMap3DCityDB(viewer);
 webMap.activateViewChangedEvent(true);
 var scene = viewer.scene;
 viewer.scene.backgroundColor = Cesium.Color.BLACK;
+viewer.scene.globe.orderIndependentTranslucency=false
 //Set the globe base color to transparent
 //viewer.scene.globe.baseColor = Cesium.Color.BLACK;
-viewer.scene.fxaa = true;
+//viewer.scene.fxaa = true;
 viewer.infoBox.frame.removeAttribute('sandbox');
 // add KML data
 viewer.flyTo(

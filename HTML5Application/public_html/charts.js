@@ -563,7 +563,8 @@ function updateGaugeValue(czmlentities, timestamp, callback) {
 }
 
 function roundNumber(num, scale) {
-    if (!("" + num).includes("e")) {
+   
+    if (!("" + num) .indexOf("e") != -1) {
         return +(Math.round(num + "e+" + scale) + "e-" + scale);
     } else {
         var arr = ("" + num).split("e");
@@ -651,129 +652,129 @@ function updategauge() {
     }
 }
 
-// loading referenced Cesium classes
-var BoundingRectangle = Cesium.BoundingRectangle;
-var Cartesian2 = Cesium.Cartesian2;
-var Cartesian3 = Cesium.Cartesian3;
-var Cartesian4 = Cesium.Cartesian4;
-var Cartographic = Cesium.Cartographic;
-var defined = Cesium.defined;
-var DeveloperError = Cesium.DeveloperError;
-var CesiumMath = Cesium.CesiumMath;
-var Matrix4 = Cesium.Matrix4;
-var SceneMode = Cesium.SceneMode;
-
-/**
- *
- * @namespace
- * @alias SceneTransforms
- */
-var SceneTransforms = {};
-
-var actualPositionScratch = new Cartesian4(0, 0, 0, 1);
-var positionCC = new Cartesian4();
-var viewProjectionScratch = new Matrix4();
-
-
-
-
-SceneTransforms.wgs84ToWindowCoordinates = function (scene, position, result) {
-    //>>includeStart('debug', pragmas.debug);
-    if (!defined(scene)) {
-        throw new DeveloperError('scene is required.');
-    }
-    if (!defined(position)) {
-        throw new DeveloperError('position is required.');
-    }
-    //>>includeEnd('debug');
-
-    // Transform for 3D, 2D, or Columbus view
-    var actualPosition = SceneTransforms.computeActualWgs84Position(scene.frameState, position, actualPositionScratch);
-
-    if (!defined(actualPosition)) {
-        return undefined;
-    }
-
-    // View-projection matrix to transform from world coordinates to clip coordinates
-    var camera = scene.camera;
-    var viewProjection = Matrix4.multiply(camera.frustum.projectionMatrix, camera.viewMatrix, viewProjectionScratch);
-    Matrix4.multiplyByVector(viewProjection, Cartesian4.fromElements(actualPosition.x, actualPosition.y,
-        actualPosition.z, 1, positionCC), positionCC);
-
-    // TODO ------> 3DCityDB-Web-Map Modificaion compared to the Cesium-Version 1.16
-    if ((positionCC.z < 0) && (scene.mode !== SceneMode.SCENE2D)) {
-        //    return undefined;
-        positionCC.y = 0 - positionCC.y;
-    }
-    // <-----------
-
-    result = SceneTransforms.clipToGLWindowCoordinates(scene, positionCC, result);
-    result.y = scene.canvas.clientHeight - result.y;
-    return result;
-};
-
-var projectedPosition = new Cartesian3();
-var positionInCartographic = new Cartographic();
-
-/**
- * @private
- */
-SceneTransforms.computeActualWgs84Position = function (frameState, position, result) {
-    var mode = frameState.mode;
-
-    if (mode === SceneMode.SCENE3D) {
-        return Cartesian3.clone(position, result);
-    }
-
-    var projection = frameState.mapProjection;
-    var cartographic = projection.ellipsoid.cartesianToCartographic(position, positionInCartographic);
-    if (!defined(cartographic)) {
-        return undefined;
-    }
-
-    projection.project(cartographic, projectedPosition);
-
-    if (mode === SceneMode.COLUMBUS_VIEW) {
-        return Cartesian3.fromElements(projectedPosition.z, projectedPosition.x, projectedPosition.y, result);
-    }
-
-    if (mode === SceneMode.SCENE2D) {
-        return Cartesian3.fromElements(0.0, projectedPosition.x, projectedPosition.y, result);
-    }
-
-    // mode === SceneMode.MORPHING
-    var morphTime = frameState.morphTime;
-    return Cartesian3.fromElements(
-        CesiumMath.lerp(projectedPosition.z, position.x, morphTime),
-        CesiumMath.lerp(projectedPosition.x, position.y, morphTime),
-        CesiumMath.lerp(projectedPosition.y, position.z, morphTime),
-        result);
-};
-
-var positionNDC = new Cartesian3();
-var positionWC = new Cartesian3();
-var viewport = new BoundingRectangle();
-var viewportTransform = new Matrix4();
-
-/**
- * @private
- */
-SceneTransforms.clipToGLWindowCoordinates = function (scene, position, result) {
-    var canvas = scene.canvas;
-
-    // Perspective divide to transform from clip coordinates to normalized device coordinates
-    Cartesian3.divideByScalar(position, position.w, positionNDC);
-
-    // Assuming viewport takes up the entire canvas...
-    viewport.width = canvas.clientWidth;
-    viewport.height = canvas.clientHeight;
-    Matrix4.computeViewportTransformation(viewport, 0.0, 1.0, viewportTransform);
-
-    // Viewport transform to transform from clip coordinates to window coordinates
-    Matrix4.multiplyByPoint(viewportTransform, positionNDC, positionWC);
-
-    return Cartesian2.fromCartesian3(positionWC, result);
-};
-
+//// loading referenced Cesium classes
+//var BoundingRectangle = Cesium.BoundingRectangle;
+//var Cartesian2 = Cesium.Cartesian2;
+//var Cartesian3 = Cesium.Cartesian3;
+//var Cartesian4 = Cesium.Cartesian4;
+//var Cartographic = Cesium.Cartographic;
+//var defined = Cesium.defined;
+//var DeveloperError = Cesium.DeveloperError;
+//var CesiumMath = Cesium.CesiumMath;
+//var Matrix4 = Cesium.Matrix4;
+//var SceneMode = Cesium.SceneMode;
+//
+///**
+// *
+// * @namespace
+// * @alias SceneTransforms
+// */
+//var SceneTransforms = {};
+//
+//var actualPositionScratch = new Cartesian4(0, 0, 0, 1);
+//var positionCC = new Cartesian4();
+//var viewProjectionScratch = new Matrix4();
+//
+//
+//
+//
+//SceneTransforms.wgs84ToWindowCoordinates = function (scene, position, result) {
+//    //>>includeStart('debug', pragmas.debug);
+//    if (!defined(scene)) {
+//        throw new DeveloperError('scene is required.');
+//    }
+//    if (!defined(position)) {
+//        throw new DeveloperError('position is required.');
+//    }
+//    //>>includeEnd('debug');
+//
+//    // Transform for 3D, 2D, or Columbus view
+//    var actualPosition = SceneTransforms.computeActualWgs84Position(scene.frameState, position, actualPositionScratch);
+//
+//    if (!defined(actualPosition)) {
+//        return undefined;
+//    }
+//
+//    // View-projection matrix to transform from world coordinates to clip coordinates
+//    var camera = scene.camera;
+//    var viewProjection = Matrix4.multiply(camera.frustum.projectionMatrix, camera.viewMatrix, viewProjectionScratch);
+//    Matrix4.multiplyByVector(viewProjection, Cartesian4.fromElements(actualPosition.x, actualPosition.y,
+//        actualPosition.z, 1, positionCC), positionCC);
+//
+//    // TODO ------> 3DCityDB-Web-Map Modificaion compared to the Cesium-Version 1.16
+//    if ((positionCC.z < 0) && (scene.mode !== SceneMode.SCENE2D)) {
+//        //    return undefined;
+//        positionCC.y = 0 - positionCC.y;
+//    }
+//    // <-----------
+//
+//    result = SceneTransforms.clipToGLWindowCoordinates(scene, positionCC, result);
+//    result.y = scene.canvas.clientHeight - result.y;
+//    return result;
+//};
+//
+//var projectedPosition = new Cartesian3();
+//var positionInCartographic = new Cartographic();
+//
+///**
+// * @private
+// */
+//SceneTransforms.computeActualWgs84Position = function (frameState, position, result) {
+//    var mode = frameState.mode;
+//
+//    if (mode === SceneMode.SCENE3D) {
+//        return Cartesian3.clone(position, result);
+//    }
+//
+//    var projection = frameState.mapProjection;
+//    var cartographic = projection.ellipsoid.cartesianToCartographic(position, positionInCartographic);
+//    if (!defined(cartographic)) {
+//        return undefined;
+//    }
+//
+//    projection.project(cartographic, projectedPosition);
+//
+//    if (mode === SceneMode.COLUMBUS_VIEW) {
+//        return Cartesian3.fromElements(projectedPosition.z, projectedPosition.x, projectedPosition.y, result);
+//    }
+//
+//    if (mode === SceneMode.SCENE2D) {
+//        return Cartesian3.fromElements(0.0, projectedPosition.x, projectedPosition.y, result);
+//    }
+//
+//    // mode === SceneMode.MORPHING
+//    var morphTime = frameState.morphTime;
+//    return Cartesian3.fromElements(
+//        CesiumMath.lerp(projectedPosition.z, position.x, morphTime),
+//        CesiumMath.lerp(projectedPosition.x, position.y, morphTime),
+//        CesiumMath.lerp(projectedPosition.y, position.z, morphTime),
+//        result);
+//};
+//
+//var positionNDC = new Cartesian3();
+//var positionWC = new Cartesian3();
+//var viewport = new BoundingRectangle();
+//var viewportTransform = new Matrix4();
+//
+///**
+// * @private
+// */
+//SceneTransforms.clipToGLWindowCoordinates = function (scene, position, result) {
+//    var canvas = scene.canvas;
+//
+//    // Perspective divide to transform from clip coordinates to normalized device coordinates
+//    Cartesian3.divideByScalar(position, position.w, positionNDC);
+//
+//    // Assuming viewport takes up the entire canvas...
+//    viewport.width = canvas.clientWidth;
+//    viewport.height = canvas.clientHeight;
+//    Matrix4.computeViewportTransformation(viewport, 0.0, 1.0, viewportTransform);
+//
+//    // Viewport transform to transform from clip coordinates to window coordinates
+//    Matrix4.multiplyByPoint(viewportTransform, positionNDC, positionWC);
+//
+//    return Cartesian2.fromCartesian3(positionWC, result);
+//};
+//
 
   

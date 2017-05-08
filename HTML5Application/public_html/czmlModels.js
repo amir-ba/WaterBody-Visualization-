@@ -249,7 +249,7 @@ viewer.dataSources.add(czmldataSourceStations).then(function () {
  
 });
 viewer.dataSources.add(czmldataSourceWall).then(function (entities) {
-        entities.show=false
+         entities.show=false
     
     
 });
