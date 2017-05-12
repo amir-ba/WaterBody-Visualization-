@@ -137,7 +137,7 @@ viewer.scene.globe.enableLighting = true;
 // add terrain
 var terrainProvider = new Cesium.CesiumTerrainProvider({
     //   url: 'http://www.3dcitydb.de/3dcitydb/fileadmin/mydata/OGC_FCP1/WaterBody_Amir/terrain/'
-    url: 'http://localhost/dashboard/cesium/Apps/22'
+     url: 'http://localhost/dashboard/cesium/Apps/terrain'
         //      url : '//assets.agi.com/stk-terrain/world'
     , requestVertexNormals: true
         //,ellipsoid: new Cesium. Ellipsoid(2000+6378137.0, 2000+6378137.0,2000+ 6356752.3142451793)
